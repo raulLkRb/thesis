@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# 
+# Start of session at: Tue Feb 14 11:53:12 2023
+# Process ID: 15192
+# Current directory: C:/Users/Raul/Documents/RG_TODpcanC5_throughput/project_1.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/Raul/Documents/RG_TODpcanC5_throughput/project_1.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/Raul/Documents/RG_TODpcanC5_throughput/project_1.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
