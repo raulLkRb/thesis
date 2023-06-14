@@ -1,0 +1,1 @@
+Within the "project_1.sdk" folder --> "throughputPR" --> "src", you will find the source files used for the project application in SDK. Specifically, the "echoWhile.c" file contains the main execution code.
