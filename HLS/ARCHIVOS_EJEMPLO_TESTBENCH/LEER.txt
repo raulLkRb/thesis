@@ -1,0 +1,5 @@
+En esta carpeta se incluyen archivos para hacer Co-Simulacion en HLS. En concreto, se incluyen tres subcarpetas:
+
+	+ stim_files: archivos de estímulo con datos obtenidos para pruebas con diferentes velocidades de exploración
+	+ testbench_files: archivos de test para obtener los vectores de características del cálculo básico de V
+	+ VC_data: vectores de características. Se incluye un archivo de ejemplo para velocidad de exploración de 30 mm/s

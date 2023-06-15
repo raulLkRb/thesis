@@ -1,0 +1,1 @@
+Archivo ejemplo para velocidad de exploración v=30 mm/s que obtiene los vectores de características del cálculo de V, con M=1024
