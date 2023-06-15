@@ -1,0 +1,7 @@
+DATASET TEXTURAS:
+
+	https://ieee-dataport.org/documents/texture-detection-feature-extraction-embedded-fpga-dataset
+
+DATASET RIGIDEZ:
+
+	https://1drv.ms/f/s!Avj-UTF7DQoDjQgy8XbK0wqjjgVN?e=UFVAG3
