@@ -1,0 +1,356 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_L1_proc'
+================================================================
+* Date:           Sun Feb  7 17:35:30 2021
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        matriz_mult
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.02|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  271|  271|  271|  271|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- L1      |  270|  270|        90|          -|          -|     3|    no    |
+        | + L3     |   88|   88|        11|          -|          -|     8|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 13
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond2_i)
+3 --> 
+	4  / (!exitcond_i)
+	2  / (exitcond_i)
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	3  / true
+* FSM state operations: 
+
+ <State 1>: 1.77ns
+ST_1: StgValue_14 (4)  [1/1] 1.77ns
+newFuncRoot:0  br label %.preheader225
+
+
+ <State 2>: 2.45ns
+ST_2: ia_0_i (6)  [1/1] 0.00ns
+.preheader225:0  %ia_0_i = phi i2 [ %ia, %0 ], [ 0, %newFuncRoot ]
+
+ST_2: ia_0_i_cast (7)  [1/1] 0.00ns  loc: mmult_accel.cpp:34->mmult_accel.cpp:108
+.preheader225:1  %ia_0_i_cast = zext i2 %ia_0_i to i32
+
+ST_2: tmp (8)  [1/1] 0.00ns  loc: mmult_accel.cpp:34->mmult_accel.cpp:108
+.preheader225:2  %tmp = call i5 @_ssdm_op_BitConcatenate.i5.i2.i3(i2 %ia_0_i, i3 0)
+
+ST_2: tmp_2_cast (9)  [1/1] 0.00ns  loc: mmult_accel.cpp:34->mmult_accel.cpp:108
+.preheader225:3  %tmp_2_cast = zext i5 %tmp to i6
+
+ST_2: exitcond2_i (10)  [1/1] 2.07ns  loc: mmult_accel.cpp:34->mmult_accel.cpp:108
+.preheader225:4  %exitcond2_i = icmp eq i2 %ia_0_i, -1
+
+ST_2: empty (11)  [1/1] 0.00ns
+.preheader225:5  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+
+ST_2: ia (12)  [1/1] 2.45ns  loc: mmult_accel.cpp:34->mmult_accel.cpp:108
+.preheader225:6  %ia = add i2 %ia_0_i, 1
+
+ST_2: StgValue_22 (13)  [1/1] 0.00ns  loc: mmult_accel.cpp:34->mmult_accel.cpp:108
+.preheader225:7  br i1 %exitcond2_i, label %mmult_hw.exit.exitStub, label %2
+
+ST_2: StgValue_23 (15)  [1/1] 0.00ns  loc: mmult_accel.cpp:35->mmult_accel.cpp:108
+:0  call void (...)* @_ssdm_op_SpecLoopName([3 x i8]* @p_str1) nounwind
+
+ST_2: tmp_1 (16)  [1/1] 0.00ns  loc: mmult_accel.cpp:37->mmult_accel.cpp:108
+:1  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([3 x i8]* @p_str2)
+
+ST_2: StgValue_25 (17)  [1/1] 1.77ns  loc: mmult_accel.cpp:40->mmult_accel.cpp:108
+:2  br label %1
+
+ST_2: StgValue_26 (44)  [1/1] 0.00ns
+mmult_hw.exit.exitStub:0  ret void
+
+
+ <State 3>: 5.92ns
+ST_3: sum_0_i (19)  [1/1] 0.00ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:0  %sum_0_i = phi float [ 0.000000e+00, %2 ], [ %sum, %3 ]
+
+ST_3: ib_0_i (20)  [1/1] 0.00ns  loc: mmult_accel.cpp:40->mmult_accel.cpp:108
+:1  %ib_0_i = phi i4 [ 0, %2 ], [ %ib, %3 ]
+
+ST_3: ib_0_i_cast (21)  [1/1] 0.00ns  loc: mmult_accel.cpp:40->mmult_accel.cpp:108
+:2  %ib_0_i_cast = zext i4 %ib_0_i to i32
+
+ST_3: ib_0_i_cast_cast (22)  [1/1] 0.00ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:3  %ib_0_i_cast_cast = zext i4 %ib_0_i to i6
+
+ST_3: tmp_3 (23)  [1/1] 2.66ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:4  %tmp_3 = add i6 %tmp_2_cast, %ib_0_i_cast_cast
+
+ST_3: tmp_3_cast (24)  [1/1] 0.00ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:5  %tmp_3_cast = zext i6 %tmp_3 to i32
+
+ST_3: coeff_addr (25)  [1/1] 0.00ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:6  %coeff_addr = getelementptr [24 x float]* @coeff, i32 0, i32 %tmp_3_cast
+
+ST_3: exitcond_i (26)  [1/1] 3.10ns  loc: mmult_accel.cpp:40->mmult_accel.cpp:108
+:7  %exitcond_i = icmp eq i4 %ib_0_i, -8
+
+ST_3: empty_18 (27)  [1/1] 0.00ns
+:8  %empty_18 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
+
+ST_3: ib (28)  [1/1] 2.62ns  loc: mmult_accel.cpp:40->mmult_accel.cpp:108
+:9  %ib = add i4 %ib_0_i, 1
+
+ST_3: StgValue_37 (29)  [1/1] 0.00ns  loc: mmult_accel.cpp:40->mmult_accel.cpp:108
+:10  br i1 %exitcond_i, label %0, label %3
+
+ST_3: coeff_load (32)  [2/2] 3.25ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:1  %coeff_load = load float* %coeff_addr, align 4
+
+ST_3: X_OUT_0_addr (39)  [1/1] 0.00ns  loc: mmult_accel.cpp:44->mmult_accel.cpp:108
+:0  %X_OUT_0_addr = getelementptr [3 x float]* %X_OUT_0, i32 0, i32 %ia_0_i_cast
+
+ST_3: StgValue_40 (40)  [1/1] 2.32ns  loc: mmult_accel.cpp:44->mmult_accel.cpp:108
+:1  store float %sum_0_i, float* %X_OUT_0_addr, align 4
+
+ST_3: empty_17 (41)  [1/1] 0.00ns  loc: mmult_accel.cpp:45->mmult_accel.cpp:108
+:2  %empty_17 = call i32 (...)* @_ssdm_op_SpecRegionEnd([3 x i8]* @p_str2, i32 %tmp_1)
+
+ST_3: StgValue_42 (42)  [1/1] 0.00ns  loc: mmult_accel.cpp:34->mmult_accel.cpp:108
+:3  br label %.preheader225
+
+
+ <State 4>: 3.25ns
+ST_4: coeff_load (32)  [1/2] 3.25ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:1  %coeff_load = load float* %coeff_addr, align 4
+
+ST_4: X_MAT_0_addr (33)  [1/1] 0.00ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:2  %X_MAT_0_addr = getelementptr [8 x float]* %X_MAT_0, i32 0, i32 %ib_0_i_cast
+
+ST_4: X_MAT_0_load (34)  [2/2] 2.32ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:3  %X_MAT_0_load = load float* %X_MAT_0_addr, align 4
+
+
+ <State 5>: 8.02ns
+ST_5: X_MAT_0_load (34)  [1/2] 2.32ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:3  %X_MAT_0_load = load float* %X_MAT_0_addr, align 4
+
+ST_5: tmp_8 (35)  [4/4] 5.70ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:4  %tmp_8 = fmul float %coeff_load, %X_MAT_0_load
+
+
+ <State 6>: 5.70ns
+ST_6: tmp_8 (35)  [3/4] 5.70ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:4  %tmp_8 = fmul float %coeff_load, %X_MAT_0_load
+
+
+ <State 7>: 5.70ns
+ST_7: tmp_8 (35)  [2/4] 5.70ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:4  %tmp_8 = fmul float %coeff_load, %X_MAT_0_load
+
+
+ <State 8>: 5.70ns
+ST_8: tmp_8 (35)  [1/4] 5.70ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:4  %tmp_8 = fmul float %coeff_load, %X_MAT_0_load
+
+
+ <State 9>: 7.26ns
+ST_9: sum (36)  [5/5] 7.26ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:5  %sum = fadd float %sum_0_i, %tmp_8
+
+
+ <State 10>: 7.26ns
+ST_10: sum (36)  [4/5] 7.26ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:5  %sum = fadd float %sum_0_i, %tmp_8
+
+
+ <State 11>: 7.26ns
+ST_11: sum (36)  [3/5] 7.26ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:5  %sum = fadd float %sum_0_i, %tmp_8
+
+
+ <State 12>: 7.26ns
+ST_12: sum (36)  [2/5] 7.26ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:5  %sum = fadd float %sum_0_i, %tmp_8
+
+
+ <State 13>: 7.26ns
+ST_13: StgValue_55 (31)  [1/1] 0.00ns  loc: mmult_accel.cpp:41->mmult_accel.cpp:108
+:0  call void (...)* @_ssdm_op_SpecLoopName([3 x i8]* @p_str3) nounwind
+
+ST_13: sum (36)  [1/5] 7.26ns  loc: mmult_accel.cpp:42->mmult_accel.cpp:108
+:5  %sum = fadd float %sum_0_i, %tmp_8
+
+ST_13: StgValue_57 (37)  [1/1] 0.00ns  loc: mmult_accel.cpp:40->mmult_accel.cpp:108
+:6  br label %1
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('ia') with incoming values : ('ia', mmult_accel.cpp:34->mmult_accel.cpp:108) [6]  (1.77 ns)
+
+ <State 2>: 2.45ns
+The critical path consists of the following:
+	'phi' operation ('ia') with incoming values : ('ia', mmult_accel.cpp:34->mmult_accel.cpp:108) [6]  (0 ns)
+	'add' operation ('ia', mmult_accel.cpp:34->mmult_accel.cpp:108) [12]  (2.45 ns)
+
+ <State 3>: 5.92ns
+The critical path consists of the following:
+	'phi' operation ('ib_0_i', mmult_accel.cpp:40->mmult_accel.cpp:108) with incoming values : ('ib', mmult_accel.cpp:40->mmult_accel.cpp:108) [20]  (0 ns)
+	'add' operation ('tmp_3', mmult_accel.cpp:42->mmult_accel.cpp:108) [23]  (2.66 ns)
+	'getelementptr' operation ('coeff_addr', mmult_accel.cpp:42->mmult_accel.cpp:108) [25]  (0 ns)
+	'load' operation ('coeff_load', mmult_accel.cpp:42->mmult_accel.cpp:108) on array 'coeff' [32]  (3.25 ns)
+
+ <State 4>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('coeff_load', mmult_accel.cpp:42->mmult_accel.cpp:108) on array 'coeff' [32]  (3.25 ns)
+
+ <State 5>: 8.02ns
+The critical path consists of the following:
+	'load' operation ('X_MAT_0_load', mmult_accel.cpp:42->mmult_accel.cpp:108) on array 'X_MAT_0' [34]  (2.32 ns)
+	'fmul' operation ('tmp_8', mmult_accel.cpp:42->mmult_accel.cpp:108) [35]  (5.7 ns)
+
+ <State 6>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_8', mmult_accel.cpp:42->mmult_accel.cpp:108) [35]  (5.7 ns)
+
+ <State 7>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_8', mmult_accel.cpp:42->mmult_accel.cpp:108) [35]  (5.7 ns)
+
+ <State 8>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_8', mmult_accel.cpp:42->mmult_accel.cpp:108) [35]  (5.7 ns)
+
+ <State 9>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', mmult_accel.cpp:42->mmult_accel.cpp:108) [36]  (7.26 ns)
+
+ <State 10>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', mmult_accel.cpp:42->mmult_accel.cpp:108) [36]  (7.26 ns)
+
+ <State 11>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', mmult_accel.cpp:42->mmult_accel.cpp:108) [36]  (7.26 ns)
+
+ <State 12>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', mmult_accel.cpp:42->mmult_accel.cpp:108) [36]  (7.26 ns)
+
+ <State 13>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', mmult_accel.cpp:42->mmult_accel.cpp:108) [36]  (7.26 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

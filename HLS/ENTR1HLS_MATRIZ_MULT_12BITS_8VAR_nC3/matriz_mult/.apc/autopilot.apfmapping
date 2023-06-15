@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="mmult.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3\mmult.h"/>
+    <originFiles name="mmult_accel.cpp" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3\mmult_accel.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="mmult_test.cpp" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3\mmult_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

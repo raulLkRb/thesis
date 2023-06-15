@@ -1,0 +1,190 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_3_proc'
+================================================================
+* Date:           Sun Feb  7 17:35:30 2021
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        matriz_mult
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      2.53|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   10|   10|   10|   10|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    9|    9|         3|          -|          -|     3|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond4)
+3 --> 
+	4  / true
+4 --> 
+	2  / true
+* FSM state operations: 
+
+ <State 1>: 1.77ns
+ST_1: StgValue_5 (9)  [1/1] 0.00ns
+newFuncRoot:0  call void (...)* @_ssdm_op_SpecInterface(i5* %out_stream_dest_V, i5* %out_stream_id_V, i1* %out_stream_last_V, i4* %out_stream_user_V, i4* %out_stream_strb_V, i4* %out_stream_keep_V, i32* %out_stream_data_V, [5 x i8]* @p_str6, i32 1, i32 1, [5 x i8]* @p_str7, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_6 (10)  [1/1] 1.77ns
+newFuncRoot:1  br label %mmult_hw.exit
+
+
+ <State 2>: 2.53ns
+ST_2: indvars_iv (12)  [1/1] 0.00ns  loc: mmult_accel.cpp:131
+mmult_hw.exit:0  %indvars_iv = phi i3 [ %indvars_iv_next, %0 ], [ 1, %newFuncRoot ]
+
+ST_2: k_1 (13)  [1/1] 0.00ns  loc: mmult_accel.cpp:131
+mmult_hw.exit:1  %k_1 = phi i3 [ %indvars_iv, %0 ], [ 0, %newFuncRoot ]
+
+ST_2: exitcond4 (14)  [1/1] 2.07ns  loc: mmult_accel.cpp:131
+mmult_hw.exit:2  %exitcond4 = icmp eq i3 %indvars_iv, -4
+
+ST_2: empty (15)  [1/1] 0.00ns
+mmult_hw.exit:3  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+
+ST_2: StgValue_11 (16)  [1/1] 0.00ns  loc: mmult_accel.cpp:131
+mmult_hw.exit:4  br i1 %exitcond4, label %.exitStub, label %0
+
+ST_2: k_1_cast3 (18)  [1/1] 0.00ns  loc: mmult_accel.cpp:131
+:0  %k_1_cast3 = zext i3 %k_1 to i32
+
+ST_2: X_OUT_0_addr (19)  [1/1] 0.00ns  loc: mmult_accel.cpp:136
+:1  %X_OUT_0_addr = getelementptr [3 x float]* %X_OUT_0, i32 0, i32 %k_1_cast3
+
+ST_2: last_assign (20)  [1/1] 2.07ns  loc: mmult_accel.cpp:136
+:2  %last_assign = icmp eq i3 %k_1, 2
+
+ST_2: X_OUT_0_load (21)  [2/2] 2.32ns  loc: ./mmult.h:182->mmult_accel.cpp:136
+:3  %X_OUT_0_load = load float* %X_OUT_0_addr, align 4
+
+ST_2: indvars_iv_next (24)  [1/1] 2.53ns  loc: mmult_accel.cpp:131
+:6  %indvars_iv_next = add i3 %indvars_iv, 1
+
+ST_2: StgValue_17 (27)  [1/1] 0.00ns
+.exitStub:0  ret void
+
+
+ <State 3>: 2.32ns
+ST_3: X_OUT_0_load (21)  [1/2] 2.32ns  loc: ./mmult.h:182->mmult_accel.cpp:136
+:3  %X_OUT_0_load = load float* %X_OUT_0_addr, align 4
+
+ST_3: val_assign (22)  [1/1] 0.00ns  loc: ./mmult.h:182->mmult_accel.cpp:136
+:4  %val_assign = bitcast float %X_OUT_0_load to i32
+
+ST_3: StgValue_20 (23)  [2/2] 0.00ns  loc: mmult_accel.cpp:136
+:5  call void @_ssdm_op_Write.axis.volatile.i5P.i5P.i1P.i4P.i4P.i4P.i32P(i5* %out_stream_dest_V, i5* %out_stream_id_V, i1* %out_stream_last_V, i4* %out_stream_user_V, i4* %out_stream_strb_V, i4* %out_stream_keep_V, i32* %out_stream_data_V, i5 0, i5 0, i1 %last_assign, i4 0, i4 -1, i4 -1, i32 %val_assign)
+
+
+ <State 4>: 0.00ns
+ST_4: StgValue_21 (23)  [1/2] 0.00ns  loc: mmult_accel.cpp:136
+:5  call void @_ssdm_op_Write.axis.volatile.i5P.i5P.i1P.i4P.i4P.i4P.i32P(i5* %out_stream_dest_V, i5* %out_stream_id_V, i1* %out_stream_last_V, i4* %out_stream_user_V, i4* %out_stream_strb_V, i4* %out_stream_keep_V, i32* %out_stream_data_V, i5 0, i5 0, i1 %last_assign, i4 0, i4 -1, i4 -1, i32 %val_assign)
+
+ST_4: StgValue_22 (25)  [1/1] 0.00ns  loc: mmult_accel.cpp:131
+:7  br label %mmult_hw.exit
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('indvars_iv', mmult_accel.cpp:131) with incoming values : ('indvars_iv_next', mmult_accel.cpp:131) [12]  (1.77 ns)
+
+ <State 2>: 2.53ns
+The critical path consists of the following:
+	'phi' operation ('indvars_iv', mmult_accel.cpp:131) with incoming values : ('indvars_iv_next', mmult_accel.cpp:131) [12]  (0 ns)
+	'add' operation ('indvars_iv_next', mmult_accel.cpp:131) [24]  (2.53 ns)
+
+ <State 3>: 2.32ns
+The critical path consists of the following:
+	'load' operation ('X_OUT_0_load', ./mmult.h:182->mmult_accel.cpp:136) on array 'X_OUT_0' [21]  (2.32 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

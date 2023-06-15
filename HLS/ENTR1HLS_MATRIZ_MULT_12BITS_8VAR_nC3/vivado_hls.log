@@ -1,0 +1,35 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado_HLS/2017.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Raul' on host 'laptop-5ntbthr8' (Windows NT_amd64 version 6.2) on Thu Jun 15 11:15:03 +0100 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Raul/Documents/thesis_rep/thesis/HLS/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3'
+INFO: [HLS 200-10] Opening project 'C:/Users/Raul/Documents/thesis_rep/thesis/HLS/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/Raul/Documents/thesis_rep/thesis/HLS/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../mmult_test.cpp in debug mode
+   Compiling ../../../../mmult_accel.cpp in debug mode
+   Generating csim.exe
+In file included from C:/Xilinx/Vivado_HLS/2017.1/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from C:/Xilinx/Vivado_HLS/2017.1/include/hls_fpo.h:172,
+                 from C:/Xilinx/Vivado_HLS/2017.1/include/hls_half.h:57,
+                 from C:/Xilinx/Vivado_HLS/2017.1/include/ap_int.h:74,
+                 from C:/Xilinx/Vivado_HLS/2017.1/include/ap_axi_sdata.h:86,
+                 from ../../../../mmult.h:2,
+                 from ../../../../mmult_test.cpp:5:
+C:/Xilinx/Vivado_HLS/2017.1/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined [enabled by default]
+C:/Xilinx/Vivado_HLS/2017.1/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+In file included from C:/Xilinx/Vivado_HLS/2017.1/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from C:/Xilinx/Vivado_HLS/2017.1/include/hls_fpo.h:172,
+                 from C:/Xilinx/Vivado_HLS/2017.1/include/hls_half.h:57,
+                 from C:/Xilinx/Vivado_HLS/2017.1/include/ap_int.h:74,
+                 from C:/Xilinx/Vivado_HLS/2017.1/include/ap_axi_sdata.h:86,
+                 from ../../../../mmult.h:2,
+                 from ../../../../mmult_accel.cpp:4:
+C:/Xilinx/Vivado_HLS/2017.1/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined [enabled by default]
+C:/Xilinx/Vivado_HLS/2017.1/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+out_stream[0] is 4189fb0a 
+out_stream[1] is 3fcd9999 
+out_stream[2] is 40ce618f 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

@@ -1,0 +1,693 @@
+
+*** Running vivado
+    with args -log wrapped_mmult_hw.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrapped_mmult_hw.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source wrapped_mmult_hw.tcl -notrace
+Command: synth_design -top wrapped_mmult_hw -part xc7z020clg484-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15856 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 315.133 ; gain = 83.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw.vhd:37]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_g8j' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j.vhd:12' bound to instance 'dato_V_U' of component 'wrapped_mmult_hw_g8j' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw.vhd:314]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_g8j' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j.vhd:45]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_g8j_memcore' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j_memcore.vhd:107' bound to instance 'wrapped_mmult_hw_g8j_memcore_U' of component 'wrapped_mmult_hw_g8j_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_g8j_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j_memcore.vhd:127]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_g8j_memcore_ram' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j_memcore.vhd:13' bound to instance 'wrapped_mmult_hw_g8j_memcore_ram_U' of component 'wrapped_mmult_hw_g8j_memcore_ram' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j_memcore.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_g8j_memcore_ram' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j_memcore.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_g8j_memcore_ram' (1#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j_memcore.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_g8j_memcore' (2#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j_memcore.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_g8j' (3#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j.vhd:45]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_hbi' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:12' bound to instance 'X_MAT_0_U' of component 'wrapped_mmult_hw_hbi' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw.vhd:339]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_hbi' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:54]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_hbi_memcore' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi_memcore.vhd:93' bound to instance 'wrapped_mmult_hw_hbi_memcore_U' of component 'wrapped_mmult_hw_hbi_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_hbi_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi_memcore.vhd:112]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_hbi_memcore_ram' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi_memcore.vhd:13' bound to instance 'wrapped_mmult_hw_hbi_memcore_ram_U' of component 'wrapped_mmult_hw_hbi_memcore_ram' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi_memcore.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_hbi_memcore_ram' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi_memcore.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_hbi_memcore_ram' (4#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi_memcore.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_hbi_memcore' (5#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi_memcore.vhd:112]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_hbi_memcore' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi_memcore.vhd:93' bound to instance 'wrapped_mmult_hw_hbi_memcore_U' of component 'wrapped_mmult_hw_hbi_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:99]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[0].buf_ce0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:103]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[0].buf_we0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:104]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[0].buf_ce1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:108]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[0].buf_we1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[1].buf_ce0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:117]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[1].buf_we0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:120]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[1].buf_ce1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:127]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[1].buf_we1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_hbi' (6#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_hbi.vhd:54]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_ibs' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_ibs.vhd:12' bound to instance 'X_OUT_0_U' of component 'wrapped_mmult_hw_ibs' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw.vhd:372]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_ibs' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_ibs.vhd:45]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_ibs_memcore' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_ibs_memcore.vhd:107' bound to instance 'wrapped_mmult_hw_ibs_memcore_U' of component 'wrapped_mmult_hw_ibs_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_ibs.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_ibs_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_ibs_memcore.vhd:127]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_ibs_memcore_ram' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_ibs_memcore.vhd:13' bound to instance 'wrapped_mmult_hw_ibs_memcore_ram_U' of component 'wrapped_mmult_hw_ibs_memcore_ram' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_ibs_memcore.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_ibs_memcore_ram' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_ibs_memcore.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_ibs_memcore_ram' (7#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_ibs_memcore.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_ibs_memcore' (8#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_ibs_memcore.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_ibs' (9#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_ibs.vhd:45]
+INFO: [Synth 8-3491] module 'read_data' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:12' bound to instance 'read_data_U0' of component 'read_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw.vhd:397]
+INFO: [Synth 8-638] synthesizing module 'read_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:37]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:59]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:62]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:82]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:100]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:327]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state3_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:334]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:357]
+WARNING: [Synth 8-6014] Unused sequential element in_stream_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:425]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:321]
+WARNING: [Synth 8-6014] Unused sequential element input_data_V_0_ack_out_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:180]
+WARNING: [Synth 8-6014] Unused sequential element input_dest_V_0_ack_out_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:228]
+INFO: [Synth 8-256] done synthesizing module 'read_data' (10#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/read_data.vhd:37]
+INFO: [Synth 8-3491] module 'Block_preheader117_s' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:12' bound to instance 'Block_preheader117_U0' of component 'Block_preheader117_s' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw.vhd:420]
+INFO: [Synth 8-638] synthesizing module 'Block_preheader117_s' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:36]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:81]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:84]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:91]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:95]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:99]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:103]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:108]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:113]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:118]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:121]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:123]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:125]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:127]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:129]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:134]
+INFO: [Synth 8-3491] module 'Block_preheader11bkb' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader11bkb.vhd:77' bound to instance 'vectorMedia1_U' of component 'Block_preheader11bkb' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'Block_preheader11bkb' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader11bkb.vhd:90]
+INFO: [Synth 8-3491] module 'Block_preheader11bkb_rom' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader11bkb.vhd:12' bound to instance 'Block_preheader11bkb_rom_U' of component 'Block_preheader11bkb_rom' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader11bkb.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'Block_preheader11bkb_rom' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader11bkb.vhd:27]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader11bkb.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'Block_preheader11bkb_rom' (11#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader11bkb.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Block_preheader11bkb' (12#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader11bkb.vhd:90]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_cud' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_cud.vhd:11' bound to instance 'wrapped_mmult_hw_cud_U8' of component 'wrapped_mmult_hw_cud' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:205]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_cud' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_cud.vhd:29]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_ap_fsub_3_full_dsp_32' declared at 'c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fsub_3_full_dsp_32/synth/wrapped_mmult_hw_ap_fsub_3_full_dsp_32.vhd:59' bound to instance 'wrapped_mmult_hw_ap_fsub_3_full_dsp_32_u' of component 'wrapped_mmult_hw_ap_fsub_3_full_dsp_32' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_cud.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_ap_fsub_3_full_dsp_32' [c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fsub_3_full_dsp_32/synth/wrapped_mmult_hw_ap_fsub_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at 'c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fmul_2_max_dsp_32/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fsub_3_full_dsp_32/synth/wrapped_mmult_hw_ap_fsub_3_full_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_ap_fsub_3_full_dsp_32' (30#1) [c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fsub_3_full_dsp_32/synth/wrapped_mmult_hw_ap_fsub_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_cud' (31#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_cud.vhd:29]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_dEe' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_dEe.vhd:11' bound to instance 'wrapped_mmult_hw_dEe_U9' of component 'wrapped_mmult_hw_dEe' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_dEe' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_dEe.vhd:27]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32' declared at 'c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32/synth/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32.vhd:59' bound to instance 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32_u' of component 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_dEe.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32' [c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32/synth/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at 'c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fmul_2_max_dsp_32/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32/synth/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32' (40#1) [c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32/synth/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_dEe' (41#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_dEe.vhd:27]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_dEe' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_dEe.vhd:11' bound to instance 'wrapped_mmult_hw_dEe_U10' of component 'wrapped_mmult_hw_dEe' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:479]
+WARNING: [Synth 8-6014] Unused sequential element X_MAT_0_we1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:456]
+INFO: [Synth 8-256] done synthesizing module 'Block_preheader117_s' (42#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Block_preheader117_s.vhd:36]
+INFO: [Synth 8-3491] module 'Loop_L1_proc' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:12' bound to instance 'Loop_L1_proc_U0' of component 'Loop_L1_proc' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw.vhd:442]
+INFO: [Synth 8-638] synthesizing module 'Loop_L1_proc' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:31]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:67]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:70]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:77]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:85]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:90]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:92]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:96]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:99]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:108]
+INFO: [Synth 8-3491] module 'Loop_L1_proc_coeff' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc_coeff.vhd:93' bound to instance 'coeff_U' of component 'Loop_L1_proc_coeff' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'Loop_L1_proc_coeff' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc_coeff.vhd:106]
+INFO: [Synth 8-3491] module 'Loop_L1_proc_coeff_rom' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc_coeff.vhd:12' bound to instance 'Loop_L1_proc_coeff_rom_U' of component 'Loop_L1_proc_coeff_rom' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc_coeff.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'Loop_L1_proc_coeff_rom' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc_coeff.vhd:27]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc_coeff.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'Loop_L1_proc_coeff_rom' (43#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc_coeff.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Loop_L1_proc_coeff' (44#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc_coeff.vhd:106]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_eOg' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_eOg.vhd:11' bound to instance 'wrapped_mmult_hw_eOg_U14' of component 'wrapped_mmult_hw_eOg' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_eOg' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_eOg.vhd:29]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_ap_fadd_3_full_dsp_32' declared at 'c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fadd_3_full_dsp_32/synth/wrapped_mmult_hw_ap_fadd_3_full_dsp_32.vhd:59' bound to instance 'wrapped_mmult_hw_ap_fadd_3_full_dsp_32_u' of component 'wrapped_mmult_hw_ap_fadd_3_full_dsp_32' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_eOg.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_ap_fadd_3_full_dsp_32' [c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fadd_3_full_dsp_32/synth/wrapped_mmult_hw_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at 'c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fmul_2_max_dsp_32/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fadd_3_full_dsp_32/synth/wrapped_mmult_hw_ap_fadd_3_full_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_ap_fadd_3_full_dsp_32' (45#1) [c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fadd_3_full_dsp_32/synth/wrapped_mmult_hw_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_eOg' (46#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_eOg.vhd:29]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_fYi' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_fYi.vhd:11' bound to instance 'wrapped_mmult_hw_fYi_U15' of component 'wrapped_mmult_hw_fYi' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_fYi' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_fYi.vhd:29]
+INFO: [Synth 8-3491] module 'wrapped_mmult_hw_ap_fmul_2_max_dsp_32' declared at 'c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fmul_2_max_dsp_32/synth/wrapped_mmult_hw_ap_fmul_2_max_dsp_32.vhd:59' bound to instance 'wrapped_mmult_hw_ap_fmul_2_max_dsp_32_u' of component 'wrapped_mmult_hw_ap_fmul_2_max_dsp_32' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_fYi.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'wrapped_mmult_hw_ap_fmul_2_max_dsp_32' [c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fmul_2_max_dsp_32/synth/wrapped_mmult_hw_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at 'c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fmul_2_max_dsp_32/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fmul_2_max_dsp_32/synth/wrapped_mmult_hw_ap_fmul_2_max_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_ap_fmul_2_max_dsp_32' (54#1) [c:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.srcs/sources_1/ip/wrapped_mmult_hw_ap_fmul_2_max_dsp_32/synth/wrapped_mmult_hw_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw_fYi' (55#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_fYi.vhd:29]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:400]
+WARNING: [Synth 8-6014] Unused sequential element coeff_ce0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'Loop_L1_proc' (56#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_L1_proc.vhd:31]
+INFO: [Synth 8-3491] module 'Loop_3_proc' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:12' bound to instance 'Loop_3_proc_U0' of component 'Loop_3_proc' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw.vhd:459]
+INFO: [Synth 8-638] synthesizing module 'Loop_3_proc' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:36]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:63]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:66]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:137]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:139]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:141]
+WARNING: [Synth 8-6014] Unused sequential element out_stream_dest_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:242]
+WARNING: [Synth 8-6014] Unused sequential element out_stream_id_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:276]
+WARNING: [Synth 8-6014] Unused sequential element out_stream_keep_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:310]
+WARNING: [Synth 8-6014] Unused sequential element out_stream_strb_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:392]
+WARNING: [Synth 8-6014] Unused sequential element out_stream_user_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:426]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:570]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:576]
+WARNING: [Synth 8-6014] Unused sequential element out_stream_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:618]
+WARNING: [Synth 8-6014] Unused sequential element out_stream_dest_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:258]
+WARNING: [Synth 8-6014] Unused sequential element out_stream_id_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:292]
+WARNING: [Synth 8-6014] Unused sequential element out_stream_keep_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:326]
+WARNING: [Synth 8-6014] Unused sequential element out_stream_last_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:360]
+WARNING: [Synth 8-6014] Unused sequential element out_stream_strb_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:408]
+WARNING: [Synth 8-6014] Unused sequential element out_stream_user_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:442]
+INFO: [Synth 8-256] done synthesizing module 'Loop_3_proc' (57#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/Loop_3_proc.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'wrapped_mmult_hw' (58#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw.vhd:37]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized29 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized29 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized29 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized29 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized29 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized83 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized83 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized83 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized83 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized83 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized81 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized81 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized81 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized81 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized81 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized11 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized11 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized11 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized7 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design dsp48e1_wrapper__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design flt_round_dsp_opt_full has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized62 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized62 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized62 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized62 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized62 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized66 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized66 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized66 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized66 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized66 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized47 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized47 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized47 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized47 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized47 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized79 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized79 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized79 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized79 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized79 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized33 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized33 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized33 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized77 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized77 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized77 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized75 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized75 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized75 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design compare_eq_im__parameterized1 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design special_detect__parameterized0 has unconnected port A[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized55 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized55 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized55 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized55 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized55 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized73 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized73 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized73 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized73 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized73 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized9 has unconnected port CLK
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 420.852 ; gain = 189.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 420.852 ; gain = 189.688
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 491 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw.xdc]
+Finished Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw.xdc]
+Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  FDE => FDRE: 38 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 665.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 665.730 ; gain = 434.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 665.730 ; gain = 434.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Block_preheader117_U0/wrapped_mmult_hw_cud_U8/wrapped_mmult_hw_ap_fsub_3_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Block_preheader117_U0/wrapped_mmult_hw_dEe_U10/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Block_preheader117_U0/wrapped_mmult_hw_dEe_U9/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_L1_proc_U0/wrapped_mmult_hw_eOg_U14/wrapped_mmult_hw_ap_fadd_3_full_dsp_32_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Loop_L1_proc_U0/wrapped_mmult_hw_fYi_U15/wrapped_mmult_hw_ap_fmul_2_max_dsp_32_u. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 665.730 ; gain = 434.566
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5557] Skipped directive 'ram_style', Block implementation is mandatory for this RAM (ram_reg)
+WARNING: [Synth 8-5557] Skipped directive 'ram_style', Block implementation is mandatory for this RAM (ram_reg)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "tmp_fu_92_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond2_fu_272_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond2_fu_272_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "X_MAT_0_address1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dato_V_address0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond2_i_fu_141_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond_i_fu_171_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond4_fu_114_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "last_assign_fu_125_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "out_stream_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "out_stream_last_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 665.730 ; gain = 434.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/wrapped_mmult_hw_ap_fsub_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/wrapped_mmult_hw_ap_fsub_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/wrapped_mmult_hw_ap_fsub_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/wrapped_mmult_hw_ap_fsub_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_DEL' (delay__parameterized42) to 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'wrapped_mmult_hw_ap_sitofp_4_no_dsp_32:/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'Loop_L1_proc_U0/wrapped_mmult_hw_eOg_U14/wrapped_mmult_hw_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'Loop_L1_proc_U0/wrapped_mmult_hw_eOg_U14/wrapped_mmult_hw_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'Loop_L1_proc_U0/wrapped_mmult_hw_eOg_U14/wrapped_mmult_hw_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'Loop_L1_proc_U0/wrapped_mmult_hw_eOg_U14/wrapped_mmult_hw_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'Loop_L1_proc_U0/wrapped_mmult_hw_fYi_U15/wrapped_mmult_hw_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'Loop_L1_proc_U0/wrapped_mmult_hw_fYi_U15/wrapped_mmult_hw_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'Loop_L1_proc_U0/wrapped_mmult_hw_fYi_U15/wrapped_mmult_hw_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'Loop_L1_proc_U0/wrapped_mmult_hw_fYi_U15/wrapped_mmult_hw_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TKEEP[3] driven by constant 1
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TKEEP[2] driven by constant 1
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TKEEP[1] driven by constant 1
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TKEEP[0] driven by constant 1
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TSTRB[3] driven by constant 1
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TSTRB[2] driven by constant 1
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TSTRB[1] driven by constant 1
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TSTRB[0] driven by constant 1
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TUSER[3] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TUSER[2] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TUSER[1] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TUSER[0] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TID[4] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TID[3] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TID[2] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TID[1] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TID[0] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TDEST[4] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TDEST[3] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TDEST[2] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TDEST[1] driven by constant 0
+WARNING: [Synth 8-3917] design wrapped_mmult_hw has port out_stream_TDEST[0] driven by constant 0
+WARNING: [Synth 8-3936] Found unconnected internal register 'dato_V_U/wrapped_mmult_hw_g8j_memcore_U/wrapped_mmult_hw_g8j_memcore_ram_U/q1_reg' and it is trimmed from '32' to '24' bits. [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j_memcore.vhd:95]
+WARNING: [Synth 8-6014] Unused sequential element dato_V_U/wrapped_mmult_hw_g8j_memcore_U/wrapped_mmult_hw_g8j_memcore_ram_U/q0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_g8j_memcore.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element dato_V_U/wrapped_mmult_hw_g8j_memcore_U/wrapped_mmult_hw_g8j_memcore_ram_U/ram_reg was removed. 
+INFO: [Synth 8-3971] The signal X_MAT_0_U/gen_buffer[0].wrapped_mmult_hw_hbi_memcore_U/wrapped_mmult_hw_hbi_memcore_ram_U/ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal X_MAT_0_U/gen_buffer[1].wrapped_mmult_hw_hbi_memcore_U/wrapped_mmult_hw_hbi_memcore_ram_U/ram_reg was recognized as a true dual port RAM template.
+WARNING: [Synth 8-6014] Unused sequential element X_OUT_0_U/wrapped_mmult_hw_ibs_memcore_U/wrapped_mmult_hw_ibs_memcore_ram_U/q0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/wrapped_mmult_hw_ibs_memcore.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element X_OUT_0_U/wrapped_mmult_hw_ibs_memcore_U/wrapped_mmult_hw_ibs_memcore_ram_U/ram_reg was removed. 
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[1]' (FDE) to 'Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[4]' (FDE) to 'Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[26]' (FDE) to 'Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[27]' (FDE) to 'Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[28]' (FDE) to 'Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[29]' (FDE) to 'Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[31]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[31] )
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/vectorMedia1_load_reg_368_reg[1]' (FDE) to 'Block_preheader117_U0/vectorMedia1_load_reg_368_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/vectorMedia1_load_reg_368_reg[4]' (FDE) to 'Block_preheader117_U0/vectorMedia1_load_reg_368_reg[30]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/vectorMedia1_load_reg_368_reg[26]' (FDE) to 'Block_preheader117_U0/vectorMedia1_load_reg_368_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/vectorMedia1_load_reg_368_reg[27]' (FDE) to 'Block_preheader117_U0/vectorMedia1_load_reg_368_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/vectorMedia1_load_reg_368_reg[28]' (FDE) to 'Block_preheader117_U0/vectorMedia1_load_reg_368_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/vectorMedia1_load_reg_368_reg[29]' (FDE) to 'Block_preheader117_U0/vectorMedia1_load_reg_368_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[1]' (FD) to 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[4]' (FD) to 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[26]' (FD) to 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[27]' (FD) to 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[28]' (FD) to 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[29]' (FD) to 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Loop_L1_proc_U0/tmp_2_cast_reg_188_reg[4]' (FDE) to 'Loop_L1_proc_U0/ia_0_i_cast_reg_183_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Loop_L1_proc_U0/tmp_2_cast_reg_188_reg[3]' (FDE) to 'Loop_L1_proc_U0/ia_0_i_cast_reg_183_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Loop_L1_proc_U0/coeff_U/Loop_L1_proc_coeff_rom_U/q0_reg[27]' (FDE) to 'Loop_L1_proc_U0/coeff_U/Loop_L1_proc_coeff_rom_U/q0_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Loop_L1_proc_U0/coeff_U/Loop_L1_proc_coeff_rom_U/q0_reg[28]' (FDE) to 'Loop_L1_proc_U0/coeff_U/Loop_L1_proc_coeff_rom_U/q0_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_L1_proc_U0/coeff_U/Loop_L1_proc_coeff_rom_U/q0_reg[30] )
+INFO: [Synth 8-3886] merging instance 'Loop_L1_proc_U0/coeff_load_reg_219_reg[27]' (FDE) to 'Loop_L1_proc_U0/coeff_load_reg_219_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Loop_L1_proc_U0/coeff_load_reg_219_reg[28]' (FDE) to 'Loop_L1_proc_U0/coeff_load_reg_219_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Loop_L1_proc_U0/wrapped_mmult_hw_fYi_U15/din0_buf1_reg[27]' (FD) to 'Loop_L1_proc_U0/wrapped_mmult_hw_fYi_U15/din0_buf1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Loop_L1_proc_U0/wrapped_mmult_hw_fYi_U15/din0_buf1_reg[28]' (FD) to 'Loop_L1_proc_U0/wrapped_mmult_hw_fYi_U15/din0_buf1_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_3_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Block_preheader117_U0/vectorMedia1_load_reg_368_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Block_preheader117_U0/vectorMedia1_load_reg_368_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_L1_proc_U0/coeff_load_reg_219_reg[30] )
+INFO: [Synth 8-3886] merging instance 'Loop_L1_proc_U0/wrapped_mmult_hw_fYi_U15/din0_buf1_reg[30]' (FD) to 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[31]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (Loop_L1_proc_U0/ib_0_i_cast_reg_201_reg[3]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_A_reg[31]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_A_reg[30]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_A_reg[29]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_A_reg[28]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_A_reg[27]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_A_reg[26]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_A_reg[25]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_A_reg[24]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_B_reg[31]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_B_reg[30]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_B_reg[29]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_B_reg[28]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_B_reg[27]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_B_reg[26]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_B_reg[25]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/input_data_V_0_payload_B_reg[24]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[31]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (Block_preheader117_U0/vectorMedia1_U/Block_preheader11bkb_rom_U/q0_reg[30]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (Block_preheader117_U0/vectorMedia1_load_reg_368_reg[31]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (Block_preheader117_U0/vectorMedia1_load_reg_368_reg[30]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[30]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (Loop_L1_proc_U0/coeff_U/Loop_L1_proc_coeff_rom_U/q0_reg[30]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (Loop_L1_proc_U0/coeff_load_reg_219_reg[30]) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (Loop_3_proc_U0/ap_done_reg_reg) is unused and will be removed from module wrapped_mmult_hw.
+WARNING: [Synth 8-3332] Sequential element (Block_preheader117_U0/wrapped_mmult_hw_cud_U8/din1_buf1_reg[31]) is unused and will be removed from module wrapped_mmult_hw.
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/wrapped_mmult_hw_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'Block_preheader117_U0/wrapped_mmult_hw_cud_U8/wrapped_mmult_hw_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized1.
+INFO: [Synth 8-3886] merging instance 'Loop_L1_proc_U0/wrapped_mmult_hw_eOg_U14/wrapped_mmult_hw_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'Loop_L1_proc_U0/wrapped_mmult_hw_eOg_U14/wrapped_mmult_hw_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/wrapped_mmult_hw_dEe_U9/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.exp_op_reg[5]' (FDRE) to 'Block_preheader117_U0/wrapped_mmult_hw_dEe_U9/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.exp_op_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Block_preheader117_U0/wrapped_mmult_hw_dEe_U10/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.exp_op_reg[5]' (FDRE) to 'Block_preheader117_U0/wrapped_mmult_hw_dEe_U10/wrapped_mmult_hw_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.exp_op_reg[6]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 665.730 ; gain = 434.566
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 727.941 ; gain = 496.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 748.105 ; gain = 516.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance X_MAT_0_U/gen_buffer[0].wrapped_mmult_hw_hbi_memcore_U/wrapped_mmult_hw_hbi_memcore_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance X_MAT_0_U/gen_buffer[1].wrapped_mmult_hw_hbi_memcore_U/wrapped_mmult_hw_hbi_memcore_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 757.246 ; gain = 526.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 757.246 ; gain = 526.082
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 757.246 ; gain = 526.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 757.246 ; gain = 526.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 757.246 ; gain = 526.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 757.246 ; gain = 526.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 757.246 ; gain = 526.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |     6|
+|2     |DSP48E1   |     2|
+|3     |DSP48E1_1 |     2|
+|4     |DSP48E1_2 |     1|
+|5     |DSP48E1_3 |     1|
+|6     |DSP48E1_4 |     1|
+|7     |LUT1      |    13|
+|8     |LUT2      |   256|
+|9     |LUT3      |   447|
+|10    |LUT4      |   214|
+|11    |LUT5      |   194|
+|12    |LUT6      |   286|
+|13    |MUXCY     |   286|
+|14    |MUXF7     |     6|
+|15    |RAM32M    |    10|
+|16    |RAMB36E1  |     2|
+|17    |SRL16E    |     4|
+|18    |XORCY     |   154|
+|19    |FDE       |    38|
+|20    |FDRE      |  1270|
+|21    |FDSE      |     8|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 757.246 ; gain = 526.082
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 319 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:58 . Memory (MB): peak = 757.246 ; gain = 281.203
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 757.246 ; gain = 526.082
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 503 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 124 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 76 instances
+  FDE => FDRE: 38 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 10 instances
+
+253 Infos, 188 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 757.246 ; gain = 526.082
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.runs/synth_1/wrapped_mmult_hw.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 757.246 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Feb  7 17:38:05 2021...

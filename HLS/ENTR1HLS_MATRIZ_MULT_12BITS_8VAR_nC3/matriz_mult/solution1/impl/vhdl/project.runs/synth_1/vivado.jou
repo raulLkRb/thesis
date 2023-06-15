@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Feb  7 17:36:43 2021
+# Process ID: 7508
+# Current directory: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.runs/synth_1
+# Command line: vivado.exe -log wrapped_mmult_hw.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrapped_mmult_hw.tcl
+# Log file: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.runs/synth_1/wrapped_mmult_hw.vds
+# Journal file: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/PCA_IMPL/ENTR1HLS_MATRIZ_MULT_12BITS_8VAR_nC3/matriz_mult/solution1/impl/vhdl/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source wrapped_mmult_hw.tcl -notrace

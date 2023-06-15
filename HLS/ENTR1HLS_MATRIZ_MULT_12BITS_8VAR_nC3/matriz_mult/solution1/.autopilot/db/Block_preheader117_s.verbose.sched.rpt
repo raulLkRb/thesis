@@ -1,0 +1,612 @@
+
+
+================================================================
+== Vivado HLS Report for 'Block_preheader117_s'
+================================================================
+* Date:           Sun Feb  7 17:35:30 2021
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        matriz_mult
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.73|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   74|   74|   74|   74|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |   64|   64|         8|          -|          -|     8|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 18
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / (!exitcond2)
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	11  / true
+* FSM state operations: 
+
+ <State 1>: 2.32ns
+ST_1: dato_V_addr (4)  [1/1] 0.00ns  loc: mmult_accel.cpp:82
+newFuncRoot:0  %dato_V_addr = getelementptr [4 x i32]* %dato_V, i32 0, i32 0
+
+ST_1: dato_V_load (5)  [2/2] 2.32ns  loc: mmult_accel.cpp:82
+newFuncRoot:1  %dato_V_load = load i32* %dato_V_addr, align 4
+
+
+ <State 2>: 8.73ns
+ST_2: dato_V_load (5)  [1/2] 2.32ns  loc: mmult_accel.cpp:82
+newFuncRoot:1  %dato_V_load = load i32* %dato_V_addr, align 4
+
+ST_2: tmp_1 (6)  [1/1] 0.00ns  loc: mmult_accel.cpp:82
+newFuncRoot:2  %tmp_1 = trunc i32 %dato_V_load to i12
+
+ST_2: temp_V_cast (7)  [1/1] 0.00ns  loc: mmult_accel.cpp:82
+newFuncRoot:3  %temp_V_cast = zext i12 %tmp_1 to i32
+
+ST_2: dp (8)  [6/6] 6.41ns  loc: mmult_accel.cpp:82
+newFuncRoot:4  %dp = sitofp i32 %temp_V_cast to float
+
+ST_2: p_Val2_128_cast (11)  [1/1] 0.00ns  loc: mmult_accel.cpp:83
+newFuncRoot:7  %p_Val2_128_cast = call i12 @_ssdm_op_PartSelect.i12.i32.i32.i32(i32 %dato_V_load, i32 12, i32 23)
+
+ST_2: temp_V_1_cast (12)  [1/1] 0.00ns  loc: mmult_accel.cpp:83
+newFuncRoot:8  %temp_V_1_cast = zext i12 %p_Val2_128_cast to i32
+
+ST_2: dp_1 (13)  [6/6] 6.41ns  loc: mmult_accel.cpp:83
+newFuncRoot:9  %dp_1 = sitofp i32 %temp_V_1_cast to float
+
+ST_2: dato_V_addr_1 (16)  [1/1] 0.00ns  loc: mmult_accel.cpp:85
+newFuncRoot:12  %dato_V_addr_1 = getelementptr [4 x i32]* %dato_V, i32 0, i32 1
+
+ST_2: dato_V_load_1 (17)  [2/2] 2.32ns  loc: mmult_accel.cpp:85
+newFuncRoot:13  %dato_V_load_1 = load i32* %dato_V_addr_1, align 4
+
+
+ <State 3>: 8.73ns
+ST_3: dp (8)  [5/6] 6.41ns  loc: mmult_accel.cpp:82
+newFuncRoot:4  %dp = sitofp i32 %temp_V_cast to float
+
+ST_3: dp_1 (13)  [5/6] 6.41ns  loc: mmult_accel.cpp:83
+newFuncRoot:9  %dp_1 = sitofp i32 %temp_V_1_cast to float
+
+ST_3: dato_V_load_1 (17)  [1/2] 2.32ns  loc: mmult_accel.cpp:85
+newFuncRoot:13  %dato_V_load_1 = load i32* %dato_V_addr_1, align 4
+
+ST_3: tmp_2 (18)  [1/1] 0.00ns  loc: mmult_accel.cpp:85
+newFuncRoot:14  %tmp_2 = trunc i32 %dato_V_load_1 to i12
+
+ST_3: temp_V_2_cast (19)  [1/1] 0.00ns  loc: mmult_accel.cpp:85
+newFuncRoot:15  %temp_V_2_cast = zext i12 %tmp_2 to i32
+
+ST_3: dp_2 (20)  [6/6] 6.41ns  loc: mmult_accel.cpp:85
+newFuncRoot:16  %dp_2 = sitofp i32 %temp_V_2_cast to float
+
+ST_3: p_Val2_329_cast (23)  [1/1] 0.00ns  loc: mmult_accel.cpp:86
+newFuncRoot:19  %p_Val2_329_cast = call i12 @_ssdm_op_PartSelect.i12.i32.i32.i32(i32 %dato_V_load_1, i32 12, i32 23)
+
+ST_3: temp_V_3_cast (24)  [1/1] 0.00ns  loc: mmult_accel.cpp:86
+newFuncRoot:20  %temp_V_3_cast = zext i12 %p_Val2_329_cast to i32
+
+ST_3: dp_3 (25)  [6/6] 6.41ns  loc: mmult_accel.cpp:86
+newFuncRoot:21  %dp_3 = sitofp i32 %temp_V_3_cast to float
+
+ST_3: dato_V_addr_2 (28)  [1/1] 0.00ns  loc: mmult_accel.cpp:88
+newFuncRoot:24  %dato_V_addr_2 = getelementptr [4 x i32]* %dato_V, i32 0, i32 2
+
+ST_3: dato_V_load_2 (29)  [2/2] 2.32ns  loc: mmult_accel.cpp:88
+newFuncRoot:25  %dato_V_load_2 = load i32* %dato_V_addr_2, align 4
+
+
+ <State 4>: 8.73ns
+ST_4: dp (8)  [4/6] 6.41ns  loc: mmult_accel.cpp:82
+newFuncRoot:4  %dp = sitofp i32 %temp_V_cast to float
+
+ST_4: dp_1 (13)  [4/6] 6.41ns  loc: mmult_accel.cpp:83
+newFuncRoot:9  %dp_1 = sitofp i32 %temp_V_1_cast to float
+
+ST_4: dp_2 (20)  [5/6] 6.41ns  loc: mmult_accel.cpp:85
+newFuncRoot:16  %dp_2 = sitofp i32 %temp_V_2_cast to float
+
+ST_4: dp_3 (25)  [5/6] 6.41ns  loc: mmult_accel.cpp:86
+newFuncRoot:21  %dp_3 = sitofp i32 %temp_V_3_cast to float
+
+ST_4: dato_V_load_2 (29)  [1/2] 2.32ns  loc: mmult_accel.cpp:88
+newFuncRoot:25  %dato_V_load_2 = load i32* %dato_V_addr_2, align 4
+
+ST_4: tmp_3 (30)  [1/1] 0.00ns  loc: mmult_accel.cpp:88
+newFuncRoot:26  %tmp_3 = trunc i32 %dato_V_load_2 to i12
+
+ST_4: temp_V_4_cast (31)  [1/1] 0.00ns  loc: mmult_accel.cpp:88
+newFuncRoot:27  %temp_V_4_cast = zext i12 %tmp_3 to i32
+
+ST_4: dp_4 (32)  [6/6] 6.41ns  loc: mmult_accel.cpp:88
+newFuncRoot:28  %dp_4 = sitofp i32 %temp_V_4_cast to float
+
+ST_4: p_Val2_530_cast (35)  [1/1] 0.00ns  loc: mmult_accel.cpp:89
+newFuncRoot:31  %p_Val2_530_cast = call i12 @_ssdm_op_PartSelect.i12.i32.i32.i32(i32 %dato_V_load_2, i32 12, i32 23)
+
+ST_4: temp_V_5_cast (36)  [1/1] 0.00ns  loc: mmult_accel.cpp:89
+newFuncRoot:32  %temp_V_5_cast = zext i12 %p_Val2_530_cast to i32
+
+ST_4: dp_5 (37)  [6/6] 6.41ns  loc: mmult_accel.cpp:89
+newFuncRoot:33  %dp_5 = sitofp i32 %temp_V_5_cast to float
+
+ST_4: dato_V_addr_3 (40)  [1/1] 0.00ns  loc: mmult_accel.cpp:91
+newFuncRoot:36  %dato_V_addr_3 = getelementptr [4 x i32]* %dato_V, i32 0, i32 3
+
+ST_4: dato_V_load_3 (41)  [2/2] 2.32ns  loc: mmult_accel.cpp:91
+newFuncRoot:37  %dato_V_load_3 = load i32* %dato_V_addr_3, align 4
+
+
+ <State 5>: 8.73ns
+ST_5: dp (8)  [3/6] 6.41ns  loc: mmult_accel.cpp:82
+newFuncRoot:4  %dp = sitofp i32 %temp_V_cast to float
+
+ST_5: dp_1 (13)  [3/6] 6.41ns  loc: mmult_accel.cpp:83
+newFuncRoot:9  %dp_1 = sitofp i32 %temp_V_1_cast to float
+
+ST_5: dp_2 (20)  [4/6] 6.41ns  loc: mmult_accel.cpp:85
+newFuncRoot:16  %dp_2 = sitofp i32 %temp_V_2_cast to float
+
+ST_5: dp_3 (25)  [4/6] 6.41ns  loc: mmult_accel.cpp:86
+newFuncRoot:21  %dp_3 = sitofp i32 %temp_V_3_cast to float
+
+ST_5: dp_4 (32)  [5/6] 6.41ns  loc: mmult_accel.cpp:88
+newFuncRoot:28  %dp_4 = sitofp i32 %temp_V_4_cast to float
+
+ST_5: dp_5 (37)  [5/6] 6.41ns  loc: mmult_accel.cpp:89
+newFuncRoot:33  %dp_5 = sitofp i32 %temp_V_5_cast to float
+
+ST_5: dato_V_load_3 (41)  [1/2] 2.32ns  loc: mmult_accel.cpp:91
+newFuncRoot:37  %dato_V_load_3 = load i32* %dato_V_addr_3, align 4
+
+ST_5: tmp_4 (42)  [1/1] 0.00ns  loc: mmult_accel.cpp:91
+newFuncRoot:38  %tmp_4 = trunc i32 %dato_V_load_3 to i12
+
+ST_5: temp_V_6_cast (43)  [1/1] 0.00ns  loc: mmult_accel.cpp:91
+newFuncRoot:39  %temp_V_6_cast = zext i12 %tmp_4 to i32
+
+ST_5: dp_6 (44)  [6/6] 6.41ns  loc: mmult_accel.cpp:91
+newFuncRoot:40  %dp_6 = sitofp i32 %temp_V_6_cast to float
+
+ST_5: p_Val2_731_cast (47)  [1/1] 0.00ns  loc: mmult_accel.cpp:92
+newFuncRoot:43  %p_Val2_731_cast = call i12 @_ssdm_op_PartSelect.i12.i32.i32.i32(i32 %dato_V_load_3, i32 12, i32 23)
+
+ST_5: temp_V_7_cast (48)  [1/1] 0.00ns  loc: mmult_accel.cpp:92
+newFuncRoot:44  %temp_V_7_cast = zext i12 %p_Val2_731_cast to i32
+
+ST_5: dp_7 (49)  [6/6] 6.41ns  loc: mmult_accel.cpp:92
+newFuncRoot:45  %dp_7 = sitofp i32 %temp_V_7_cast to float
+
+
+ <State 6>: 6.41ns
+ST_6: dp (8)  [2/6] 6.41ns  loc: mmult_accel.cpp:82
+newFuncRoot:4  %dp = sitofp i32 %temp_V_cast to float
+
+ST_6: dp_1 (13)  [2/6] 6.41ns  loc: mmult_accel.cpp:83
+newFuncRoot:9  %dp_1 = sitofp i32 %temp_V_1_cast to float
+
+ST_6: dp_2 (20)  [3/6] 6.41ns  loc: mmult_accel.cpp:85
+newFuncRoot:16  %dp_2 = sitofp i32 %temp_V_2_cast to float
+
+ST_6: dp_3 (25)  [3/6] 6.41ns  loc: mmult_accel.cpp:86
+newFuncRoot:21  %dp_3 = sitofp i32 %temp_V_3_cast to float
+
+ST_6: dp_4 (32)  [4/6] 6.41ns  loc: mmult_accel.cpp:88
+newFuncRoot:28  %dp_4 = sitofp i32 %temp_V_4_cast to float
+
+ST_6: dp_5 (37)  [4/6] 6.41ns  loc: mmult_accel.cpp:89
+newFuncRoot:33  %dp_5 = sitofp i32 %temp_V_5_cast to float
+
+ST_6: dp_6 (44)  [5/6] 6.41ns  loc: mmult_accel.cpp:91
+newFuncRoot:40  %dp_6 = sitofp i32 %temp_V_6_cast to float
+
+ST_6: dp_7 (49)  [5/6] 6.41ns  loc: mmult_accel.cpp:92
+newFuncRoot:45  %dp_7 = sitofp i32 %temp_V_7_cast to float
+
+
+ <State 7>: 8.73ns
+ST_7: dp (8)  [1/6] 6.41ns  loc: mmult_accel.cpp:82
+newFuncRoot:4  %dp = sitofp i32 %temp_V_cast to float
+
+ST_7: X_MAT_0_addr (9)  [1/1] 0.00ns  loc: mmult_accel.cpp:82
+newFuncRoot:5  %X_MAT_0_addr = getelementptr [8 x float]* %X_MAT_0, i32 0, i32 0
+
+ST_7: StgValue_77 (10)  [1/1] 2.32ns  loc: mmult_accel.cpp:82
+newFuncRoot:6  store float %dp, float* %X_MAT_0_addr, align 4
+
+ST_7: dp_1 (13)  [1/6] 6.41ns  loc: mmult_accel.cpp:83
+newFuncRoot:9  %dp_1 = sitofp i32 %temp_V_1_cast to float
+
+ST_7: X_MAT_0_addr_1 (14)  [1/1] 0.00ns  loc: mmult_accel.cpp:83
+newFuncRoot:10  %X_MAT_0_addr_1 = getelementptr [8 x float]* %X_MAT_0, i32 0, i32 1
+
+ST_7: StgValue_80 (15)  [1/1] 2.32ns  loc: mmult_accel.cpp:83
+newFuncRoot:11  store float %dp_1, float* %X_MAT_0_addr_1, align 4
+
+ST_7: dp_2 (20)  [2/6] 6.41ns  loc: mmult_accel.cpp:85
+newFuncRoot:16  %dp_2 = sitofp i32 %temp_V_2_cast to float
+
+ST_7: dp_3 (25)  [2/6] 6.41ns  loc: mmult_accel.cpp:86
+newFuncRoot:21  %dp_3 = sitofp i32 %temp_V_3_cast to float
+
+ST_7: dp_4 (32)  [3/6] 6.41ns  loc: mmult_accel.cpp:88
+newFuncRoot:28  %dp_4 = sitofp i32 %temp_V_4_cast to float
+
+ST_7: dp_5 (37)  [3/6] 6.41ns  loc: mmult_accel.cpp:89
+newFuncRoot:33  %dp_5 = sitofp i32 %temp_V_5_cast to float
+
+ST_7: dp_6 (44)  [4/6] 6.41ns  loc: mmult_accel.cpp:91
+newFuncRoot:40  %dp_6 = sitofp i32 %temp_V_6_cast to float
+
+ST_7: dp_7 (49)  [4/6] 6.41ns  loc: mmult_accel.cpp:92
+newFuncRoot:45  %dp_7 = sitofp i32 %temp_V_7_cast to float
+
+
+ <State 8>: 8.73ns
+ST_8: dp_2 (20)  [1/6] 6.41ns  loc: mmult_accel.cpp:85
+newFuncRoot:16  %dp_2 = sitofp i32 %temp_V_2_cast to float
+
+ST_8: X_MAT_0_addr_2 (21)  [1/1] 0.00ns  loc: mmult_accel.cpp:85
+newFuncRoot:17  %X_MAT_0_addr_2 = getelementptr [8 x float]* %X_MAT_0, i32 0, i32 2
+
+ST_8: StgValue_89 (22)  [1/1] 2.32ns  loc: mmult_accel.cpp:85
+newFuncRoot:18  store float %dp_2, float* %X_MAT_0_addr_2, align 4
+
+ST_8: dp_3 (25)  [1/6] 6.41ns  loc: mmult_accel.cpp:86
+newFuncRoot:21  %dp_3 = sitofp i32 %temp_V_3_cast to float
+
+ST_8: X_MAT_0_addr_3 (26)  [1/1] 0.00ns  loc: mmult_accel.cpp:86
+newFuncRoot:22  %X_MAT_0_addr_3 = getelementptr [8 x float]* %X_MAT_0, i32 0, i32 3
+
+ST_8: StgValue_92 (27)  [1/1] 2.32ns  loc: mmult_accel.cpp:86
+newFuncRoot:23  store float %dp_3, float* %X_MAT_0_addr_3, align 4
+
+ST_8: dp_4 (32)  [2/6] 6.41ns  loc: mmult_accel.cpp:88
+newFuncRoot:28  %dp_4 = sitofp i32 %temp_V_4_cast to float
+
+ST_8: dp_5 (37)  [2/6] 6.41ns  loc: mmult_accel.cpp:89
+newFuncRoot:33  %dp_5 = sitofp i32 %temp_V_5_cast to float
+
+ST_8: dp_6 (44)  [3/6] 6.41ns  loc: mmult_accel.cpp:91
+newFuncRoot:40  %dp_6 = sitofp i32 %temp_V_6_cast to float
+
+ST_8: dp_7 (49)  [3/6] 6.41ns  loc: mmult_accel.cpp:92
+newFuncRoot:45  %dp_7 = sitofp i32 %temp_V_7_cast to float
+
+
+ <State 9>: 8.73ns
+ST_9: dp_4 (32)  [1/6] 6.41ns  loc: mmult_accel.cpp:88
+newFuncRoot:28  %dp_4 = sitofp i32 %temp_V_4_cast to float
+
+ST_9: X_MAT_0_addr_4 (33)  [1/1] 0.00ns  loc: mmult_accel.cpp:88
+newFuncRoot:29  %X_MAT_0_addr_4 = getelementptr [8 x float]* %X_MAT_0, i32 0, i32 4
+
+ST_9: StgValue_99 (34)  [1/1] 2.32ns  loc: mmult_accel.cpp:88
+newFuncRoot:30  store float %dp_4, float* %X_MAT_0_addr_4, align 4
+
+ST_9: dp_5 (37)  [1/6] 6.41ns  loc: mmult_accel.cpp:89
+newFuncRoot:33  %dp_5 = sitofp i32 %temp_V_5_cast to float
+
+ST_9: X_MAT_0_addr_5 (38)  [1/1] 0.00ns  loc: mmult_accel.cpp:89
+newFuncRoot:34  %X_MAT_0_addr_5 = getelementptr [8 x float]* %X_MAT_0, i32 0, i32 5
+
+ST_9: StgValue_102 (39)  [1/1] 2.32ns  loc: mmult_accel.cpp:89
+newFuncRoot:35  store float %dp_5, float* %X_MAT_0_addr_5, align 4
+
+ST_9: dp_6 (44)  [2/6] 6.41ns  loc: mmult_accel.cpp:91
+newFuncRoot:40  %dp_6 = sitofp i32 %temp_V_6_cast to float
+
+ST_9: dp_7 (49)  [2/6] 6.41ns  loc: mmult_accel.cpp:92
+newFuncRoot:45  %dp_7 = sitofp i32 %temp_V_7_cast to float
+
+
+ <State 10>: 8.73ns
+ST_10: dp_6 (44)  [1/6] 6.41ns  loc: mmult_accel.cpp:91
+newFuncRoot:40  %dp_6 = sitofp i32 %temp_V_6_cast to float
+
+ST_10: X_MAT_0_addr_6 (45)  [1/1] 0.00ns  loc: mmult_accel.cpp:91
+newFuncRoot:41  %X_MAT_0_addr_6 = getelementptr [8 x float]* %X_MAT_0, i32 0, i32 6
+
+ST_10: StgValue_107 (46)  [1/1] 2.32ns  loc: mmult_accel.cpp:91
+newFuncRoot:42  store float %dp_6, float* %X_MAT_0_addr_6, align 4
+
+ST_10: dp_7 (49)  [1/6] 6.41ns  loc: mmult_accel.cpp:92
+newFuncRoot:45  %dp_7 = sitofp i32 %temp_V_7_cast to float
+
+ST_10: X_MAT_0_addr_7 (50)  [1/1] 0.00ns  loc: mmult_accel.cpp:92
+newFuncRoot:46  %X_MAT_0_addr_7 = getelementptr [8 x float]* %X_MAT_0, i32 0, i32 7
+
+ST_10: StgValue_110 (51)  [1/1] 2.32ns  loc: mmult_accel.cpp:92
+newFuncRoot:47  store float %dp_7, float* %X_MAT_0_addr_7, align 4
+
+ST_10: StgValue_111 (52)  [1/1] 1.77ns  loc: mmult_accel.cpp:97
+newFuncRoot:48  br label %.preheader117
+
+
+ <State 11>: 3.25ns
+ST_11: i (54)  [1/1] 0.00ns
+.preheader117:0  %i = phi i4 [ %i_1, %.preheader.preheader ], [ 0, %newFuncRoot ]
+
+ST_11: i_cast (55)  [1/1] 0.00ns  loc: mmult_accel.cpp:97
+.preheader117:1  %i_cast = zext i4 %i to i32
+
+ST_11: exitcond2 (56)  [1/1] 3.10ns  loc: mmult_accel.cpp:97
+.preheader117:2  %exitcond2 = icmp eq i4 %i, -8
+
+ST_11: empty (57)  [1/1] 0.00ns
+.preheader117:3  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
+
+ST_11: i_1 (58)  [1/1] 2.62ns  loc: mmult_accel.cpp:97
+.preheader117:4  %i_1 = add i4 %i, 1
+
+ST_11: StgValue_117 (59)  [1/1] 0.00ns  loc: mmult_accel.cpp:97
+.preheader117:5  br i1 %exitcond2, label %.preheader225.exitStub, label %.preheader.preheader
+
+ST_11: vectorMedia1_addr (61)  [1/1] 0.00ns  loc: mmult_accel.cpp:102
+.preheader.preheader:0  %vectorMedia1_addr = getelementptr inbounds [8 x float]* @vectorMedia1, i32 0, i32 %i_cast
+
+ST_11: X_MAT_0_addr_8 (62)  [1/1] 0.00ns  loc: mmult_accel.cpp:102
+.preheader.preheader:1  %X_MAT_0_addr_8 = getelementptr [8 x float]* %X_MAT_0, i32 0, i32 %i_cast
+
+ST_11: X_MAT_0_load (63)  [2/2] 2.32ns  loc: mmult_accel.cpp:102
+.preheader.preheader:2  %X_MAT_0_load = load float* %X_MAT_0_addr_8, align 4
+
+ST_11: vectorMedia1_load (64)  [2/2] 3.25ns  loc: mmult_accel.cpp:102
+.preheader.preheader:3  %vectorMedia1_load = load float* %vectorMedia1_addr, align 4
+
+ST_11: StgValue_122 (69)  [1/1] 0.00ns
+.preheader225.exitStub:0  ret void
+
+
+ <State 12>: 3.25ns
+ST_12: X_MAT_0_load (63)  [1/2] 2.32ns  loc: mmult_accel.cpp:102
+.preheader.preheader:2  %X_MAT_0_load = load float* %X_MAT_0_addr_8, align 4
+
+ST_12: vectorMedia1_load (64)  [1/2] 3.25ns  loc: mmult_accel.cpp:102
+.preheader.preheader:3  %vectorMedia1_load = load float* %vectorMedia1_addr, align 4
+
+
+ <State 13>: 7.26ns
+ST_13: tmp (65)  [5/5] 7.26ns  loc: mmult_accel.cpp:102
+.preheader.preheader:4  %tmp = fsub float %X_MAT_0_load, %vectorMedia1_load
+
+
+ <State 14>: 7.26ns
+ST_14: tmp (65)  [4/5] 7.26ns  loc: mmult_accel.cpp:102
+.preheader.preheader:4  %tmp = fsub float %X_MAT_0_load, %vectorMedia1_load
+
+
+ <State 15>: 7.26ns
+ST_15: tmp (65)  [3/5] 7.26ns  loc: mmult_accel.cpp:102
+.preheader.preheader:4  %tmp = fsub float %X_MAT_0_load, %vectorMedia1_load
+
+
+ <State 16>: 7.26ns
+ST_16: tmp (65)  [2/5] 7.26ns  loc: mmult_accel.cpp:102
+.preheader.preheader:4  %tmp = fsub float %X_MAT_0_load, %vectorMedia1_load
+
+
+ <State 17>: 7.26ns
+ST_17: tmp (65)  [1/5] 7.26ns  loc: mmult_accel.cpp:102
+.preheader.preheader:4  %tmp = fsub float %X_MAT_0_load, %vectorMedia1_load
+
+
+ <State 18>: 2.32ns
+ST_18: StgValue_130 (66)  [1/1] 2.32ns  loc: mmult_accel.cpp:102
+.preheader.preheader:5  store float %tmp, float* %X_MAT_0_addr_8, align 4
+
+ST_18: StgValue_131 (67)  [1/1] 0.00ns  loc: mmult_accel.cpp:97
+.preheader.preheader:6  br label %.preheader117
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 2.32ns
+The critical path consists of the following:
+	'getelementptr' operation ('dato_V_addr', mmult_accel.cpp:82) [4]  (0 ns)
+	'load' operation ('dato_V_load', mmult_accel.cpp:82) on array 'dato_V' [5]  (2.32 ns)
+
+ <State 2>: 8.73ns
+The critical path consists of the following:
+	'load' operation ('dato_V_load', mmult_accel.cpp:82) on array 'dato_V' [5]  (2.32 ns)
+	'sitofp' operation ('dp', mmult_accel.cpp:82) [8]  (6.41 ns)
+
+ <State 3>: 8.73ns
+The critical path consists of the following:
+	'load' operation ('dato_V_load_1', mmult_accel.cpp:85) on array 'dato_V' [17]  (2.32 ns)
+	'sitofp' operation ('dp_2', mmult_accel.cpp:85) [20]  (6.41 ns)
+
+ <State 4>: 8.73ns
+The critical path consists of the following:
+	'load' operation ('dato_V_load_2', mmult_accel.cpp:88) on array 'dato_V' [29]  (2.32 ns)
+	'sitofp' operation ('dp_5', mmult_accel.cpp:89) [37]  (6.41 ns)
+
+ <State 5>: 8.73ns
+The critical path consists of the following:
+	'load' operation ('dato_V_load_3', mmult_accel.cpp:91) on array 'dato_V' [41]  (2.32 ns)
+	'sitofp' operation ('dp_6', mmult_accel.cpp:91) [44]  (6.41 ns)
+
+ <State 6>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('dp', mmult_accel.cpp:82) [8]  (6.41 ns)
+
+ <State 7>: 8.73ns
+The critical path consists of the following:
+	'sitofp' operation ('dp', mmult_accel.cpp:82) [8]  (6.41 ns)
+	'store' operation (mmult_accel.cpp:82) of variable 'dp', mmult_accel.cpp:82 on array 'X_MAT_0' [10]  (2.32 ns)
+
+ <State 8>: 8.73ns
+The critical path consists of the following:
+	'sitofp' operation ('dp_2', mmult_accel.cpp:85) [20]  (6.41 ns)
+	'store' operation (mmult_accel.cpp:85) of variable 'dp_2', mmult_accel.cpp:85 on array 'X_MAT_0' [22]  (2.32 ns)
+
+ <State 9>: 8.73ns
+The critical path consists of the following:
+	'sitofp' operation ('dp_4', mmult_accel.cpp:88) [32]  (6.41 ns)
+	'store' operation (mmult_accel.cpp:88) of variable 'dp_4', mmult_accel.cpp:88 on array 'X_MAT_0' [34]  (2.32 ns)
+
+ <State 10>: 8.73ns
+The critical path consists of the following:
+	'sitofp' operation ('dp_6', mmult_accel.cpp:91) [44]  (6.41 ns)
+	'store' operation (mmult_accel.cpp:91) of variable 'dp_6', mmult_accel.cpp:91 on array 'X_MAT_0' [46]  (2.32 ns)
+
+ <State 11>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', mmult_accel.cpp:97) [54]  (0 ns)
+	'getelementptr' operation ('vectorMedia1_addr', mmult_accel.cpp:102) [61]  (0 ns)
+	'load' operation ('vectorMedia1_load', mmult_accel.cpp:102) on array 'vectorMedia1' [64]  (3.25 ns)
+
+ <State 12>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('vectorMedia1_load', mmult_accel.cpp:102) on array 'vectorMedia1' [64]  (3.25 ns)
+
+ <State 13>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp', mmult_accel.cpp:102) [65]  (7.26 ns)
+
+ <State 14>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp', mmult_accel.cpp:102) [65]  (7.26 ns)
+
+ <State 15>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp', mmult_accel.cpp:102) [65]  (7.26 ns)
+
+ <State 16>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp', mmult_accel.cpp:102) [65]  (7.26 ns)
+
+ <State 17>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp', mmult_accel.cpp:102) [65]  (7.26 ns)
+
+ <State 18>: 2.32ns
+The critical path consists of the following:
+	'store' operation (mmult_accel.cpp:102) of variable 'tmp', mmult_accel.cpp:102 on array 'X_MAT_0' [66]  (2.32 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

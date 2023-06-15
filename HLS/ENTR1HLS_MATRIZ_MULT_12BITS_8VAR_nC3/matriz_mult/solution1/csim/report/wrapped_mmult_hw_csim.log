@@ -1,0 +1,13 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../mmult_test.cpp in debug mode
+   Compiling ../../../../mmult_accel.cpp in debug mode
+   Generating csim.exe
+out_stream[0] is 4189fb0a 
+
+out_stream[1] is 3fcd9999 
+
+out_stream[2] is 40ce618f 
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
