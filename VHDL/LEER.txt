@@ -1,0 +1,15 @@
+La carpeta de VHDL incluye los siguientes archivos y carpetas:
+
+	+ controlador_two_sides.vhd, que contiene el controlador SPI que se menciona en la tesis
+	+ synchrModul.vhd, que contiene los módulos de sincronización para las señales t_valid (parte de rigidez)
+	+ algorithmRigidez --> Esta carpeta contiene los archivos .vhd para la extracción de características (rigidez) en dedo y palma:
+		
+		>> algRigiDedo.vhd, que contiene el modelado hardware para la extracción de características en el dedo
+		>> algRigiPalma.vhd, que contiene el modelado hardware para la extracción de características en la palma
+
+	+ controlInterface --> Esta carpeta contiene los archivos .vhd para la interfaz de AXISTREAM en la arquitectura del camino de datos común:
+	
+		>> control_intf22.vhd, código VHDL de nivel más alto que controla las entradas y salidas entre los submodulos siguientes:
+		>> data_receiver.vhd, este es el consumidor de datos que proviene de la etapa inicial de la arquitectura
+		>> interface_bram_write_first.vhd, este módulo sintetiza una memoria BRAM de 128 posiciones tal y como se comenta en la tesis
+		>> producer.vhd, este es el productor de datos de salida hacia las etapas finales de la arquitectura 
