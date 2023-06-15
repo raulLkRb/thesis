@@ -1,0 +1,42 @@
+---------------------------------------------------------------------------------------------------------
+----------------------------------------ALGORITMO DE BARRIDO---------------------------------------------
+---------------------------------------------------------------------------------------------------------
+
+--> PONER COMO DIRECTORIO DE MATLAB LA CARPETA "heuristicAlgorithm" y ponerla en el "Set Path" también.
+---------------------------------------------------------------------------------------------------------
+
+
+En el directorio:
+
+../heuristicAlgorithm/library_v1/ALGORITMO_APRENDIZAJE/T0_FIJADO:
+								|
+								|
+								|
+								|
+								|
+								|--PARFORv93.m (sin filtro en los datos)
+								|
+								|--PARFORv93b.m (con filtro en los datos)
+
+
+---------------------------------------------------------------------------------------------------------
+
+Para usar el archivo PARFORv93b.m hay que cargar el filtro. Para cargar el filtro, poner en la línea de
+comandos de Matlab:
+
+"fdatool"
+
+O poner:
+
+"filter designer"
+
+Presionar la tecla de Enter y en la ventana que aparece hacer lo siguiente:
+
+File --> Open --> genericFIR.fda
+
+A continuación, hacer lo siguiente:
+
+File --> Export
+
+Y en la ventana que aparece escribir "NumP". Le damos a Exportar y ya debería poder usarse el archivo
+PARFORv93b.m. 
