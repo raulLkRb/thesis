@@ -1,0 +1,80 @@
+<stg><name>Block_arrayctor.loop</name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="2" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+newFuncRoot:0  %p_read_2 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %p_read)
+
+]]></Node>
+<StgValue><ssdm name="p_read_2"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="3" bw="24" op_0_bw="32">
+<![CDATA[
+newFuncRoot:1  %p_Val2_s = trunc i32 %p_read_2 to i24
+
+]]></Node>
+<StgValue><ssdm name="p_Val2_s"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="0" op_0_bw="24">
+<![CDATA[
+newFuncRoot:2  ret i24 %p_Val2_s
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="5" name="p_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="p_read"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="7" from="_ssdm_op_Read.ap_auto.i32" to="p_read_2" fromId="6" toId="2">
+</dataflow>
+<dataflow id="8" from="p_read" to="p_read_2" fromId="5" toId="2">
+</dataflow>
+<dataflow id="9" from="p_read_2" to="p_Val2_s" fromId="2" toId="3">
+</dataflow>
+<dataflow id="10" from="p_Val2_s" to="StgValue_4" fromId="3" toId="4">
+</dataflow>
+</dataflows>
+
+
+</stg>

@@ -1,0 +1,50 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'sweep_algorithm_DECM'" level="0">
+<item name = "Date">Thu Jun 15 12:11:15 2023
+</item>
+<item name = "Version">2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)</item>
+<item name = "Project">crVar_17_1</item>
+<item name = "Solution">solutionDataflow</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 9.63, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">16394, 19523, 16394, 19523, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_meanFilterInTime_fu_494">meanFilterInTime, 13, 13, 14, 14, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- lp3">2048, 2048, 2, 1, 1, 2048, yes</column>
+<column name="- lp4">14341, 14341, 34, 28, 1, 512, yes</column>
+<column name="- Loop 3">1051, 1051, 1, 1, 1, 1024, yes</column>
+<column name="- Loop 4">2074, 2074, 1, 1, 1, 2049, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

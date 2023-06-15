@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Mar 16 16:38:01 2021
+# Process ID: 10440
+# Current directory: C:/Users/Raul/Documents/barrido/BARRIDO_BASICO_cambioDec/crVar_17_1/sweepMinNoFilter/impl/vhdl
+# Command line: vivado.exe -notrace -mode batch -source run_vivado.tcl
+# Log file: C:/Users/Raul/Documents/barrido/BARRIDO_BASICO_cambioDec/crVar_17_1/sweepMinNoFilter/impl/vhdl/vivado.log
+# Journal file: C:/Users/Raul/Documents/barrido/BARRIDO_BASICO_cambioDec/crVar_17_1/sweepMinNoFilter/impl/vhdl\vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace

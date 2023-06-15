@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="axi_algorithm.cpp" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\axi_algorithm.cpp"/>
+    <originFiles name="axi_algorithm.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\axi_algorithm.h"/>
+    <originFiles name="stimTestM10.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\stimTestM10.h"/>
+    <originFiles name="stimTestM100.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\stimTestM100.h"/>
+    <originFiles name="stimTestM125.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\stimTestM125.h"/>
+    <originFiles name="stimTestM150.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\stimTestM150.h"/>
+    <originFiles name="stimTestM175.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\stimTestM175.h"/>
+    <originFiles name="stimTestM2.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\stimTestM2.h"/>
+    <originFiles name="stimTestM20.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\stimTestM20.h"/>
+    <originFiles name="stimTestM200.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\stimTestM200.h"/>
+    <originFiles name="stimTestM250.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\stimTestM250.h"/>
+    <originFiles name="stimTestM30.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\stimTestM30.h"/>
+    <originFiles name="stimTestM5.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\stimTestM5.h"/>
+    <originFiles name="stimTestM50.h" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\stimTestM50.h"/>
+  </source>
+  <testbench>
+    <originFiles name="axi_algorithm_test_SWEEP_v30.cpp" path="C:\Users\Raul\Documents\thesis_rep\thesis\HLS\ALGORITMO_BARRIDO\axi_algorithm_test_SWEEP_v30.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

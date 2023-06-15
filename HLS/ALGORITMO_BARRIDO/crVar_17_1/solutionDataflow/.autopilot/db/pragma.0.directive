@@ -1,0 +1,83 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="pop_stream" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="push_stream" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="read_data" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="write_data" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="axi_algorithm" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="axi_algorithm" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+<option name="bundle" value="CONTROL_BUS"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="axi_algorithm" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="input_AX_ALG"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="axi_algorithm" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="output_AX_ALG"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sweep_algorithm_DECMINV3" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sweep_algorithm_DECMINV3" label="">
+<pragma name="PIPELINE">
+<option name="rewind" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sweep_algorithm_DECMINV3" label="">
+<pragma name="UNROLL">
+<option name="factor" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sweep_algorithm_DECMINV3" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sweep_algorithm_DECMINV3" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="meanFilterInTime" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="aux_array"/>
+<option name="core" value="RAM_2P_BRAM"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="meanFilterInTime" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="meanFilterInTime" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

@@ -1,0 +1,111 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Mon Jun 15 12:14:55 2020
+| Host         : LAPTOP-5NTBTHR8 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file axi_algorithm_control_sets_placed.rpt
+| Design       : axi_algorithm
+| Device       : xc7z020
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    48 |
+| Unused register locations in slices containing registers |    92 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              42 |           22 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              80 |           29 |
+| Yes          | No                    | No                     |            1121 |          342 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             297 |           74 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+-------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                                                            Enable Signal                                                            |                                Set/Reset Signal                               | Slice Load Count | Bel Load Count |
++--------------+-------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|  ap_clk      | sweep_algorithm_DECM_U0/currentGroupX_OUT_V_4_reg_13100                                                                             |                                                                               |                2 |              5 |
+|  ap_clk      | sweep_algorithm_DECM_U0/ap_CS_fsm_pp1_stage0                                                                                        |                                                                               |                8 |             11 |
+|  ap_clk      | sweep_algorithm_DECM_U0/sum_V_U/sweep_algorithm_DdEe_ram_U/E[0]                                                                     | sweep_algorithm_DECM_U0/ap_NS_fsm1                                            |                3 |             11 |
+|  ap_clk      | sweep_algorithm_DECM_U0/ce05                                                                                                        |                                                                               |                3 |             12 |
+|  ap_clk      | sweep_algorithm_DECM_U0/aux_array_V_1_U/sweep_algorithm_Dcud_ram_U/WEBWE[0]                                                         | sweep_algorithm_DECM_U0/i_i_reg_259[11]_i_1_n_6                               |                6 |             12 |
+|  ap_clk      | read_data_U0/input_data_V_0_load_B                                                                                                  |                                                                               |                4 |             18 |
+|  ap_clk      | p_Val2_cast_loc_ch_U/U_fifo_w24_d2_A_shiftReg/ce                                                                                    |                                                                               |                3 |             18 |
+|  ap_clk      | buf_Tj_in_0_V_U/ap_return_preg_reg[17]                                                                                              | sweep_algorithm_DECM_U0/grp_meanFilterInTime_fu_494/SR[0]                     |                4 |             18 |
+|  ap_clk      | read_data_U0/input_data_V_0_load_A                                                                                                  |                                                                               |                5 |             18 |
+|  ap_clk      | read_data_U0/ce                                                                                                                     |                                                                               |                3 |             18 |
+|  ap_clk      | read_data_U0/input_data_V_0_sel0                                                                                                    | sweep_algorithm_DECM_U0/grp_meanFilterInTime_fu_494/SR[0]                     |                5 |             18 |
+|  ap_clk      | sweep_algorithm_DECM_U0/vector_V_00                                                                                                 |                                                                               |                6 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/grp_meanFilterInTime_fu_494/ap_CS_fsm_state2                                                                |                                                                               |                9 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/ap_CS_fsm_pp1_stage5                                                                                        |                                                                               |                9 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/aux_array_V_1_U/sweep_algorithm_Dcud_ram_U/ap_phi_precharge_reg_pp1_iter0_this_assign_0_i_be_reg_400_reg[0] | sweep_algorithm_DECM_U0/ap_phi_precharge_reg_pp1_iter0_contNuevo_i_be_reg_424 |                8 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/aux_array_V_1_U/sweep_algorithm_Dcud_ram_U/ap_phi_precharge_reg_pp1_iter0_this_assign_0_i_be_reg_400_reg[0] | sweep_algorithm_DECM_U0/ap_phi_precharge_reg_pp1_iter0_cont_i_be_reg_412      |                6 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/aux_array_V_1_U/sweep_algorithm_Dcud_ram_U/p_Val2_10_i_reg_1215_reg_0                                       | sweep_algorithm_DECM_U0/ap_phi_precharge_reg_pp1_iter0_cont32_2_i_reg_354     |                8 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/aux_array_V_1_U/sweep_algorithm_Dcud_ram_U/p_Val2_10_i_reg_1215_reg_0                                       | sweep_algorithm_DECM_U0/ap_phi_precharge_reg_pp1_iter0_contNuevo_1_i_reg_365  |                8 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/grp_meanFilterInTime_fu_494/ap_CS_fsm_state9                                                                |                                                                               |                9 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/grp_meanFilterInTime_fu_494/ap_CS_fsm_state8                                                                |                                                                               |                7 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/grp_meanFilterInTime_fu_494/ap_CS_fsm_state7                                                                |                                                                               |                9 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/grp_meanFilterInTime_fu_494/ap_CS_fsm_state6                                                                |                                                                               |                9 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/grp_meanFilterInTime_fu_494/ap_CS_fsm_state5                                                                |                                                                               |                8 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/grp_meanFilterInTime_fu_494/ap_CS_fsm_state4                                                                |                                                                               |               15 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/currentGroupX_OUT_V_1_reg_11800                                                                             |                                                                               |               20 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/grp_meanFilterInTime_fu_494/ap_CS_fsm_state3                                                                |                                                                               |               14 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/q0_reg[0][0]                                                                                                |                                                                               |               14 |             32 |
+|  ap_clk      | write_data_U0/output_data_V_1_load_A                                                                                                |                                                                               |               10 |             32 |
+|  ap_clk      | write_data_U0/output_data_V_1_load_B                                                                                                |                                                                               |                8 |             32 |
+|  ap_clk      | write_data_U0/E[0]                                                                                                                  |                                                                               |               12 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/ap_ready                                                                                                    |                                                                               |                8 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/cont32_1_i_reg_12450                                                                                        |                                                                               |                9 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/contador_new_i_reg_483[31]_i_1_n_6                                                                          |                                                                               |                9 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/currentGroupX_OUT_V_5_reg_13310                                                                             |                                                                               |               15 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/p_Val2_i_i3_reg_13360                                                                                       |                                                                               |                8 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/p_Val2_i_i_reg_13250                                                                                        |                                                                               |                8 |             32 |
+|  ap_clk      | sweep_algorithm_DECM_U0/grp_meanFilterInTime_fu_494/aux_array_V_U/meanFilterInTime_bkb_ram_U/E[0]                                   |                                                                               |                8 |             33 |
+|  ap_clk      | sweep_algorithm_DECM_U0/cont32_i_reg_11430                                                                                          |                                                                               |                9 |             34 |
+|  ap_clk      | sweep_algorithm_DECM_U0/contNuevoSuma_i_phi_fu_324_p41                                                                              | sweep_algorithm_DECM_U0/contNuevoSuma_i_reg_320[1]_i_1_n_6                    |                7 |             34 |
+|  ap_clk      | sweep_algorithm_DECM_U0/ap_CS_fsm_pp1_stage2                                                                                        |                                                                               |               10 |             36 |
+|  ap_clk      | sweep_algorithm_DECM_U0/aux_array_V_1_U/sweep_algorithm_Dcud_ram_U/p_Val2_10_i_reg_1215_reg_0                                       |                                                                               |               10 |             36 |
+|  ap_clk      |                                                                                                                                     |                                                                               |               22 |             42 |
+|  ap_clk      | sweep_algorithm_DECM_U0/aux_array_V_1_U/sweep_algorithm_Dcud_ram_U/ap_phi_precharge_reg_pp1_iter0_this_assign_0_i_be_reg_400_reg[0] |                                                                               |               16 |             46 |
+|  ap_clk      | sweep_algorithm_DECM_U0/p_0_in                                                                                                      |                                                                               |                8 |             64 |
+|  ap_clk      | sweep_algorithm_DECM_U0/aux_array_V_1_U/sweep_algorithm_Dcud_ram_U/ind_i_reg_271_reg[0]                                             | sweep_algorithm_DECM_U0/i_1_i_reg_284[9]_i_1_n_6                              |               19 |             76 |
+|  ap_clk      |                                                                                                                                     | sweep_algorithm_DECM_U0/grp_meanFilterInTime_fu_494/SR[0]                     |               29 |             80 |
+|  ap_clk      | sweep_algorithm_DECM_U0/contNuevoSuma_i_be_reg_4370                                                                                 |                                                                               |               23 |            100 |
+|  ap_clk      | sweep_algorithm_DECM_U0/aux_array_V_1_U/sweep_algorithm_Dcud_ram_U/p_Val2_10_i_reg_1215_reg                                         |                                                                               |               28 |            100 |
++--------------+-------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 5      |                     1 |
+| 11     |                     2 |
+| 12     |                     2 |
+| 16+    |                    43 |
++--------+-----------------------+
+
+
