@@ -1,0 +1,1192 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Feb  1 16:43:26 2021
+# Process ID: 10632
+# Current directory: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl
+# Command line: vivado.exe -notrace -mode batch -source run_vivado.tcl
+# Log file: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/vivado.log
+# Journal file: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl\vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl'
+[Mon Feb  1 16:43:29 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/synth_1/runme.log
+[Mon Feb  1 16:43:29 2021] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log opcionA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source opcionA.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source opcionA.tcl -notrace
+Command: synth_design -top opcionA -part xc7z020clg484-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7820 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 305.273 ; gain = 82.043
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'opcionA' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:64]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:578]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:581]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:637]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:644]
+INFO: [Synth 8-3491] module 'write_data' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/write_data.vhd:12' bound to instance 'grp_write_data_fu_96' of component 'write_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:696]
+INFO: [Synth 8-638] synthesizing module 'write_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/write_data.vhd:36]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/write_data.vhd:57]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/write_data.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/write_data.vhd:63]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/write_data.vhd:86]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'opcionA_mux_42_32_1' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA_mux_42_32_1.vhd:13' bound to instance 'opcionA_mux_42_32_1_U7' of component 'opcionA_mux_42_32_1' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/write_data.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'opcionA_mux_42_32_1' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA_mux_42_32_1.vhd:32]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'opcionA_mux_42_32_1' (1#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA_mux_42_32_1.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/write_data.vhd:303]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/write_data.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/write_data.vhd:266]
+INFO: [Synth 8-256] done synthesizing module 'write_data' (2#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/write_data.vhd:36]
+INFO: [Synth 8-3491] module 'read_data' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:12' bound to instance 'dedo0_0_V_read_data_fu_118' of component 'read_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:718]
+INFO: [Synth 8-638] synthesizing module 'read_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:34]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:41]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element input_AX_ALGpalma1_TREADY_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:128]
+INFO: [Synth 8-256] done synthesizing module 'read_data' (3#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:34]
+INFO: [Synth 8-3491] module 'read_data' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:12' bound to instance 'palma0_0_V_read_data_fu_137' of component 'read_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:738]
+INFO: [Synth 8-3491] module 'read_data' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:12' bound to instance 'dedo1_0_V_read_data_fu_156' of component 'read_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:758]
+INFO: [Synth 8-3491] module 'read_data' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:12' bound to instance 'palma1_0_V_read_data_fu_175' of component 'read_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:778]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:3114]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_ignore_call42_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:3120]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_ignore_call43_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:3126]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_ignore_call44_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:3132]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_ignore_call45_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:3138]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_ignore_call46_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:3144]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state4_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:3150]
+WARNING: [Synth 8-6014] Unused sequential element input_AX_ALGdedo0_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:3187]
+WARNING: [Synth 8-6014] Unused sequential element input_AX_ALGdedo1_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:3324]
+WARNING: [Synth 8-6014] Unused sequential element input_AX_ALGpalma0_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:3461]
+WARNING: [Synth 8-6014] Unused sequential element input_AX_ALGpalma1_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:3598]
+INFO: [Synth 8-256] done synthesizing module 'opcionA' (4#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.vhd:64]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TKEEP[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TKEEP[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TKEEP[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TKEEP[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TSTRB[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TSTRB[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TSTRB[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TSTRB[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TUSER[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TUSER[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TUSER[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TUSER[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TLAST[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TID[4]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TID[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TID[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TID[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TID[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TDEST[4]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TDEST[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TDEST[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TDEST[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALGpalma1_TDEST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 354.367 ; gain = 131.137
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 354.367 ; gain = 131.137
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.xdc]
+Finished Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 683.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "tmp_fu_133_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "last_assign_fu_145_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo0_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo0_dest_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo0_id_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo0_keep_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo0_last_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo0_strb_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo0_user_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo1_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo1_dest_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo1_id_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo1_keep_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo1_last_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo1_strb_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGdedo1_user_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma0_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma0_dest_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma0_id_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma0_keep_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma0_last_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma0_strb_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma0_user_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma1_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma1_dest_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma1_id_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma1_keep_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma1_last_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma1_strb_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_AX_ALGpalma1_user_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_AX_ALG_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_AX_ALG_dest_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_AX_ALG_id_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_AX_ALG_keep_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_AX_ALG_last_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_AX_ALG_strb_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_AX_ALG_user_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 15    
+	                5 Bit    Registers := 20    
+	                4 Bit    Registers := 31    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 35    
+	                1 Bit    Registers := 90    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 10    
+	   2 Input      4 Bit        Muxes := 17    
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 36    
+	   4 Input      2 Bit        Muxes := 35    
+	   2 Input      1 Bit        Muxes := 87    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module opcionA 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 14    
+	                5 Bit    Registers := 20    
+	                4 Bit    Registers := 31    
+	                2 Bit    Registers := 35    
+	                1 Bit    Registers := 81    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 10    
+	   2 Input      4 Bit        Muxes := 17    
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 35    
+	   4 Input      2 Bit        Muxes := 35    
+	   2 Input      1 Bit        Muxes := 76    
+Module opcionA_mux_42_32_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module write_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module read_data 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'palma0_0_V_read_data_fu_137/ap_CS_fsm_reg[0:0]' into 'dedo0_0_V_read_data_fu_118/ap_CS_fsm_reg[0:0]' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:59]
+INFO: [Synth 8-4471] merging register 'dedo1_0_V_read_data_fu_156/ap_CS_fsm_reg[0:0]' into 'dedo0_0_V_read_data_fu_118/ap_CS_fsm_reg[0:0]' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:59]
+INFO: [Synth 8-4471] merging register 'palma1_0_V_read_data_fu_175/ap_CS_fsm_reg[0:0]' into 'dedo0_0_V_read_data_fu_118/ap_CS_fsm_reg[0:0]' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:59]
+WARNING: [Synth 8-6014] Unused sequential element palma0_0_V_read_data_fu_137/ap_CS_fsm_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:59]
+WARNING: [Synth 8-6014] Unused sequential element dedo1_0_V_read_data_fu_156/ap_CS_fsm_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:59]
+WARNING: [Synth 8-6014] Unused sequential element palma1_0_V_read_data_fu_175/ap_CS_fsm_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/read_data.vhd:59]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dedo0_0_V_read_data_fu_118/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_dest_V_1_payload_B_reg[0]' (FDE) to 'output_AX_ALG_dest_V_1_payload_B_reg[1]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_dest_V_1_payload_A_reg[0]' (FDE) to 'output_AX_ALG_dest_V_1_payload_A_reg[1]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_dest_V_1_payload_B_reg[1]' (FDE) to 'output_AX_ALG_dest_V_1_payload_B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_dest_V_1_payload_A_reg[1]' (FDE) to 'output_AX_ALG_dest_V_1_payload_A_reg[2]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_dest_V_1_payload_B_reg[2]' (FDE) to 'output_AX_ALG_dest_V_1_payload_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_dest_V_1_payload_A_reg[2]' (FDE) to 'output_AX_ALG_dest_V_1_payload_A_reg[3]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_dest_V_1_payload_B_reg[3]' (FDE) to 'output_AX_ALG_dest_V_1_payload_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_dest_V_1_payload_A_reg[3]' (FDE) to 'output_AX_ALG_dest_V_1_payload_A_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output_AX_ALG_dest_V_1_payload_B_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output_AX_ALG_dest_V_1_payload_A_reg[4] )
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_id_V_1_payload_B_reg[0]' (FDE) to 'output_AX_ALG_id_V_1_payload_B_reg[1]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_id_V_1_payload_A_reg[0]' (FDE) to 'output_AX_ALG_id_V_1_payload_A_reg[1]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_id_V_1_payload_B_reg[1]' (FDE) to 'output_AX_ALG_id_V_1_payload_B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_id_V_1_payload_A_reg[1]' (FDE) to 'output_AX_ALG_id_V_1_payload_A_reg[2]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_id_V_1_payload_B_reg[2]' (FDE) to 'output_AX_ALG_id_V_1_payload_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_id_V_1_payload_A_reg[2]' (FDE) to 'output_AX_ALG_id_V_1_payload_A_reg[3]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_id_V_1_payload_B_reg[3]' (FDE) to 'output_AX_ALG_id_V_1_payload_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_id_V_1_payload_A_reg[3]' (FDE) to 'output_AX_ALG_id_V_1_payload_A_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output_AX_ALG_id_V_1_payload_B_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output_AX_ALG_id_V_1_payload_A_reg[4] )
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_user_V_1_payload_B_reg[0]' (FDE) to 'output_AX_ALG_user_V_1_payload_B_reg[1]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_user_V_1_payload_A_reg[0]' (FDE) to 'output_AX_ALG_user_V_1_payload_A_reg[1]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_user_V_1_payload_B_reg[1]' (FDE) to 'output_AX_ALG_user_V_1_payload_B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_user_V_1_payload_A_reg[1]' (FDE) to 'output_AX_ALG_user_V_1_payload_A_reg[2]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_user_V_1_payload_B_reg[2]' (FDE) to 'output_AX_ALG_user_V_1_payload_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_user_V_1_payload_A_reg[2]' (FDE) to 'output_AX_ALG_user_V_1_payload_A_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output_AX_ALG_user_V_1_payload_B_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output_AX_ALG_user_V_1_payload_A_reg[3] )
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_strb_V_1_payload_B_reg[0]' (FDE) to 'output_AX_ALG_strb_V_1_payload_B_reg[1]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_strb_V_1_payload_A_reg[0]' (FDE) to 'output_AX_ALG_strb_V_1_payload_A_reg[1]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_strb_V_1_payload_B_reg[1]' (FDE) to 'output_AX_ALG_strb_V_1_payload_B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_strb_V_1_payload_A_reg[1]' (FDE) to 'output_AX_ALG_strb_V_1_payload_A_reg[2]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_strb_V_1_payload_B_reg[2]' (FDE) to 'output_AX_ALG_strb_V_1_payload_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_strb_V_1_payload_A_reg[2]' (FDE) to 'output_AX_ALG_strb_V_1_payload_A_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\output_AX_ALG_strb_V_1_payload_B_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\output_AX_ALG_strb_V_1_payload_A_reg[3] )
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_keep_V_1_payload_B_reg[0]' (FDE) to 'output_AX_ALG_keep_V_1_payload_B_reg[1]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_keep_V_1_payload_A_reg[0]' (FDE) to 'output_AX_ALG_keep_V_1_payload_A_reg[1]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_keep_V_1_payload_B_reg[1]' (FDE) to 'output_AX_ALG_keep_V_1_payload_B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_keep_V_1_payload_A_reg[1]' (FDE) to 'output_AX_ALG_keep_V_1_payload_A_reg[2]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_keep_V_1_payload_B_reg[2]' (FDE) to 'output_AX_ALG_keep_V_1_payload_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'output_AX_ALG_keep_V_1_payload_A_reg[2]' (FDE) to 'output_AX_ALG_keep_V_1_payload_A_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\output_AX_ALG_keep_V_1_payload_B_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\output_AX_ALG_keep_V_1_payload_A_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (dedo0_0_V_read_data_fu_118/ap_CS_fsm_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_keep_V_1_sel_rd_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_keep_V_1_sel_wr_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_keep_V_1_payload_A_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_keep_V_1_payload_B_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_strb_V_1_sel_rd_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_strb_V_1_sel_wr_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_strb_V_1_payload_A_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_strb_V_1_payload_B_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_user_V_1_sel_rd_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_user_V_1_sel_wr_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_user_V_1_payload_A_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_user_V_1_payload_B_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_id_V_1_sel_rd_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_id_V_1_sel_wr_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_id_V_1_payload_A_reg[4]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_id_V_1_payload_B_reg[4]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_dest_V_1_sel_rd_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_dest_V_1_sel_wr_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_dest_V_1_payload_A_reg[4]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (output_AX_ALG_dest_V_1_payload_B_reg[4]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_keep_V_0_state_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_keep_V_0_state_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_keep_V_0_sel_rd_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_keep_V_0_sel_wr_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_keep_V_0_payload_A_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_keep_V_0_payload_A_reg[2]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_keep_V_0_payload_A_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_keep_V_0_payload_A_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_keep_V_0_payload_B_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_keep_V_0_payload_B_reg[2]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_keep_V_0_payload_B_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_keep_V_0_payload_B_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_strb_V_0_state_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_strb_V_0_state_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_strb_V_0_sel_rd_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_strb_V_0_sel_wr_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_strb_V_0_payload_A_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_strb_V_0_payload_A_reg[2]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_strb_V_0_payload_A_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_strb_V_0_payload_A_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_strb_V_0_payload_B_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_strb_V_0_payload_B_reg[2]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_strb_V_0_payload_B_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_strb_V_0_payload_B_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_user_V_0_state_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_user_V_0_state_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_user_V_0_sel_rd_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_user_V_0_sel_wr_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_user_V_0_payload_A_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_user_V_0_payload_A_reg[2]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_user_V_0_payload_A_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_user_V_0_payload_A_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_user_V_0_payload_B_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_user_V_0_payload_B_reg[2]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_user_V_0_payload_B_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_user_V_0_payload_B_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_last_V_0_state_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_last_V_0_state_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_last_V_0_sel_rd_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_last_V_0_sel_wr_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_last_V_0_payload_A_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_last_V_0_payload_B_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_state_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_state_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_sel_rd_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_sel_wr_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_payload_A_reg[4]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_payload_A_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_payload_A_reg[2]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_payload_A_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_payload_A_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_payload_B_reg[4]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_payload_B_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_payload_B_reg[2]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_payload_B_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_id_V_0_payload_B_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_dest_V_0_sel_rd_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_dest_V_0_sel_wr_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_dest_V_0_payload_A_reg[4]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_dest_V_0_payload_A_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_dest_V_0_payload_A_reg[2]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_dest_V_0_payload_A_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_dest_V_0_payload_A_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_dest_V_0_payload_B_reg[4]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_dest_V_0_payload_B_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_dest_V_0_payload_B_reg[2]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_dest_V_0_payload_B_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGdedo0_dest_V_0_payload_B_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGpalma0_keep_V_0_state_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGpalma0_keep_V_0_state_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGpalma0_keep_V_0_sel_rd_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGpalma0_keep_V_0_sel_wr_reg) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGpalma0_keep_V_0_payload_A_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGpalma0_keep_V_0_payload_A_reg[2]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGpalma0_keep_V_0_payload_A_reg[1]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGpalma0_keep_V_0_payload_A_reg[0]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGpalma0_keep_V_0_payload_B_reg[3]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGpalma0_keep_V_0_payload_B_reg[2]) is unused and will be removed from module opcionA.
+WARNING: [Synth 8-3332] Sequential element (input_AX_ALGpalma0_keep_V_0_payload_B_reg[1]) is unused and will be removed from module opcionA.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |   183|
+|4     |LUT4 |    21|
+|5     |LUT5 |    26|
+|6     |LUT6 |    41|
+|7     |FDRE |   538|
+|8     |FDSE |     2|
++------+-----+------+
+
+Report Instance Areas: 
++------+-----------------------+-----------+------+
+|      |Instance               |Module     |Cells |
++------+-----------------------+-----------+------+
+|1     |top                    |           |   813|
+|2     |  grp_write_data_fu_96 |write_data |   115|
++------+-----------------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 683.047 ; gain = 459.816
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 296 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 683.047 ; gain = 131.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 683.047 ; gain = 459.816
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+120 Infos, 142 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 683.047 ; gain = 463.051
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/synth_1/opcionA.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 683.047 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  1 16:43:53 2021...
+[Mon Feb  1 16:43:54 2021] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:25 . Memory (MB): peak = 236.348 ; gain = 7.516
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.xdc:2]
+Finished Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 520.637 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1022.934 ; gain = 502.297
+[Mon Feb  1 16:44:07 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/impl_1/runme.log
+[Mon Feb  1 16:44:07 2021] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log opcionA.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source opcionA.tcl -notrace
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source opcionA.tcl -notrace
+Command: open_checkpoint C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/impl_1/opcionA.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 220.359 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/impl_1/.Xil/Vivado-5720-LAPTOP-5NTBTHR8/dcp3/opcionA.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.xdc:2]
+Finished Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/impl_1/.Xil/Vivado-5720-LAPTOP-5NTBTHR8/dcp3/opcionA.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.1 (64-bit) build 1846317
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg484'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.279 . Memory (MB): peak = 524.414 ; gain = 8.645
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1544a6c14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1025.141 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1544a6c14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1025.141 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1544a6c14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1025.141 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1544a6c14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1025.141 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1544a6c14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1025.141 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1025.141 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1544a6c14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1544a6c14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1025.141 ; gain = 0.000
+20 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1025.141 ; gain = 509.371
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/impl_1/opcionA_opt.dcp' has been generated.
+Command: report_drc -file opcionA_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/impl_1/opcionA_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg484'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1025.141 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 6c98dd16
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1025.141 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: dae57cc7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.271 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 13e617f31
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.359 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 13e617f31
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.361 . Memory (MB): peak = 1025.141 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 13e617f31
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.362 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 159e6e67c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.915 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 159e6e67c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.917 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1be54e618
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.970 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 17ba81bc7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.980 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 17ba81bc7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.981 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: e5782516
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.997 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 202efeb01
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 2625a90f5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 2625a90f5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1025.141 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 2625a90f5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1025.141 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 24977fd0c
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 24977fd0c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1026.539 ; gain = 1.398
+INFO: [Place 30-746] Post Placement Timing Summary WNS=6.205. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1b42a5ff9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1026.539 ; gain = 1.398
+Phase 4.1 Post Commit Optimization | Checksum: 1b42a5ff9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1026.539 ; gain = 1.398
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1b42a5ff9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1026.539 ; gain = 1.398
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1b42a5ff9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1026.539 ; gain = 1.398
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1b13bcf62
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1026.539 ; gain = 1.398
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1b13bcf62
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1026.539 ; gain = 1.398
+Ending Placer Task | Checksum: 195cbb748
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1026.539 ; gain = 1.398
+37 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1026.539 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/impl_1/opcionA_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1026.539 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1026.539 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1026.539 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.500 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+41 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1026.539 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/impl_1/opcionA_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg484'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: d937291d ConstDB: 0 ShapeSum: bc948e2b RouteDB: 0
+
+Phase 1 Build RT Design
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_AX_ALG_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_AX_ALG_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma1_TDATA[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma1_TDATA[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo0_TDATA[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo0_TDATA[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGdedo1_TDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGdedo1_TDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALGpalma0_TDATA[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALGpalma0_TDATA[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+INFO: [Common 17-14] Message 'Route 35-198' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1 Build RT Design | Checksum: 6632671c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1148.254 ; gain = 121.715
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 6632671c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1148.254 ; gain = 121.715
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 6632671c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1151.977 ; gain = 125.438
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 6632671c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1151.977 ; gain = 125.438
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 15c082b31
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.231  | TNS=0.000  | WHS=-0.146 | THS=-9.214 |
+
+Phase 2 Router Initialization | Checksum: ba784bef
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: e3d133df
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.715  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1b6b19646
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.715  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 114d284e1
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+Phase 4 Rip-up And Reroute | Checksum: 114d284e1
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 114d284e1
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 114d284e1
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+Phase 5 Delay and Skew Optimization | Checksum: 114d284e1
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1e54d9348
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.830  | TNS=0.000  | WHS=0.105  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 16b9236a4
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+Phase 6 Post Hold Fix | Checksum: 16b9236a4
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0498084 %
+  Global Horizontal Routing Utilization  = 0.0616971 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1887f0bef
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1154.355 ; gain = 127.816
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1887f0bef
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1156.293 ; gain = 129.754
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 132e4ec0f
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1156.293 ; gain = 129.754
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.830  | TNS=0.000  | WHS=0.105  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 132e4ec0f
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1156.293 ; gain = 129.754
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1156.293 ; gain = 129.754
+
+Routing Is Done.
+55 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1156.293 ; gain = 129.754
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1156.293 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/impl_1/opcionA_routed.dcp' has been generated.
+Command: report_drc -file opcionA_drc_routed.rpt -pb opcionA_drc_routed.pb -rpx opcionA_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/impl_1/opcionA_drc_routed.rpt.
+report_drc completed successfully
+Command: report_methodology -file opcionA_methodology_drc_routed.rpt -rpx opcionA_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/project.runs/impl_1/opcionA_methodology_drc_routed.rpt.
+report_methodology completed successfully
+Command: report_power -file opcionA_power_routed.rpt -pb opcionA_power_summary_routed.pb -rpx opcionA_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+62 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  1 16:44:46 2021...
+[Mon Feb  1 16:44:47 2021] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:41 . Memory (MB): peak = 1034.359 ; gain = 4.070
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/.Xil/Vivado-10632-LAPTOP-5NTBTHR8/dcp4/opcionA.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/opcionA.xdc:2]
+Finished Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/vhdl/.Xil/Vivado-10632-LAPTOP-5NTBTHR8/dcp4/opcionA.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1124.887 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1124.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1238.164 ; gain = 2.004
+
+
+Implementation tool: Xilinx Vivado v.2017.1
+Project:             opcionA
+Solution:            solution1
+Device target:       xc7z020clg484-1
+Report date:         Mon Feb 01 16:44:48 +0100 2021
+
+#=== Post-Implementation Resource usage ===
+SLICE:          169
+LUT:            190
+FF:             540
+DSP:              0
+BRAM:             0
+SRL:              0
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    3.032
+CP achieved post-implementation:    4.169
+Timing met
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  1 16:44:48 2021...

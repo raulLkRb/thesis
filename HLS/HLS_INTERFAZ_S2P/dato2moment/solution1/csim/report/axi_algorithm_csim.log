@@ -1,0 +1,23 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../axi_algorithm_test_SWEEP_v2.cpp in debug mode
+   Compiling ../../../../axi_algorithm.cpp in debug mode
+   Generating csim.exe
+M00_dedo is 193 
+
+M00_palma is 989 
+
+M00_dedo is 194 
+
+M00_palma is 9822 
+
+M00_dedo is 1933 
+
+M00_palma is 9855 
+
+M00_dedo is 1998 
+
+M00_palma is 989 
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

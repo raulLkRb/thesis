@@ -1,0 +1,766 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Feb  1 13:51:38 2021
+# Process ID: 8352
+# Current directory: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/synth_1
+# Command line: vivado.exe -log axi_algorithm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_algorithm.tcl
+# Log file: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/synth_1/axi_algorithm.vds
+# Journal file: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source axi_algorithm.tcl -notrace
+Command: synth_design -top axi_algorithm -part xc7z020clg484-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2156 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 304.297 ; gain = 81.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'axi_algorithm' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:64]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4 - type: integer 
+	Parameter AddressWidth bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'axi_algorithm_dato' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:12' bound to instance 'dato_U' of component 'axi_algorithm_dato' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:387]
+INFO: [Synth 8-638] synthesizing module 'axi_algorithm_dato' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:52]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4 - type: integer 
+	Parameter AddressWidth bound to: 2 - type: integer 
+	Parameter BufferCount bound to: 2 - type: integer 
+	Parameter MemLatency bound to: 1 - type: integer 
+	Parameter IndexWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'axi_algorithm_dato_memcore' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:102' bound to instance 'axi_algorithm_dato_memcore_U' of component 'axi_algorithm_dato_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'axi_algorithm_dato_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:120]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4 - type: integer 
+	Parameter AddressWidth bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'axi_algorithm_dato_memcore_ram' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:13' bound to instance 'axi_algorithm_dato_memcore_ram_U' of component 'axi_algorithm_dato_memcore_ram' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'axi_algorithm_dato_memcore_ram' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:34]
+	Parameter mem_type bound to: distributed - type: string 
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 2 - type: integer 
+	Parameter mem_size bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_algorithm_dato_memcore_ram' (1#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'axi_algorithm_dato_memcore' (2#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:120]
+INFO: [Synth 8-3491] module 'axi_algorithm_dato_memcore' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:102' bound to instance 'axi_algorithm_dato_memcore_U' of component 'axi_algorithm_dato_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:95]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[0].buf_ce0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:99]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[0].buf_we0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:100]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[0].buf_ce1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:104]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[1].buf_ce0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:112]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[1].buf_we0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[1].buf_ce1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:122]
+INFO: [Synth 8-256] done synthesizing module 'axi_algorithm_dato' (3#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:52]
+INFO: [Synth 8-3491] module 'read_data' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:12' bound to instance 'read_data_U0' of component 'read_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:418]
+INFO: [Synth 8-638] synthesizing module 'read_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:37]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:59]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:62]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:82]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:100]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:327]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state3_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:334]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:357]
+WARNING: [Synth 8-6014] Unused sequential element input_AX_ALG_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:425]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:321]
+WARNING: [Synth 8-6014] Unused sequential element input_data_V_0_ack_out_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:180]
+WARNING: [Synth 8-6014] Unused sequential element input_dest_V_0_ack_out_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:228]
+INFO: [Synth 8-256] done synthesizing module 'read_data' (4#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:37]
+INFO: [Synth 8-3491] module 'Block_arrayctor_loop' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:12' bound to instance 'Block_arrayctor_loop_U0' of component 'Block_arrayctor_loop' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:441]
+INFO: [Synth 8-638] synthesizing module 'Block_arrayctor_loop' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:34]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:47]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:50]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:54]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:57]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:127]
+WARNING: [Synth 8-6014] Unused sequential element dato_ce1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:202]
+INFO: [Synth 8-256] done synthesizing module 'Block_arrayctor_loop' (5#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:34]
+INFO: [Synth 8-3491] module 'write_data21' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:12' bound to instance 'write_data21_U0' of component 'write_data21' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:461]
+INFO: [Synth 8-638] synthesizing module 'write_data21' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:34]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:52]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:268]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:302]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:336]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:404]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00001001_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:464]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_pp0_stage0_iter0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:482]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:488]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_0to0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:527]
+WARNING: [Synth 8-6014] Unused sequential element ap_reset_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:547]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALGdedo0_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:558]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element output_data_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:202]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:284]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:352]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:386]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:420]
+INFO: [Synth 8-256] done synthesizing module 'write_data21' (6#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:34]
+INFO: [Synth 8-3491] module 'write_data22' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:12' bound to instance 'write_data22_U0' of component 'write_data22' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:481]
+INFO: [Synth 8-638] synthesizing module 'write_data22' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:34]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:52]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:268]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:302]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:336]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:404]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00001001_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:464]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_pp0_stage0_iter0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:482]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:488]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_0to0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:527]
+WARNING: [Synth 8-6014] Unused sequential element ap_reset_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:547]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALGpalma0_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:558]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element output_data_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:202]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:284]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:352]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:386]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:420]
+INFO: [Synth 8-256] done synthesizing module 'write_data22' (7#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:34]
+INFO: [Synth 8-3491] module 'write_data23' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:12' bound to instance 'write_data23_U0' of component 'write_data23' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:501]
+INFO: [Synth 8-638] synthesizing module 'write_data23' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:34]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:52]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:268]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:302]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:336]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:404]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00001001_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:464]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_pp0_stage0_iter0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:482]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:488]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_0to0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:527]
+WARNING: [Synth 8-6014] Unused sequential element ap_reset_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:547]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALGdedo1_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:558]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element output_data_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:202]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:284]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:352]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:386]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:420]
+INFO: [Synth 8-256] done synthesizing module 'write_data23' (8#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:34]
+INFO: [Synth 8-3491] module 'write_data' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:12' bound to instance 'write_data_U0' of component 'write_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:521]
+INFO: [Synth 8-638] synthesizing module 'write_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:34]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:52]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:268]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:302]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:336]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:404]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00001001_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:464]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_pp0_stage0_iter0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:482]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:488]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_0to0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:527]
+WARNING: [Synth 8-6014] Unused sequential element ap_reset_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:547]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALGpalma1_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:558]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element output_data_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:202]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:284]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:352]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:386]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:420]
+INFO: [Synth 8-256] done synthesizing module 'write_data' (9#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:34]
+INFO: [Synth 8-3491] module 'fifo_w32_d2_A' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:49' bound to instance 'dedo0_0_V_U' of component 'fifo_w32_d2_A' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:541]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d2_A' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:68]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_w32_d2_A_shiftReg' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:13' bound to instance 'U_fifo_w32_d2_A_shiftReg' of component 'fifo_w32_d2_A_shiftReg' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d2_A_shiftReg' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:26]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d2_A_shiftReg' (10#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d2_A' (11#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:68]
+INFO: [Synth 8-3491] module 'fifo_w32_d2_A' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:49' bound to instance 'palma0_0_V_U' of component 'fifo_w32_d2_A' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:554]
+INFO: [Synth 8-3491] module 'fifo_w32_d2_A' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:49' bound to instance 'dedo1_0_V_U' of component 'fifo_w32_d2_A' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:567]
+INFO: [Synth 8-3491] module 'fifo_w32_d2_A' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:49' bound to instance 'palma1_0_V_U' of component 'fifo_w32_d2_A' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:580]
+INFO: [Synth 8-256] done synthesizing module 'axi_algorithm' (12#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:64]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TKEEP[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TKEEP[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TKEEP[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TKEEP[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TSTRB[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TSTRB[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TSTRB[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TSTRB[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TUSER[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TUSER[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TUSER[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TUSER[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TLAST[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[4]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[4]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[0]
+WARNING: [Synth 8-3331] design axi_algorithm_dato_memcore has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 349.387 ; gain = 126.238
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 349.387 ; gain = 126.238
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.xdc]
+Finished Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 680.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 680.059 ; gain = 456.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 680.059 ; gain = 456.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 680.059 ; gain = 456.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "tmp_fu_92_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "output_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 680.059 ; gain = 456.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 16    
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 31    
+	                1 Bit    Registers := 44    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 41    
+	   4 Input      2 Bit        Muxes := 30    
+	   2 Input      1 Bit        Muxes := 73    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_algorithm 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_algorithm_dato_memcore_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module axi_algorithm_dato 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 9     
+Module read_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+Module Block_arrayctor_loop 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module write_data21 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 10    
+Module write_data22 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 10    
+Module write_data23 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 10    
+Module write_data 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 10    
+Module fifo_w32_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'write_data22_U0/ap_CS_fsm_reg[0:0]' into 'write_data21_U0/ap_CS_fsm_reg[0:0]' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:144]
+INFO: [Synth 8-4471] merging register 'write_data23_U0/ap_CS_fsm_reg[0:0]' into 'write_data21_U0/ap_CS_fsm_reg[0:0]' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:144]
+INFO: [Synth 8-4471] merging register 'write_data_U0/ap_CS_fsm_reg[0:0]' into 'write_data21_U0/ap_CS_fsm_reg[0:0]' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:144]
+WARNING: [Synth 8-6014] Unused sequential element write_data22_U0/ap_CS_fsm_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:144]
+WARNING: [Synth 8-6014] Unused sequential element write_data23_U0/ap_CS_fsm_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:144]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TKEEP[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TKEEP[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TKEEP[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TKEEP[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TSTRB[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TSTRB[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TSTRB[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TSTRB[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TUSER[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TUSER[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TUSER[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TUSER[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TLAST[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TID[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TID[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TID[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TID[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TID[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TDEST[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TDEST[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TDEST[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TDEST[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TDEST[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TKEEP[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TKEEP[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TKEEP[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TKEEP[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TSTRB[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TSTRB[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TSTRB[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TSTRB[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TUSER[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TUSER[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TUSER[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TUSER[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TLAST[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TID[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TID[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TID[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TID[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TID[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TDEST[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TDEST[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TDEST[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TDEST[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TDEST[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TKEEP[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TKEEP[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TKEEP[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TKEEP[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TSTRB[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TSTRB[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TSTRB[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TSTRB[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TUSER[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TUSER[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TUSER[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TUSER[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TLAST[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TID[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TID[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TID[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TID[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TID[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TDEST[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TDEST[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TDEST[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TDEST[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TDEST[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TKEEP[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TKEEP[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TKEEP[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TKEEP[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TSTRB[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TSTRB[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TSTRB[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TSTRB[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TUSER[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TUSER[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TUSER[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TUSER[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TLAST[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TID[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TID[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TID[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TID[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TID[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TDEST[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TDEST[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TDEST[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TDEST[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TDEST[0] driven by constant 0
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TKEEP[3]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TKEEP[2]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TKEEP[1]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TKEEP[0]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TSTRB[3]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TSTRB[2]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TSTRB[1]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TSTRB[0]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TUSER[3]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TUSER[2]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TUSER[1]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TUSER[0]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TLAST[0]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TID[4]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TID[3]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TID[2]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TID[1]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TID[0]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TDEST[4]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TDEST[3]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TDEST[2]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TDEST[1]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TDEST[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data23_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data22_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data21_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\write_data21_U0/ap_CS_fsm_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (write_data21_U0/ap_CS_fsm_reg[0]) is unused and will be removed from module axi_algorithm.
+WARNING: [Synth 8-3332] Sequential element (write_data21_U0/ap_done_reg_reg) is unused and will be removed from module axi_algorithm.
+WARNING: [Synth 8-3332] Sequential element (write_data22_U0/ap_done_reg_reg) is unused and will be removed from module axi_algorithm.
+WARNING: [Synth 8-3332] Sequential element (write_data23_U0/ap_done_reg_reg) is unused and will be removed from module axi_algorithm.
+WARNING: [Synth 8-3332] Sequential element (write_data_U0/ap_done_reg_reg) is unused and will be removed from module axi_algorithm.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 680.059 ; gain = 456.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------+--------------------------------------------------------------------------------------------+----------------+----------------------+-----------------+
+|Module Name   | RTL Object                                                                                 | Inference      | Size (Depth x Width) | Primitives      | 
++--------------+--------------------------------------------------------------------------------------------+----------------+----------------------+-----------------+
+|axi_algorithm | dato_U/gen_buffer[1].axi_algorithm_dato_memcore_U/axi_algorithm_dato_memcore_ram_U/ram_reg | User Attribute | 4 x 32               | RAM16X1D x 32   | 
+|axi_algorithm | dato_U/gen_buffer[0].axi_algorithm_dato_memcore_U/axi_algorithm_dato_memcore_ram_U/ram_reg | User Attribute | 4 x 32               | RAM16X1D x 32   | 
++--------------+--------------------------------------------------------------------------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 680.059 ; gain = 456.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 682.449 ; gain = 459.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[2] | 4      | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__4     | SRL_SIG_reg[2] | 4      | 32         | 32     | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     2|
+|2     |LUT2     |    24|
+|3     |LUT3     |   212|
+|4     |LUT4     |   116|
+|5     |LUT5     |   114|
+|6     |LUT6     |    37|
+|7     |RAM16X1D |    64|
+|8     |SRL16E   |   128|
+|9     |FDRE     |   619|
+|10    |FDSE     |    15|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------+---------------------------------+------+
+|      |Instance                                         |Module                           |Cells |
++------+-------------------------------------------------+---------------------------------+------+
+|1     |top                                              |                                 |  1331|
+|2     |  Block_arrayctor_loop_U0                        |Block_arrayctor_loop             |    87|
+|3     |  dato_U                                         |axi_algorithm_dato               |   272|
+|4     |    \gen_buffer[0].axi_algorithm_dato_memcore_U  |axi_algorithm_dato_memcore       |    97|
+|5     |      axi_algorithm_dato_memcore_ram_U           |axi_algorithm_dato_memcore_ram_7 |    97|
+|6     |    \gen_buffer[1].axi_algorithm_dato_memcore_U  |axi_algorithm_dato_memcore_6     |   162|
+|7     |      axi_algorithm_dato_memcore_ram_U           |axi_algorithm_dato_memcore_ram   |   162|
+|8     |  dedo0_0_V_U                                    |fifo_w32_d2_A                    |    45|
+|9     |    U_fifo_w32_d2_A_shiftReg                     |fifo_w32_d2_A_shiftReg_5         |    34|
+|10    |  dedo1_0_V_U                                    |fifo_w32_d2_A_0                  |    45|
+|11    |    U_fifo_w32_d2_A_shiftReg                     |fifo_w32_d2_A_shiftReg_4         |    34|
+|12    |  palma0_0_V_U                                   |fifo_w32_d2_A_1                  |    45|
+|13    |    U_fifo_w32_d2_A_shiftReg                     |fifo_w32_d2_A_shiftReg_3         |    34|
+|14    |  palma1_0_V_U                                   |fifo_w32_d2_A_2                  |    45|
+|15    |    U_fifo_w32_d2_A_shiftReg                     |fifo_w32_d2_A_shiftReg           |    34|
+|16    |  read_data_U0                                   |read_data                        |   251|
+|17    |  write_data21_U0                                |write_data21                     |   134|
+|18    |  write_data22_U0                                |write_data22                     |   134|
+|19    |  write_data23_U0                                |write_data23                     |   134|
+|20    |  write_data_U0                                  |write_data                       |   135|
++------+-------------------------------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 126 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 687.270 ; gain = 133.449
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
+
+82 Infos, 244 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 687.270 ; gain = 467.176
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/synth_1/axi_algorithm.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 687.270 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  1 13:52:14 2021...

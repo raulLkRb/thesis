@@ -1,0 +1,60 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="pop_stream" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="push_stream" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="read_data" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="write_data" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="axi_algorithm" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="output_AX_ALGpalma1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="axi_algorithm" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="output_AX_ALGdedo1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="axi_algorithm" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="output_AX_ALGpalma0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="axi_algorithm" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="output_AX_ALGdedo0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="axi_algorithm" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="axi_algorithm" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+<option name="bundle" value="CONTROL_BUS"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="axi_algorithm" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="input_AX_ALG"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

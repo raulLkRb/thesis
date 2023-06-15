@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="axi_algorithm" xd:componentRef="axi_algorithm" xd:initiationInterval="12" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="input_AX_ALG[].data" xd:originalName="input_AX_ALG" xd:direction="in" xd:interfaceRef="input_AX_ALG" xd:busTypeRef="axis" xd:arraySize="4" xd:dataWidth="32"/>
+  <xd:arg xd:name="input_AX_ALG[].keep" xd:originalName="input_AX_ALG" xd:direction="in" xd:interfaceRef="input_AX_ALG" xd:busTypeRef="axis" xd:arraySize="4" xd:dataWidth="4"/>
+  <xd:arg xd:name="input_AX_ALG[].strb" xd:originalName="input_AX_ALG" xd:direction="in" xd:interfaceRef="input_AX_ALG" xd:busTypeRef="axis" xd:arraySize="4" xd:dataWidth="4"/>
+  <xd:arg xd:name="input_AX_ALG[].user" xd:originalName="input_AX_ALG" xd:direction="in" xd:interfaceRef="input_AX_ALG" xd:busTypeRef="axis" xd:arraySize="4" xd:dataWidth="4"/>
+  <xd:arg xd:name="input_AX_ALG[].last" xd:originalName="input_AX_ALG" xd:direction="in" xd:interfaceRef="input_AX_ALG" xd:busTypeRef="axis" xd:arraySize="4" xd:dataWidth="1"/>
+  <xd:arg xd:name="input_AX_ALG[].id" xd:originalName="input_AX_ALG" xd:direction="in" xd:interfaceRef="input_AX_ALG" xd:busTypeRef="axis" xd:arraySize="4" xd:dataWidth="5"/>
+  <xd:arg xd:name="input_AX_ALG[].dest" xd:originalName="input_AX_ALG" xd:direction="in" xd:interfaceRef="input_AX_ALG" xd:busTypeRef="axis" xd:arraySize="4" xd:dataWidth="5"/>
+  <xd:arg xd:name="output_AX_ALGdedo0[].data" xd:originalName="output_AX_ALGdedo0" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="output_AX_ALGdedo0[].keep" xd:originalName="output_AX_ALGdedo0" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="4"/>
+  <xd:arg xd:name="output_AX_ALGdedo0[].strb" xd:originalName="output_AX_ALGdedo0" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="4"/>
+  <xd:arg xd:name="output_AX_ALGdedo0[].user" xd:originalName="output_AX_ALGdedo0" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="4"/>
+  <xd:arg xd:name="output_AX_ALGdedo0[].last" xd:originalName="output_AX_ALGdedo0" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="1"/>
+  <xd:arg xd:name="output_AX_ALGdedo0[].id" xd:originalName="output_AX_ALGdedo0" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="5"/>
+  <xd:arg xd:name="output_AX_ALGdedo0[].dest" xd:originalName="output_AX_ALGdedo0" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="5"/>
+  <xd:arg xd:name="output_AX_ALGpalma0[].data" xd:originalName="output_AX_ALGpalma0" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="output_AX_ALGpalma0[].keep" xd:originalName="output_AX_ALGpalma0" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="4"/>
+  <xd:arg xd:name="output_AX_ALGpalma0[].strb" xd:originalName="output_AX_ALGpalma0" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="4"/>
+  <xd:arg xd:name="output_AX_ALGpalma0[].user" xd:originalName="output_AX_ALGpalma0" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="4"/>
+  <xd:arg xd:name="output_AX_ALGpalma0[].last" xd:originalName="output_AX_ALGpalma0" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="1"/>
+  <xd:arg xd:name="output_AX_ALGpalma0[].id" xd:originalName="output_AX_ALGpalma0" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="5"/>
+  <xd:arg xd:name="output_AX_ALGpalma0[].dest" xd:originalName="output_AX_ALGpalma0" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma0" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="5"/>
+  <xd:arg xd:name="output_AX_ALGdedo1[].data" xd:originalName="output_AX_ALGdedo1" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="output_AX_ALGdedo1[].keep" xd:originalName="output_AX_ALGdedo1" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="4"/>
+  <xd:arg xd:name="output_AX_ALGdedo1[].strb" xd:originalName="output_AX_ALGdedo1" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="4"/>
+  <xd:arg xd:name="output_AX_ALGdedo1[].user" xd:originalName="output_AX_ALGdedo1" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="4"/>
+  <xd:arg xd:name="output_AX_ALGdedo1[].last" xd:originalName="output_AX_ALGdedo1" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="1"/>
+  <xd:arg xd:name="output_AX_ALGdedo1[].id" xd:originalName="output_AX_ALGdedo1" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="5"/>
+  <xd:arg xd:name="output_AX_ALGdedo1[].dest" xd:originalName="output_AX_ALGdedo1" xd:direction="out" xd:interfaceRef="output_AX_ALGdedo1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="5"/>
+  <xd:arg xd:name="output_AX_ALGpalma1[].data" xd:originalName="output_AX_ALGpalma1" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="output_AX_ALGpalma1[].keep" xd:originalName="output_AX_ALGpalma1" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="4"/>
+  <xd:arg xd:name="output_AX_ALGpalma1[].strb" xd:originalName="output_AX_ALGpalma1" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="4"/>
+  <xd:arg xd:name="output_AX_ALGpalma1[].user" xd:originalName="output_AX_ALGpalma1" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="4"/>
+  <xd:arg xd:name="output_AX_ALGpalma1[].last" xd:originalName="output_AX_ALGpalma1" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="1"/>
+  <xd:arg xd:name="output_AX_ALGpalma1[].id" xd:originalName="output_AX_ALGpalma1" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="5"/>
+  <xd:arg xd:name="output_AX_ALGpalma1[].dest" xd:originalName="output_AX_ALGpalma1" xd:direction="out" xd:interfaceRef="output_AX_ALGpalma1" xd:busTypeRef="axis" xd:arraySize="1" xd:dataWidth="5"/>
+  <xd:latencyEstimates xd:best-case="11" xd:worst-case="11" xd:average-case="11"/>
+  <xd:resourceEstimates xd:LUT="852" xd:FF="639" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

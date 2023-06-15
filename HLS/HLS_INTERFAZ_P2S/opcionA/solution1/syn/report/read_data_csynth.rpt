@@ -1,0 +1,133 @@
+
+
+================================================================
+== Vivado HLS Report for 'read_data'
+================================================================
+* Date:           Wed Feb  1 16:42:50 2023
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        opcionA
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      0.00|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    0|    0|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|      2|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      9|
+|Register         |        -|      -|       1|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|       1|     11|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------+----+-----------+-----+-----------+
+    |              Name              | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------+----+-----------+-----+-----------+
+    |input_AX_ALGpalma1_TDATA_blk_n  |   9|          2|    1|          2|
+    +--------------------------------+----+-----------+-----+-----------+
+    |Total                           |   9|          2|    1|          2|
+    +--------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------+---+----+-----+-----------+
+    |    Name   | FF| LUT| Bits| Const Bits|
+    +-----------+---+----+-----+-----------+
+    |ap_CS_fsm  |  1|   0|    1|          0|
+    +-----------+---+----+-----+-----------+
+    |Total      |  1|   0|    1|          0|
+    +-----------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+--------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  | Source Object|    C Type    |
++--------------------------------+-----+-----+------------+--------------+--------------+
+|ap_clk                          |  in |    1| ap_ctrl_hs |   read_data  | return value |
+|ap_rst                          |  in |    1| ap_ctrl_hs |   read_data  | return value |
+|ap_start                        |  in |    1| ap_ctrl_hs |   read_data  | return value |
+|ap_done                         | out |    1| ap_ctrl_hs |   read_data  | return value |
+|ap_idle                         | out |    1| ap_ctrl_hs |   read_data  | return value |
+|ap_ready                        | out |    1| ap_ctrl_hs |   read_data  | return value |
+|ap_return                       | out |   32| ap_ctrl_hs |   read_data  | return value |
+|input_AX_ALGpalma1_TDATA_blk_n  | out |    1| ap_ctrl_hs |   read_data  | return value |
+|input_AX_ALGpalma1_TDATA        |  in |   32|    axis    | input_data_V |    pointer   |
+|input_AX_ALGpalma1_TVALID       |  in |    1|    axis    | input_data_V |    pointer   |
+|input_AX_ALGpalma1_TREADY       | out |    1|    axis    | input_dest_V |    pointer   |
+|input_AX_ALGpalma1_TDEST        |  in |    5|    axis    | input_dest_V |    pointer   |
+|input_AX_ALGpalma1_TKEEP        |  in |    4|    axis    | input_keep_V |    pointer   |
+|input_AX_ALGpalma1_TSTRB        |  in |    4|    axis    | input_strb_V |    pointer   |
+|input_AX_ALGpalma1_TUSER        |  in |    4|    axis    | input_user_V |    pointer   |
+|input_AX_ALGpalma1_TLAST        |  in |    1|    axis    | input_last_V |    pointer   |
+|input_AX_ALGpalma1_TID          |  in |    5|    axis    |  input_id_V  |    pointer   |
++--------------------------------+-----+-----+------------+--------------+--------------+
+

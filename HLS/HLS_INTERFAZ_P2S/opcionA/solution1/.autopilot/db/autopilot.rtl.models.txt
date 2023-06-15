@@ -1,0 +1,4 @@
+opcionA_mux_42_32_1
+read_data
+write_data
+opcionA

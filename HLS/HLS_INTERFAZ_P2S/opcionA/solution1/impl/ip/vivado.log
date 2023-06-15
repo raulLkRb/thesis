@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Feb  1 16:43:22 2021
+# Process ID: 12444
+# Current directory: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/ip/vivado.log
+# Journal file: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_ARRAY_OUT_SIMPLE/opcionA/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  1 16:43:25 2021...

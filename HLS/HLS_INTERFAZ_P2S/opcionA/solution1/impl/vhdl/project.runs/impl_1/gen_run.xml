@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1612194247">
+  <File Type="PLACE-DCP" Name="opcionA_placed.dcp"/>
+  <File Type="PA-DCP" Name="opcionA.dcp"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="opcionA_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="opcionA_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="opcionA_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="opcionA.tcl"/>
+  <File Type="OPT-HWDEF" Name="opcionA.hwdef"/>
+  <File Type="RDI-RDI" Name="opcionA.vdi"/>
+  <File Type="OPT-DCP" Name="opcionA_opt.dcp"/>
+  <File Type="OPT-DRC" Name="opcionA_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="opcionA_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="opcionA_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="opcionA_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="opcionA_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-IO" Name="opcionA_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="opcionA_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="opcionA_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="opcionA_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="opcionA_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="opcionA_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="opcionA_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="opcionA_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="opcionA_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="opcionA_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="opcionA_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="opcionA_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="opcionA_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="opcionA_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="opcionA_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="opcionA_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="opcionA_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="opcionA_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="opcionA.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="opcionA_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="opcionA.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="opcionA_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="opcionA.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="opcionA_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="opcionA.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="opcionA_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="opcionA_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="opcionA_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="opcionA_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="opcionA_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="opcionA_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="opcionA_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="opcionA_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="opcionA_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="opcionA_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="opcionA_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="opcionA_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="opcionA_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="opcionA_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="opcionA_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="opcionA.bit"/>
+  <File Type="BITSTR-RBT" Name="opcionA.rbt"/>
+  <File Type="BITSTR-NKY" Name="opcionA.nky"/>
+  <File Type="BITSTR-BMM" Name="opcionA_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="opcionA.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="opcionA.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/opcionA.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/opcionA_mux_42_32_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/read_data.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/write_data.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="opcionA"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/opcionA.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

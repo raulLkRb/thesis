@@ -1,0 +1,13 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../axi_algorithm_test_SWEEP_v2.cpp in debug mode
+   Compiling ../../../../axi_algorithm.cpp in debug mode
+   Generating csim.exe
+dato_out[0] is: 120000 
+
+dato_out[1] is: 400000 
+
+t_ready is: 0 
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

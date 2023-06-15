@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1612183956">
+  <File Type="PLACE-DCP" Name="axi_algorithm_placed.dcp"/>
+  <File Type="PA-DCP" Name="axi_algorithm.dcp"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="axi_algorithm_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="axi_algorithm_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="axi_algorithm_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="axi_algorithm.tcl"/>
+  <File Type="OPT-HWDEF" Name="axi_algorithm.hwdef"/>
+  <File Type="RDI-RDI" Name="axi_algorithm.vdi"/>
+  <File Type="OPT-DCP" Name="axi_algorithm_opt.dcp"/>
+  <File Type="OPT-DRC" Name="axi_algorithm_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="axi_algorithm_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="axi_algorithm_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="axi_algorithm_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="axi_algorithm_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-IO" Name="axi_algorithm_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="axi_algorithm_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="axi_algorithm_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="axi_algorithm_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="axi_algorithm_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="axi_algorithm_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="axi_algorithm_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="axi_algorithm_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="axi_algorithm_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="axi_algorithm_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="axi_algorithm_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="axi_algorithm_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="axi_algorithm_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="axi_algorithm_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="axi_algorithm_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="axi_algorithm_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="axi_algorithm_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="axi_algorithm_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="axi_algorithm.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="axi_algorithm_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="axi_algorithm.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="axi_algorithm_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="axi_algorithm.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="axi_algorithm_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="axi_algorithm.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="axi_algorithm_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="axi_algorithm_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="axi_algorithm_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="axi_algorithm_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="axi_algorithm_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="axi_algorithm_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="axi_algorithm_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="axi_algorithm_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="axi_algorithm_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="axi_algorithm_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="axi_algorithm_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="axi_algorithm_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="axi_algorithm_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="axi_algorithm_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="axi_algorithm_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="axi_algorithm.bit"/>
+  <File Type="BITSTR-RBT" Name="axi_algorithm.rbt"/>
+  <File Type="BITSTR-NKY" Name="axi_algorithm.nky"/>
+  <File Type="BITSTR-BMM" Name="axi_algorithm_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="axi_algorithm.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="axi_algorithm.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/Block_arrayctor_loop.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/axi_algorithm.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/axi_algorithm_dato.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/axi_algorithm_dato_memcore.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fifo_w32_d2_A.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/read_data.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/write_data.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/write_data21.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/write_data22.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/write_data23.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="axi_algorithm"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/axi_algorithm.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,74 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Mon Feb  1 16:44:29 2021
+| Host         : LAPTOP-5NTBTHR8 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file opcionA_control_sets_placed.rpt
+| Design       : opcionA
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    12 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              25 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              35 |            7 |
+| Yes          | No                    | No                     |             480 |          153 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+-------------------------------------------+----------------------------+------------------+----------------+
+| Clock Signal |               Enable Signal               |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++--------------+-------------------------------------------+----------------------------+------------------+----------------+
+|  ap_clk      |                                           |                            |                9 |             25 |
+|  ap_clk      | input_AX_ALGdedo0_data_V_0_load_A         |                            |               10 |             32 |
+|  ap_clk      | input_AX_ALGdedo0_data_V_0_load_B         |                            |               12 |             32 |
+|  ap_clk      | input_AX_ALGdedo1_data_V_0_load_A         |                            |                9 |             32 |
+|  ap_clk      | input_AX_ALGdedo1_data_V_0_load_B         |                            |               10 |             32 |
+|  ap_clk      | input_AX_ALGpalma0_data_V_0_load_A        |                            |               11 |             32 |
+|  ap_clk      | input_AX_ALGpalma0_data_V_0_load_B        |                            |               12 |             32 |
+|  ap_clk      | grp_write_data_fu_96/last_assign_reg_1940 |                            |               14 |             32 |
+|  ap_clk      | input_AX_ALGpalma1_data_V_0_load_A        |                            |               12 |             32 |
+|  ap_clk      | input_AX_ALGpalma1_data_V_0_load_B        |                            |               12 |             32 |
+|  ap_clk      | output_AX_ALG_data_V_1_load_A             |                            |               13 |             32 |
+|  ap_clk      | output_AX_ALG_data_V_1_load_B             |                            |               14 |             32 |
+|  ap_clk      |                                           | grp_write_data_fu_96/SR[0] |                7 |             35 |
+|  ap_clk      | ap_NS_fsm1                                |                            |               24 |            128 |
++--------------+-------------------------------------------+----------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 16+    |                    14 |
++--------+-----------------------+
+
+

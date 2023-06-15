@@ -1,0 +1,1333 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Feb  1 13:51:33 2021
+# Process ID: 12452
+# Current directory: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl
+# Command line: vivado.exe -notrace -mode batch -source run_vivado.tcl
+# Log file: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/vivado.log
+# Journal file: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl\vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl'
+[Mon Feb  1 13:51:37 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/synth_1/runme.log
+[Mon Feb  1 13:51:37 2021] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log axi_algorithm.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_algorithm.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source axi_algorithm.tcl -notrace
+Command: synth_design -top axi_algorithm -part xc7z020clg484-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2156 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 304.297 ; gain = 81.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'axi_algorithm' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:64]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4 - type: integer 
+	Parameter AddressWidth bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'axi_algorithm_dato' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:12' bound to instance 'dato_U' of component 'axi_algorithm_dato' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:387]
+INFO: [Synth 8-638] synthesizing module 'axi_algorithm_dato' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:52]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4 - type: integer 
+	Parameter AddressWidth bound to: 2 - type: integer 
+	Parameter BufferCount bound to: 2 - type: integer 
+	Parameter MemLatency bound to: 1 - type: integer 
+	Parameter IndexWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'axi_algorithm_dato_memcore' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:102' bound to instance 'axi_algorithm_dato_memcore_U' of component 'axi_algorithm_dato_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'axi_algorithm_dato_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:120]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4 - type: integer 
+	Parameter AddressWidth bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'axi_algorithm_dato_memcore_ram' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:13' bound to instance 'axi_algorithm_dato_memcore_ram_U' of component 'axi_algorithm_dato_memcore_ram' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'axi_algorithm_dato_memcore_ram' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:34]
+	Parameter mem_type bound to: distributed - type: string 
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 2 - type: integer 
+	Parameter mem_size bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_algorithm_dato_memcore_ram' (1#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'axi_algorithm_dato_memcore' (2#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:120]
+INFO: [Synth 8-3491] module 'axi_algorithm_dato_memcore' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato_memcore.vhd:102' bound to instance 'axi_algorithm_dato_memcore_U' of component 'axi_algorithm_dato_memcore' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:95]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[0].buf_ce0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:99]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[0].buf_we0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:100]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[0].buf_ce1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:104]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[1].buf_ce0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:112]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[1].buf_we0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element connect_buffer[1].buf_ce1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:122]
+INFO: [Synth 8-256] done synthesizing module 'axi_algorithm_dato' (3#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm_dato.vhd:52]
+INFO: [Synth 8-3491] module 'read_data' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:12' bound to instance 'read_data_U0' of component 'read_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:418]
+INFO: [Synth 8-638] synthesizing module 'read_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:37]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:59]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:62]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:82]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:100]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:327]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state3_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:334]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:357]
+WARNING: [Synth 8-6014] Unused sequential element input_AX_ALG_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:425]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:321]
+WARNING: [Synth 8-6014] Unused sequential element input_data_V_0_ack_out_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:180]
+WARNING: [Synth 8-6014] Unused sequential element input_dest_V_0_ack_out_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:228]
+INFO: [Synth 8-256] done synthesizing module 'read_data' (4#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/read_data.vhd:37]
+INFO: [Synth 8-3491] module 'Block_arrayctor_loop' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:12' bound to instance 'Block_arrayctor_loop_U0' of component 'Block_arrayctor_loop' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:441]
+INFO: [Synth 8-638] synthesizing module 'Block_arrayctor_loop' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:34]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:47]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:50]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:54]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:57]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:127]
+WARNING: [Synth 8-6014] Unused sequential element dato_ce1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:202]
+INFO: [Synth 8-256] done synthesizing module 'Block_arrayctor_loop' (5#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/Block_arrayctor_loop.vhd:34]
+INFO: [Synth 8-3491] module 'write_data21' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:12' bound to instance 'write_data21_U0' of component 'write_data21' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:461]
+INFO: [Synth 8-638] synthesizing module 'write_data21' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:34]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:52]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:268]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:302]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:336]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:404]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00001001_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:464]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_pp0_stage0_iter0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:482]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:488]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_0to0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:527]
+WARNING: [Synth 8-6014] Unused sequential element ap_reset_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:547]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALGdedo0_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:558]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element output_data_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:202]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:284]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:352]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:386]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:420]
+INFO: [Synth 8-256] done synthesizing module 'write_data21' (6#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data21.vhd:34]
+INFO: [Synth 8-3491] module 'write_data22' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:12' bound to instance 'write_data22_U0' of component 'write_data22' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:481]
+INFO: [Synth 8-638] synthesizing module 'write_data22' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:34]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:52]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:268]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:302]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:336]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:404]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00001001_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:464]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_pp0_stage0_iter0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:482]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:488]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_0to0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:527]
+WARNING: [Synth 8-6014] Unused sequential element ap_reset_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:547]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALGpalma0_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:558]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element output_data_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:202]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:284]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:352]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:386]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:420]
+INFO: [Synth 8-256] done synthesizing module 'write_data22' (7#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:34]
+INFO: [Synth 8-3491] module 'write_data23' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:12' bound to instance 'write_data23_U0' of component 'write_data23' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:501]
+INFO: [Synth 8-638] synthesizing module 'write_data23' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:34]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:52]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:268]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:302]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:336]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:404]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00001001_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:464]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_pp0_stage0_iter0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:482]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:488]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_0to0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:527]
+WARNING: [Synth 8-6014] Unused sequential element ap_reset_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:547]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALGdedo1_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:558]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element output_data_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:202]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:284]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:352]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:386]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:420]
+INFO: [Synth 8-256] done synthesizing module 'write_data23' (8#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:34]
+INFO: [Synth 8-3491] module 'write_data' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:12' bound to instance 'write_data_U0' of component 'write_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:521]
+INFO: [Synth 8-638] synthesizing module 'write_data' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:34]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:52]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:268]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:302]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:336]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:404]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00001001_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:464]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_pp0_stage0_iter0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:482]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:488]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_0to0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:527]
+WARNING: [Synth 8-6014] Unused sequential element ap_reset_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:547]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALGpalma1_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:558]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element output_data_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:202]
+WARNING: [Synth 8-6014] Unused sequential element output_dest_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element output_id_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:284]
+WARNING: [Synth 8-6014] Unused sequential element output_keep_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element output_last_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:352]
+WARNING: [Synth 8-6014] Unused sequential element output_strb_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:386]
+WARNING: [Synth 8-6014] Unused sequential element output_user_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:420]
+INFO: [Synth 8-256] done synthesizing module 'write_data' (9#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:34]
+INFO: [Synth 8-3491] module 'fifo_w32_d2_A' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:49' bound to instance 'dedo0_0_V_U' of component 'fifo_w32_d2_A' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:541]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d2_A' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:68]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_w32_d2_A_shiftReg' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:13' bound to instance 'U_fifo_w32_d2_A_shiftReg' of component 'fifo_w32_d2_A_shiftReg' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d2_A_shiftReg' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:26]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d2_A_shiftReg' (10#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d2_A' (11#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:68]
+INFO: [Synth 8-3491] module 'fifo_w32_d2_A' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:49' bound to instance 'palma0_0_V_U' of component 'fifo_w32_d2_A' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:554]
+INFO: [Synth 8-3491] module 'fifo_w32_d2_A' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:49' bound to instance 'dedo1_0_V_U' of component 'fifo_w32_d2_A' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:567]
+INFO: [Synth 8-3491] module 'fifo_w32_d2_A' declared at 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:49' bound to instance 'palma1_0_V_U' of component 'fifo_w32_d2_A' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:580]
+INFO: [Synth 8-256] done synthesizing module 'axi_algorithm' (12#1) [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.vhd:64]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TKEEP[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TKEEP[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TKEEP[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TKEEP[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TSTRB[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TSTRB[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TSTRB[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TSTRB[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TUSER[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TUSER[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TUSER[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TUSER[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TLAST[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[4]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[4]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[0]
+WARNING: [Synth 8-3331] design axi_algorithm_dato_memcore has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 349.387 ; gain = 126.238
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 349.387 ; gain = 126.238
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.xdc]
+Finished Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 680.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 680.059 ; gain = 456.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 680.059 ; gain = 456.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 680.059 ; gain = 456.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "tmp_fu_92_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "output_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/fifo_w32_d2_A.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 680.059 ; gain = 456.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 16    
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 31    
+	                1 Bit    Registers := 44    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 41    
+	   4 Input      2 Bit        Muxes := 30    
+	   2 Input      1 Bit        Muxes := 73    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_algorithm 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_algorithm_dato_memcore_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module axi_algorithm_dato 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 9     
+Module read_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+Module Block_arrayctor_loop 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module write_data21 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 10    
+Module write_data22 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 10    
+Module write_data23 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 10    
+Module write_data 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 10    
+Module fifo_w32_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'write_data22_U0/ap_CS_fsm_reg[0:0]' into 'write_data21_U0/ap_CS_fsm_reg[0:0]' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:144]
+INFO: [Synth 8-4471] merging register 'write_data23_U0/ap_CS_fsm_reg[0:0]' into 'write_data21_U0/ap_CS_fsm_reg[0:0]' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:144]
+INFO: [Synth 8-4471] merging register 'write_data_U0/ap_CS_fsm_reg[0:0]' into 'write_data21_U0/ap_CS_fsm_reg[0:0]' [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data.vhd:144]
+WARNING: [Synth 8-6014] Unused sequential element write_data22_U0/ap_CS_fsm_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data22.vhd:144]
+WARNING: [Synth 8-6014] Unused sequential element write_data23_U0/ap_CS_fsm_reg was removed.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/write_data23.vhd:144]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TKEEP[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TKEEP[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TKEEP[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TKEEP[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TSTRB[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TSTRB[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TSTRB[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TSTRB[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TUSER[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TUSER[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TUSER[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TUSER[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TLAST[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TID[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TID[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TID[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TID[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TID[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TDEST[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TDEST[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TDEST[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TDEST[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo0_TDEST[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TKEEP[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TKEEP[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TKEEP[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TKEEP[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TSTRB[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TSTRB[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TSTRB[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TSTRB[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TUSER[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TUSER[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TUSER[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TUSER[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TLAST[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TID[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TID[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TID[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TID[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TID[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TDEST[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TDEST[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TDEST[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TDEST[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma0_TDEST[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TKEEP[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TKEEP[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TKEEP[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TKEEP[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TSTRB[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TSTRB[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TSTRB[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TSTRB[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TUSER[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TUSER[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TUSER[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TUSER[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TLAST[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TID[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TID[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TID[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TID[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TID[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TDEST[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TDEST[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TDEST[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TDEST[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGdedo1_TDEST[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TKEEP[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TKEEP[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TKEEP[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TKEEP[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TSTRB[3] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TSTRB[2] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TSTRB[1] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TSTRB[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TUSER[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TUSER[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TUSER[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TUSER[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TLAST[0] driven by constant 1
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TID[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TID[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TID[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TID[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TID[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TDEST[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TDEST[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TDEST[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TDEST[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_algorithm has port output_AX_ALGpalma1_TDEST[0] driven by constant 0
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TKEEP[3]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TKEEP[2]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TKEEP[1]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TKEEP[0]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TSTRB[3]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TSTRB[2]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TSTRB[1]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TSTRB[0]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TUSER[3]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TUSER[2]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TUSER[1]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TUSER[0]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TLAST[0]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TID[4]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TID[3]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TID[2]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TID[1]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TID[0]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TDEST[4]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TDEST[3]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TDEST[2]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TDEST[1]
+WARNING: [Synth 8-3331] design axi_algorithm has unconnected port input_AX_ALG_TDEST[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data23_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data22_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data21_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\write_data21_U0/ap_CS_fsm_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (write_data21_U0/ap_CS_fsm_reg[0]) is unused and will be removed from module axi_algorithm.
+WARNING: [Synth 8-3332] Sequential element (write_data21_U0/ap_done_reg_reg) is unused and will be removed from module axi_algorithm.
+WARNING: [Synth 8-3332] Sequential element (write_data22_U0/ap_done_reg_reg) is unused and will be removed from module axi_algorithm.
+WARNING: [Synth 8-3332] Sequential element (write_data23_U0/ap_done_reg_reg) is unused and will be removed from module axi_algorithm.
+WARNING: [Synth 8-3332] Sequential element (write_data_U0/ap_done_reg_reg) is unused and will be removed from module axi_algorithm.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 680.059 ; gain = 456.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------+--------------------------------------------------------------------------------------------+----------------+----------------------+-----------------+
+|Module Name   | RTL Object                                                                                 | Inference      | Size (Depth x Width) | Primitives      | 
++--------------+--------------------------------------------------------------------------------------------+----------------+----------------------+-----------------+
+|axi_algorithm | dato_U/gen_buffer[1].axi_algorithm_dato_memcore_U/axi_algorithm_dato_memcore_ram_U/ram_reg | User Attribute | 4 x 32               | RAM16X1D x 32   | 
+|axi_algorithm | dato_U/gen_buffer[0].axi_algorithm_dato_memcore_U/axi_algorithm_dato_memcore_ram_U/ram_reg | User Attribute | 4 x 32               | RAM16X1D x 32   | 
++--------------+--------------------------------------------------------------------------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 680.059 ; gain = 456.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 682.449 ; gain = 459.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[2] | 4      | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__4     | SRL_SIG_reg[2] | 4      | 32         | 32     | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     2|
+|2     |LUT2     |    24|
+|3     |LUT3     |   212|
+|4     |LUT4     |   116|
+|5     |LUT5     |   114|
+|6     |LUT6     |    37|
+|7     |RAM16X1D |    64|
+|8     |SRL16E   |   128|
+|9     |FDRE     |   619|
+|10    |FDSE     |    15|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------+---------------------------------+------+
+|      |Instance                                         |Module                           |Cells |
++------+-------------------------------------------------+---------------------------------+------+
+|1     |top                                              |                                 |  1331|
+|2     |  Block_arrayctor_loop_U0                        |Block_arrayctor_loop             |    87|
+|3     |  dato_U                                         |axi_algorithm_dato               |   272|
+|4     |    \gen_buffer[0].axi_algorithm_dato_memcore_U  |axi_algorithm_dato_memcore       |    97|
+|5     |      axi_algorithm_dato_memcore_ram_U           |axi_algorithm_dato_memcore_ram_7 |    97|
+|6     |    \gen_buffer[1].axi_algorithm_dato_memcore_U  |axi_algorithm_dato_memcore_6     |   162|
+|7     |      axi_algorithm_dato_memcore_ram_U           |axi_algorithm_dato_memcore_ram   |   162|
+|8     |  dedo0_0_V_U                                    |fifo_w32_d2_A                    |    45|
+|9     |    U_fifo_w32_d2_A_shiftReg                     |fifo_w32_d2_A_shiftReg_5         |    34|
+|10    |  dedo1_0_V_U                                    |fifo_w32_d2_A_0                  |    45|
+|11    |    U_fifo_w32_d2_A_shiftReg                     |fifo_w32_d2_A_shiftReg_4         |    34|
+|12    |  palma0_0_V_U                                   |fifo_w32_d2_A_1                  |    45|
+|13    |    U_fifo_w32_d2_A_shiftReg                     |fifo_w32_d2_A_shiftReg_3         |    34|
+|14    |  palma1_0_V_U                                   |fifo_w32_d2_A_2                  |    45|
+|15    |    U_fifo_w32_d2_A_shiftReg                     |fifo_w32_d2_A_shiftReg           |    34|
+|16    |  read_data_U0                                   |read_data                        |   251|
+|17    |  write_data21_U0                                |write_data21                     |   134|
+|18    |  write_data22_U0                                |write_data22                     |   134|
+|19    |  write_data23_U0                                |write_data23                     |   134|
+|20    |  write_data_U0                                  |write_data                       |   135|
++------+-------------------------------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 126 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 687.270 ; gain = 133.449
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 687.270 ; gain = 464.121
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
+
+82 Infos, 244 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 687.270 ; gain = 467.176
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/synth_1/axi_algorithm.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 687.270 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  1 13:52:14 2021...
+[Mon Feb  1 13:52:18 2021] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:41 . Memory (MB): peak = 236.418 ; gain = 5.508
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.xdc:2]
+Finished Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 515.645 ; gain = 279.227
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 515.645 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1022.953 ; gain = 507.309
+[Mon Feb  1 13:52:36 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/impl_1/runme.log
+[Mon Feb  1 13:52:36 2021] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log axi_algorithm.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source axi_algorithm.tcl -notrace
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source axi_algorithm.tcl -notrace
+Command: open_checkpoint C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/impl_1/axi_algorithm.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 220.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/impl_1/.Xil/Vivado-4876-LAPTOP-5NTBTHR8/dcp3/axi_algorithm.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.xdc:2]
+Finished Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/impl_1/.Xil/Vivado-4876-LAPTOP-5NTBTHR8/dcp3/axi_algorithm.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.1 (64-bit) build 1846317
+open_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 515.145 ; gain = 294.816
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg484'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.332 . Memory (MB): peak = 523.785 ; gain = 8.641
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 83da7f86
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1025.512 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 83da7f86
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1025.512 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 83da7f86
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1025.512 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 83da7f86
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1025.512 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 83da7f86
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1025.512 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1025.512 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 83da7f86
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 83da7f86
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1025.512 ; gain = 0.000
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1025.512 ; gain = 510.367
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/impl_1/axi_algorithm_opt.dcp' has been generated.
+Command: report_drc -file axi_algorithm_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/impl_1/axi_algorithm_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg484'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1025.512 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 5c50d988
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1025.512 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 8b730db3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.447 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: b7dd1922
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.674 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: b7dd1922
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.677 . Memory (MB): peak = 1025.512 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: b7dd1922
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.679 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 107752c3b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 107752c3b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 189fdb6e0
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: ba6c0b50
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: ba6c0b50
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: c69a18a7
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1e52dc19e
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 10f7e9278
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 10f7e9278
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.512 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 10f7e9278
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1025.512 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 166c52c57
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 166c52c57
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1028.969 ; gain = 3.457
+INFO: [Place 30-746] Post Placement Timing Summary WNS=5.431. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: fb143cd6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1028.969 ; gain = 3.457
+Phase 4.1 Post Commit Optimization | Checksum: fb143cd6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1028.969 ; gain = 3.457
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: fb143cd6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1028.969 ; gain = 3.457
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: fb143cd6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1028.969 ; gain = 3.457
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: e871b2fa
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1028.969 ; gain = 3.457
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: e871b2fa
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1028.969 ; gain = 3.457
+Ending Placer Task | Checksum: 59cbccc4
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1028.969 ; gain = 3.457
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1028.969 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/impl_1/axi_algorithm_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1028.969 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1028.969 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1028.969 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.500 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+43 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.144 . Memory (MB): peak = 1028.969 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/impl_1/axi_algorithm_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg484'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 107037e7 ConstDB: 0 ShapeSum: 495b94dd RouteDB: 0
+
+Phase 1 Build RT Design
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_AX_ALGpalma0_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_AX_ALGpalma0_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_AX_ALGpalma1_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_AX_ALGpalma1_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_AX_ALGdedo0_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_AX_ALGdedo0_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_AX_ALGdedo1_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_AX_ALGdedo1_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+Phase 1 Build RT Design | Checksum: 6029c54c
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1147.684 ; gain = 118.715
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 6029c54c
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1147.684 ; gain = 118.715
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 6029c54c
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1151.406 ; gain = 122.438
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 6029c54c
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1151.406 ; gain = 122.438
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 126d78e57
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1153.785 ; gain = 124.816
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.437  | TNS=0.000  | WHS=-0.186 | THS=-11.301|
+
+Phase 2 Router Initialization | Checksum: a7f48a84
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1153.785 ; gain = 124.816
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 17b8e41a3
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.781 ; gain = 125.812
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 63
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.361  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: e45077d5
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.789 ; gain = 125.820
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.361  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1350bbc4b
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.789 ; gain = 125.820
+Phase 4 Rip-up And Reroute | Checksum: 1350bbc4b
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.789 ; gain = 125.820
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 1350bbc4b
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.789 ; gain = 125.820
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1350bbc4b
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.789 ; gain = 125.820
+Phase 5 Delay and Skew Optimization | Checksum: 1350bbc4b
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.789 ; gain = 125.820
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 15ec34b70
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.789 ; gain = 125.820
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.476  | TNS=0.000  | WHS=0.043  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1a91b107f
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.789 ; gain = 125.820
+Phase 6 Post Hold Fix | Checksum: 1a91b107f
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.789 ; gain = 125.820
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.117272 %
+  Global Horizontal Routing Utilization  = 0.160328 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1f52fed90
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.789 ; gain = 125.820
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1f52fed90
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1157.848 ; gain = 128.879
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 14590daef
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1157.848 ; gain = 128.879
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=4.476  | TNS=0.000  | WHS=0.043  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 14590daef
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1157.848 ; gain = 128.879
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1157.848 ; gain = 128.879
+
+Routing Is Done.
+56 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 1157.848 ; gain = 128.879
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.156 . Memory (MB): peak = 1157.848 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/impl_1/axi_algorithm_routed.dcp' has been generated.
+Command: report_drc -file axi_algorithm_drc_routed.rpt -pb axi_algorithm_drc_routed.pb -rpx axi_algorithm_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/impl_1/axi_algorithm_drc_routed.rpt.
+report_drc completed successfully
+Command: report_methodology -file axi_algorithm_methodology_drc_routed.rpt -rpx axi_algorithm_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/project.runs/impl_1/axi_algorithm_methodology_drc_routed.rpt.
+report_methodology completed successfully
+Command: report_power -file axi_algorithm_power_routed.rpt -pb axi_algorithm_power_summary_routed.pb -rpx axi_algorithm_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+63 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  1 13:53:28 2021...
+[Mon Feb  1 13:53:32 2021] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:55 . Memory (MB): peak = 1035.363 ; gain = 4.059
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/.Xil/Vivado-12452-LAPTOP-5NTBTHR8/dcp4/axi_algorithm.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/axi_algorithm.xdc:2]
+Finished Parsing XDC File [C:/Users/Raul/Documents/RIGIDEZ_VIVADO/HLS_INTERFAZ_INIT_SIMPLE_MAXMOM/dato2moment/solution1/impl/vhdl/.Xil/Vivado-12452-LAPTOP-5NTBTHR8/dcp4/axi_algorithm.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1126.957 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1126.957 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1242.270 ; gain = 1.035
+
+
+Implementation tool: Xilinx Vivado v.2017.1
+Project:             dato2moment
+Solution:            solution1
+Device target:       xc7z020clg484-1
+Report date:         Mon Feb 01 13:53:33 +0100 2021
+
+#=== Post-Implementation Resource usage ===
+SLICE:          231
+LUT:            511
+FF:             634
+DSP:              0
+BRAM:             0
+SRL:             64
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    4.333
+CP achieved post-implementation:    5.523
+Timing met
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  1 13:53:33 2021...

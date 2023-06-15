@@ -1,0 +1,335 @@
+
+
+================================================================
+== Vivado HLS Report for 'axi_algorithm'
+================================================================
+* Date:           Mon Feb  1 13:51:17 2021
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        dato2moment
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      4.14|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   11|   11|    7|    7| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 7
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 7, States = { 1 2 3 4 5 6 7 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+* FSM state operations: 
+
+ <State 1>: 0.00ns
+ST_1: dato (73)  [1/1] 0.00ns
+arrayctor.loop1.preheader:37  %dato = alloca [4 x i32], align 4
+
+
+ <State 2>: 0.00ns
+ST_2: StgValue_9 (80)  [2/2] 0.00ns  loc: axi_algorithm.cpp:26
+arrayctor.loop1.preheader:44  call fastcc void @read_data(i32* %input_AX_ALG_data_V, i4* %input_AX_ALG_keep_V, i4* %input_AX_ALG_strb_V, i4* %input_AX_ALG_user_V, i1* %input_AX_ALG_last_V, i5* %input_AX_ALG_id_V, i5* %input_AX_ALG_dest_V, [4 x i32]* %dato)
+
+
+ <State 3>: 0.00ns
+ST_3: StgValue_10 (80)  [1/2] 0.00ns  loc: axi_algorithm.cpp:26
+arrayctor.loop1.preheader:44  call fastcc void @read_data(i32* %input_AX_ALG_data_V, i4* %input_AX_ALG_keep_V, i4* %input_AX_ALG_strb_V, i4* %input_AX_ALG_user_V, i1* %input_AX_ALG_last_V, i5* %input_AX_ALG_id_V, i5* %input_AX_ALG_dest_V, [4 x i32]* %dato)
+
+
+ <State 4>: 0.00ns
+ST_4: call_ret (81)  [2/2] 0.00ns
+arrayctor.loop1.preheader:45  %call_ret = call fastcc { i32, i32, i32, i32 } @Block_arrayctor.loop([4 x i32]* %dato)
+
+
+ <State 5>: 2.32ns
+ST_5: call_ret (81)  [1/2] 2.32ns
+arrayctor.loop1.preheader:45  %call_ret = call fastcc { i32, i32, i32, i32 } @Block_arrayctor.loop([4 x i32]* %dato)
+
+ST_5: dedo0_0_V (82)  [1/1] 0.00ns
+arrayctor.loop1.preheader:46  %dedo0_0_V = extractvalue { i32, i32, i32, i32 } %call_ret, 0
+
+ST_5: palma0_0_V (83)  [1/1] 0.00ns
+arrayctor.loop1.preheader:47  %palma0_0_V = extractvalue { i32, i32, i32, i32 } %call_ret, 1
+
+ST_5: dedo1_0_V (84)  [1/1] 0.00ns
+arrayctor.loop1.preheader:48  %dedo1_0_V = extractvalue { i32, i32, i32, i32 } %call_ret, 2
+
+ST_5: palma1_0_V (85)  [1/1] 0.00ns
+arrayctor.loop1.preheader:49  %palma1_0_V = extractvalue { i32, i32, i32, i32 } %call_ret, 3
+
+ST_5: StgValue_17 (86)  [2/2] 0.00ns  loc: axi_algorithm.cpp:35
+arrayctor.loop1.preheader:50  call fastcc void @write_data21(i32 %dedo0_0_V, i32* %output_AX_ALGdedo0_data_V, i4* %output_AX_ALGdedo0_keep_V, i4* %output_AX_ALGdedo0_strb_V, i4* %output_AX_ALGdedo0_user_V, i1* %output_AX_ALGdedo0_last_V, i5* %output_AX_ALGdedo0_id_V, i5* %output_AX_ALGdedo0_dest_V)
+
+ST_5: StgValue_18 (87)  [2/2] 0.00ns  loc: axi_algorithm.cpp:36
+arrayctor.loop1.preheader:51  call fastcc void @write_data22(i32 %palma0_0_V, i32* %output_AX_ALGpalma0_data_V, i4* %output_AX_ALGpalma0_keep_V, i4* %output_AX_ALGpalma0_strb_V, i4* %output_AX_ALGpalma0_user_V, i1* %output_AX_ALGpalma0_last_V, i5* %output_AX_ALGpalma0_id_V, i5* %output_AX_ALGpalma0_dest_V)
+
+ST_5: StgValue_19 (88)  [2/2] 0.00ns  loc: axi_algorithm.cpp:37
+arrayctor.loop1.preheader:52  call fastcc void @write_data23(i32 %dedo1_0_V, i32* %output_AX_ALGdedo1_data_V, i4* %output_AX_ALGdedo1_keep_V, i4* %output_AX_ALGdedo1_strb_V, i4* %output_AX_ALGdedo1_user_V, i1* %output_AX_ALGdedo1_last_V, i5* %output_AX_ALGdedo1_id_V, i5* %output_AX_ALGdedo1_dest_V)
+
+ST_5: StgValue_20 (89)  [2/2] 0.00ns  loc: axi_algorithm.cpp:38
+arrayctor.loop1.preheader:53  call fastcc void @write_data(i32 %palma1_0_V, i32* %output_AX_ALGpalma1_data_V, i4* %output_AX_ALGpalma1_keep_V, i4* %output_AX_ALGpalma1_strb_V, i4* %output_AX_ALGpalma1_user_V, i1* %output_AX_ALGpalma1_last_V, i5* %output_AX_ALGpalma1_id_V, i5* %output_AX_ALGpalma1_dest_V)
+
+
+ <State 6>: 0.00ns
+ST_6: StgValue_21 (86)  [1/2] 0.00ns  loc: axi_algorithm.cpp:35
+arrayctor.loop1.preheader:50  call fastcc void @write_data21(i32 %dedo0_0_V, i32* %output_AX_ALGdedo0_data_V, i4* %output_AX_ALGdedo0_keep_V, i4* %output_AX_ALGdedo0_strb_V, i4* %output_AX_ALGdedo0_user_V, i1* %output_AX_ALGdedo0_last_V, i5* %output_AX_ALGdedo0_id_V, i5* %output_AX_ALGdedo0_dest_V)
+
+ST_6: StgValue_22 (87)  [1/2] 0.00ns  loc: axi_algorithm.cpp:36
+arrayctor.loop1.preheader:51  call fastcc void @write_data22(i32 %palma0_0_V, i32* %output_AX_ALGpalma0_data_V, i4* %output_AX_ALGpalma0_keep_V, i4* %output_AX_ALGpalma0_strb_V, i4* %output_AX_ALGpalma0_user_V, i1* %output_AX_ALGpalma0_last_V, i5* %output_AX_ALGpalma0_id_V, i5* %output_AX_ALGpalma0_dest_V)
+
+ST_6: StgValue_23 (88)  [1/2] 0.00ns  loc: axi_algorithm.cpp:37
+arrayctor.loop1.preheader:52  call fastcc void @write_data23(i32 %dedo1_0_V, i32* %output_AX_ALGdedo1_data_V, i4* %output_AX_ALGdedo1_keep_V, i4* %output_AX_ALGdedo1_strb_V, i4* %output_AX_ALGdedo1_user_V, i1* %output_AX_ALGdedo1_last_V, i5* %output_AX_ALGdedo1_id_V, i5* %output_AX_ALGdedo1_dest_V)
+
+ST_6: StgValue_24 (89)  [1/2] 0.00ns  loc: axi_algorithm.cpp:38
+arrayctor.loop1.preheader:53  call fastcc void @write_data(i32 %palma1_0_V, i32* %output_AX_ALGpalma1_data_V, i4* %output_AX_ALGpalma1_keep_V, i4* %output_AX_ALGpalma1_strb_V, i4* %output_AX_ALGpalma1_user_V, i1* %output_AX_ALGpalma1_last_V, i5* %output_AX_ALGpalma1_id_V, i5* %output_AX_ALGpalma1_dest_V)
+
+
+ <State 7>: 0.00ns
+ST_7: StgValue_25 (36)  [1/1] 0.00ns  loc: axi_algorithm.cpp:14
+arrayctor.loop1.preheader:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str2) nounwind
+
+ST_7: StgValue_26 (37)  [1/1] 0.00ns
+arrayctor.loop1.preheader:1  call void (...)* @_ssdm_op_SpecBitsMap(i32* %input_AX_ALG_data_V), !map !71
+
+ST_7: StgValue_27 (38)  [1/1] 0.00ns
+arrayctor.loop1.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i4* %input_AX_ALG_keep_V), !map !77
+
+ST_7: StgValue_28 (39)  [1/1] 0.00ns
+arrayctor.loop1.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(i4* %input_AX_ALG_strb_V), !map !81
+
+ST_7: StgValue_29 (40)  [1/1] 0.00ns
+arrayctor.loop1.preheader:4  call void (...)* @_ssdm_op_SpecBitsMap(i4* %input_AX_ALG_user_V), !map !85
+
+ST_7: StgValue_30 (41)  [1/1] 0.00ns
+arrayctor.loop1.preheader:5  call void (...)* @_ssdm_op_SpecBitsMap(i1* %input_AX_ALG_last_V), !map !89
+
+ST_7: StgValue_31 (42)  [1/1] 0.00ns
+arrayctor.loop1.preheader:6  call void (...)* @_ssdm_op_SpecBitsMap(i5* %input_AX_ALG_id_V), !map !93
+
+ST_7: StgValue_32 (43)  [1/1] 0.00ns
+arrayctor.loop1.preheader:7  call void (...)* @_ssdm_op_SpecBitsMap(i5* %input_AX_ALG_dest_V), !map !97
+
+ST_7: StgValue_33 (44)  [1/1] 0.00ns
+arrayctor.loop1.preheader:8  call void (...)* @_ssdm_op_SpecBitsMap(i32* %output_AX_ALGdedo0_data_V), !map !101
+
+ST_7: StgValue_34 (45)  [1/1] 0.00ns
+arrayctor.loop1.preheader:9  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_AX_ALGdedo0_keep_V), !map !105
+
+ST_7: StgValue_35 (46)  [1/1] 0.00ns
+arrayctor.loop1.preheader:10  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_AX_ALGdedo0_strb_V), !map !109
+
+ST_7: StgValue_36 (47)  [1/1] 0.00ns
+arrayctor.loop1.preheader:11  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_AX_ALGdedo0_user_V), !map !113
+
+ST_7: StgValue_37 (48)  [1/1] 0.00ns
+arrayctor.loop1.preheader:12  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_AX_ALGdedo0_last_V), !map !117
+
+ST_7: StgValue_38 (49)  [1/1] 0.00ns
+arrayctor.loop1.preheader:13  call void (...)* @_ssdm_op_SpecBitsMap(i5* %output_AX_ALGdedo0_id_V), !map !121
+
+ST_7: StgValue_39 (50)  [1/1] 0.00ns
+arrayctor.loop1.preheader:14  call void (...)* @_ssdm_op_SpecBitsMap(i5* %output_AX_ALGdedo0_dest_V), !map !125
+
+ST_7: StgValue_40 (51)  [1/1] 0.00ns
+arrayctor.loop1.preheader:15  call void (...)* @_ssdm_op_SpecBitsMap(i32* %output_AX_ALGpalma0_data_V), !map !129
+
+ST_7: StgValue_41 (52)  [1/1] 0.00ns
+arrayctor.loop1.preheader:16  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_AX_ALGpalma0_keep_V), !map !133
+
+ST_7: StgValue_42 (53)  [1/1] 0.00ns
+arrayctor.loop1.preheader:17  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_AX_ALGpalma0_strb_V), !map !137
+
+ST_7: StgValue_43 (54)  [1/1] 0.00ns
+arrayctor.loop1.preheader:18  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_AX_ALGpalma0_user_V), !map !141
+
+ST_7: StgValue_44 (55)  [1/1] 0.00ns
+arrayctor.loop1.preheader:19  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_AX_ALGpalma0_last_V), !map !145
+
+ST_7: StgValue_45 (56)  [1/1] 0.00ns
+arrayctor.loop1.preheader:20  call void (...)* @_ssdm_op_SpecBitsMap(i5* %output_AX_ALGpalma0_id_V), !map !149
+
+ST_7: StgValue_46 (57)  [1/1] 0.00ns
+arrayctor.loop1.preheader:21  call void (...)* @_ssdm_op_SpecBitsMap(i5* %output_AX_ALGpalma0_dest_V), !map !153
+
+ST_7: StgValue_47 (58)  [1/1] 0.00ns
+arrayctor.loop1.preheader:22  call void (...)* @_ssdm_op_SpecBitsMap(i32* %output_AX_ALGdedo1_data_V), !map !157
+
+ST_7: StgValue_48 (59)  [1/1] 0.00ns
+arrayctor.loop1.preheader:23  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_AX_ALGdedo1_keep_V), !map !161
+
+ST_7: StgValue_49 (60)  [1/1] 0.00ns
+arrayctor.loop1.preheader:24  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_AX_ALGdedo1_strb_V), !map !165
+
+ST_7: StgValue_50 (61)  [1/1] 0.00ns
+arrayctor.loop1.preheader:25  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_AX_ALGdedo1_user_V), !map !169
+
+ST_7: StgValue_51 (62)  [1/1] 0.00ns
+arrayctor.loop1.preheader:26  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_AX_ALGdedo1_last_V), !map !173
+
+ST_7: StgValue_52 (63)  [1/1] 0.00ns
+arrayctor.loop1.preheader:27  call void (...)* @_ssdm_op_SpecBitsMap(i5* %output_AX_ALGdedo1_id_V), !map !177
+
+ST_7: StgValue_53 (64)  [1/1] 0.00ns
+arrayctor.loop1.preheader:28  call void (...)* @_ssdm_op_SpecBitsMap(i5* %output_AX_ALGdedo1_dest_V), !map !181
+
+ST_7: StgValue_54 (65)  [1/1] 0.00ns
+arrayctor.loop1.preheader:29  call void (...)* @_ssdm_op_SpecBitsMap(i32* %output_AX_ALGpalma1_data_V), !map !185
+
+ST_7: StgValue_55 (66)  [1/1] 0.00ns
+arrayctor.loop1.preheader:30  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_AX_ALGpalma1_keep_V), !map !189
+
+ST_7: StgValue_56 (67)  [1/1] 0.00ns
+arrayctor.loop1.preheader:31  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_AX_ALGpalma1_strb_V), !map !193
+
+ST_7: StgValue_57 (68)  [1/1] 0.00ns
+arrayctor.loop1.preheader:32  call void (...)* @_ssdm_op_SpecBitsMap(i4* %output_AX_ALGpalma1_user_V), !map !197
+
+ST_7: StgValue_58 (69)  [1/1] 0.00ns
+arrayctor.loop1.preheader:33  call void (...)* @_ssdm_op_SpecBitsMap(i1* %output_AX_ALGpalma1_last_V), !map !201
+
+ST_7: StgValue_59 (70)  [1/1] 0.00ns
+arrayctor.loop1.preheader:34  call void (...)* @_ssdm_op_SpecBitsMap(i5* %output_AX_ALGpalma1_id_V), !map !205
+
+ST_7: StgValue_60 (71)  [1/1] 0.00ns
+arrayctor.loop1.preheader:35  call void (...)* @_ssdm_op_SpecBitsMap(i5* %output_AX_ALGpalma1_dest_V), !map !209
+
+ST_7: StgValue_61 (72)  [1/1] 0.00ns
+arrayctor.loop1.preheader:36  call void (...)* @_ssdm_op_SpecTopModule([14 x i8]* @axi_algorithm_str) nounwind
+
+ST_7: StgValue_62 (74)  [1/1] 0.00ns
+arrayctor.loop1.preheader:38  call void (...)* @_ssdm_op_SpecInterface(i32* %output_AX_ALGpalma1_data_V, i4* %output_AX_ALGpalma1_keep_V, i4* %output_AX_ALGpalma1_strb_V, i4* %output_AX_ALGpalma1_user_V, i1* %output_AX_ALGpalma1_last_V, i5* %output_AX_ALGpalma1_id_V, i5* %output_AX_ALGpalma1_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_7: StgValue_63 (75)  [1/1] 0.00ns
+arrayctor.loop1.preheader:39  call void (...)* @_ssdm_op_SpecInterface(i32* %output_AX_ALGdedo1_data_V, i4* %output_AX_ALGdedo1_keep_V, i4* %output_AX_ALGdedo1_strb_V, i4* %output_AX_ALGdedo1_user_V, i1* %output_AX_ALGdedo1_last_V, i5* %output_AX_ALGdedo1_id_V, i5* %output_AX_ALGdedo1_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_7: StgValue_64 (76)  [1/1] 0.00ns
+arrayctor.loop1.preheader:40  call void (...)* @_ssdm_op_SpecInterface(i32* %output_AX_ALGpalma0_data_V, i4* %output_AX_ALGpalma0_keep_V, i4* %output_AX_ALGpalma0_strb_V, i4* %output_AX_ALGpalma0_user_V, i1* %output_AX_ALGpalma0_last_V, i5* %output_AX_ALGpalma0_id_V, i5* %output_AX_ALGpalma0_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_7: StgValue_65 (77)  [1/1] 0.00ns
+arrayctor.loop1.preheader:41  call void (...)* @_ssdm_op_SpecInterface(i32* %output_AX_ALGdedo0_data_V, i4* %output_AX_ALGdedo0_keep_V, i4* %output_AX_ALGdedo0_strb_V, i4* %output_AX_ALGdedo0_user_V, i1* %output_AX_ALGdedo0_last_V, i5* %output_AX_ALGdedo0_id_V, i5* %output_AX_ALGdedo0_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_7: StgValue_66 (78)  [1/1] 0.00ns  loc: axi_algorithm.cpp:15
+arrayctor.loop1.preheader:42  call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [12 x i8]* @p_str4, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind
+
+ST_7: StgValue_67 (79)  [1/1] 0.00ns
+arrayctor.loop1.preheader:43  call void (...)* @_ssdm_op_SpecInterface(i32* %input_AX_ALG_data_V, i4* %input_AX_ALG_keep_V, i4* %input_AX_ALG_strb_V, i4* %input_AX_ALG_user_V, i1* %input_AX_ALG_last_V, i5* %input_AX_ALG_id_V, i5* %input_AX_ALG_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_7: StgValue_68 (90)  [1/1] 0.00ns  loc: axi_algorithm.cpp:40
+arrayctor.loop1.preheader:54  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 2.32ns
+The critical path consists of the following:
+	'call' operation ('call_ret') to 'Block_arrayctor.loop' [81]  (2.32 ns)
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

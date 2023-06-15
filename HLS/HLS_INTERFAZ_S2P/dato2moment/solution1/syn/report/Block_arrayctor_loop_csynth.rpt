@@ -1,0 +1,139 @@
+
+
+================================================================
+== Vivado HLS Report for 'Block_arrayctor_loop'
+================================================================
+* Date:           Mon Feb  1 13:51:18 2021
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        dato2moment
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      2.32|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    2|    2|    2|    2|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|      2|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     60|
+|Register         |        -|      -|      68|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|      68|     62|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------+----+-----------+-----+-----------+
+    |      Name     | LUT| Input Size| Bits| Total Bits|
+    +---------------+----+-----------+-----+-----------+
+    |ap_NS_fsm      |  21|          4|    1|          4|
+    |ap_done        |   9|          2|    1|          2|
+    |dato_address0  |  15|          3|    2|          6|
+    |dato_address1  |  15|          3|    2|          6|
+    +---------------+----+-----------+-----+-----------+
+    |Total          |  60|         12|    6|         18|
+    +---------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------+----+----+-----+-----------+
+    |        Name       | FF | LUT| Bits| Const Bits|
+    +-------------------+----+----+-----+-----------+
+    |ap_CS_fsm          |   3|   0|    3|          0|
+    |ap_done_reg        |   1|   0|    1|          0|
+    |dedo0_0_V_reg_87   |  32|   0|   32|          0|
+    |palma0_0_V_reg_92  |  32|   0|   32|          0|
+    +-------------------+----+----+-----+-----------+
+    |Total              |  68|   0|   68|          0|
+    +-------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------+-----+-----+------------+----------------------+--------------+
+|   RTL Ports   | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++---------------+-----+-----+------------+----------------------+--------------+
+|ap_clk         |  in |    1| ap_ctrl_hs | Block_arrayctor.loop | return value |
+|ap_rst         |  in |    1| ap_ctrl_hs | Block_arrayctor.loop | return value |
+|ap_start       |  in |    1| ap_ctrl_hs | Block_arrayctor.loop | return value |
+|ap_done        | out |    1| ap_ctrl_hs | Block_arrayctor.loop | return value |
+|ap_continue    |  in |    1| ap_ctrl_hs | Block_arrayctor.loop | return value |
+|ap_idle        | out |    1| ap_ctrl_hs | Block_arrayctor.loop | return value |
+|ap_ready       | out |    1| ap_ctrl_hs | Block_arrayctor.loop | return value |
+|ap_return_0    | out |   32| ap_ctrl_hs | Block_arrayctor.loop | return value |
+|ap_return_1    | out |   32| ap_ctrl_hs | Block_arrayctor.loop | return value |
+|ap_return_2    | out |   32| ap_ctrl_hs | Block_arrayctor.loop | return value |
+|ap_return_3    | out |   32| ap_ctrl_hs | Block_arrayctor.loop | return value |
+|dato_address0  | out |    2|  ap_memory |         dato         |     array    |
+|dato_ce0       | out |    1|  ap_memory |         dato         |     array    |
+|dato_q0        |  in |   32|  ap_memory |         dato         |     array    |
+|dato_address1  | out |    2|  ap_memory |         dato         |     array    |
+|dato_ce1       | out |    1|  ap_memory |         dato         |     array    |
+|dato_q1        |  in |   32|  ap_memory |         dato         |     array    |
++---------------+-----+-----+------------+----------------------+--------------+
+
