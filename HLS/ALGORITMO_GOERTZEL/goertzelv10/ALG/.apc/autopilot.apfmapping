@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="axi_algorithm.cpp" path="C:\Users\Raul\Documents\GOERTZEL_HLS\goertzelv10\axi_algorithm.cpp"/>
+    <originFiles name="axi_algorithm.h" path="C:\Users\Raul\Documents\GOERTZEL_HLS\goertzelv10\axi_algorithm.h"/>
+    <originFiles name="stim.h" path="C:\Users\Raul\Documents\GOERTZEL_HLS\goertzelv10\stim.h"/>
+  </source>
+  <testbench>
+    <originFiles name="testv6.cpp" path="C:\Users\Raul\Documents\GOERTZEL_HLS\goertzelv10\testv6.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

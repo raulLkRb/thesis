@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1594729141">
+  <File Type="PLACE-DCP" Name="goertzel_algorithm_simpler_placed.dcp"/>
+  <File Type="PA-DCP" Name="goertzel_algorithm_simpler.dcp"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="goertzel_algorithm_simpler_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="goertzel_algorithm_simpler_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="goertzel_algorithm_simpler_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="goertzel_algorithm_simpler.tcl"/>
+  <File Type="OPT-HWDEF" Name="goertzel_algorithm_simpler.hwdef"/>
+  <File Type="RDI-RDI" Name="goertzel_algorithm_simpler.vdi"/>
+  <File Type="OPT-DCP" Name="goertzel_algorithm_simpler_opt.dcp"/>
+  <File Type="OPT-DRC" Name="goertzel_algorithm_simpler_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="goertzel_algorithm_simpler_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="goertzel_algorithm_simpler_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="goertzel_algorithm_simpler_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="goertzel_algorithm_simpler_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-IO" Name="goertzel_algorithm_simpler_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="goertzel_algorithm_simpler_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="goertzel_algorithm_simpler_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="goertzel_algorithm_simpler_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="goertzel_algorithm_simpler_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="goertzel_algorithm_simpler_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="goertzel_algorithm_simpler_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="goertzel_algorithm_simpler_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="goertzel_algorithm_simpler_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="goertzel_algorithm_simpler_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="goertzel_algorithm_simpler_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="goertzel_algorithm_simpler_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="goertzel_algorithm_simpler_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="goertzel_algorithm_simpler_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="goertzel_algorithm_simpler_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="goertzel_algorithm_simpler_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="goertzel_algorithm_simpler_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="goertzel_algorithm_simpler_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="goertzel_algorithm_simpler.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="goertzel_algorithm_simpler_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="goertzel_algorithm_simpler.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="goertzel_algorithm_simpler_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="goertzel_algorithm_simpler.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="goertzel_algorithm_simpler_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="goertzel_algorithm_simpler.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="goertzel_algorithm_simpler_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="goertzel_algorithm_simpler_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="goertzel_algorithm_simpler_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="goertzel_algorithm_simpler_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="goertzel_algorithm_simpler_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="goertzel_algorithm_simpler_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="goertzel_algorithm_simpler_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="goertzel_algorithm_simpler_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="goertzel_algorithm_simpler_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="goertzel_algorithm_simpler_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="goertzel_algorithm_simpler_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="goertzel_algorithm_simpler_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="goertzel_algorithm_simpler_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="goertzel_algorithm_simpler_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="goertzel_algorithm_simpler_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="goertzel_algorithm_simpler.bit"/>
+  <File Type="BITSTR-RBT" Name="goertzel_algorithm_simpler.rbt"/>
+  <File Type="BITSTR-NKY" Name="goertzel_algorithm_simpler.nky"/>
+  <File Type="BITSTR-BMM" Name="goertzel_algorithm_simpler_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="goertzel_algorithm_simpler.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="goertzel_algorithm_simpler.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/Loop_2_proc.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Loop_g1_proc.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/devuelveAuxArray.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/devuelveAuxArray_bkb.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/fifo_w32_d4_A.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/goertzelInterno_scud.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/goertzelInterno_sdEe.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/goertzelInterno_simp.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/goertzel_algoritheOg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/goertzel_algorithm_simpler.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/read_data.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/start_for_Loop_2_hbi.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/start_for_Loop_g1g8j.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/start_for_devuelvfYi.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="goertzel_algorithm_simpler"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/goertzel_algorithm_simpler.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

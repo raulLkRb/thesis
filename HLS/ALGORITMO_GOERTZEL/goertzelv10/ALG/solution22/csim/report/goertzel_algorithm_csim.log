@@ -1,0 +1,79 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../axi_algorithm_test.cpp in debug mode
+   Compiling ../../../../axi_algorithm.cpp in debug mode
+   Generating csim.exe
+[0]:
+
+8975 
+
+8298 
+
+4013 
+
+8216 
+
+6068 
+
+7939 
+
+9172 
+
+9911 
+
+5415 
+
+10058 
+
+944 
+
+3727 
+
+406 
+
+5828 
+
+10058 
+
+10059 
+
+
+
+[1]:
+
+16525 
+
+15198 
+
+7905 
+
+15789 
+
+11965 
+
+15182 
+
+16763 
+
+18545 
+
+14035 
+
+18842 
+
+1227 
+
+6619 
+
+571 
+
+10780 
+
+18790 
+
+18792 
+
+
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

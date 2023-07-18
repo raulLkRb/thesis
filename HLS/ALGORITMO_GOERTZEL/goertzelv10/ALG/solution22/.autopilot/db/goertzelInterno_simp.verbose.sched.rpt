@@ -1,0 +1,645 @@
+
+
+================================================================
+== Vivado HLS Report for 'goertzelInterno_simp'
+================================================================
+* Date:           Tue Jul 14 13:29:08 2020
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        ALG
+* Solution:       solution22
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.62|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-------+-------+-------+-------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    |  min  |  max  |  min  |  max  |   Type  |
+    +-------+-------+-------+-------+---------+
+    |  14340|  14340|  14340|  14340|   none  |
+    +-------+-------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-------+-------+----------+-----------+-----------+------+----------+
+        |          |    Latency    | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|  min  |  max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-------+-------+----------+-----------+-----------+------+----------+
+        |- lg1     |  14329|  14329|         7|          -|          -|  2047|    no    |
+        +----------+-------+-------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 18
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / (!exitcond)
+	10  / (exitcond)
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	3  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+* FSM state operations: 
+
+ <State 1>: 3.25ns
+ST_1: indiceK_read (6)  [1/1] 0.00ns
+:1  %indiceK_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %indiceK)
+
+ST_1: indiceK_cast1 (7)  [1/1] 0.00ns
+:2  %indiceK_cast1 = zext i4 %indiceK_read to i32
+
+ST_1: REAL_PARTE_W_V_addr (9)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69
+:4  %REAL_PARTE_W_V_addr = getelementptr [8 x i30]* @REAL_PARTE_W_V, i32 0, i32 %indiceK_cast1
+
+ST_1: REAL_PARTE_W_V_load (10)  [2/2] 3.25ns  loc: axi_algorithm.cpp:69
+:5  %REAL_PARTE_W_V_load = load i30* %REAL_PARTE_W_V_addr, align 4
+
+
+ <State 2>: 3.25ns
+ST_2: StgValue_23 (5)  [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecInterface(i32* %aux_array_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str82, i32 0, i32 0, [1 x i8]* @p_str83, [1 x i8]* @p_str84, [1 x i8]* @p_str85, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str86, [1 x i8]* @p_str87)
+
+ST_2: StgValue_24 (8)  [1/1] 0.00ns  loc: axi_algorithm.cpp:56
+:3  call void (...)* @_ssdm_op_SpecResourceLimit(i32 1, [4 x i8]* @p_str4, [1 x i8]* @p_str3, [1 x i8]* @p_str3, [1 x i8]* @p_str3) nounwind
+
+ST_2: REAL_PARTE_W_V_load (10)  [1/2] 3.25ns  loc: axi_algorithm.cpp:69
+:5  %REAL_PARTE_W_V_load = load i30* %REAL_PARTE_W_V_addr, align 4
+
+ST_2: REAL_PARTE_W_V_load_s (11)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69
+:6  %REAL_PARTE_W_V_load_s = sext i30 %REAL_PARTE_W_V_load to i33
+
+ST_2: OP1_V_1_cast (12)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69
+:7  %OP1_V_1_cast = zext i33 %REAL_PARTE_W_V_load_s to i97
+
+ST_2: StgValue_28 (13)  [1/1] 1.77ns  loc: axi_algorithm.cpp:65
+:8  br label %1
+
+
+ <State 3>: 6.98ns
+ST_3: p_Val2_6 (15)  [1/1] 0.00ns
+:0  %p_Val2_6 = phi i64 [ 0, %0 ], [ %d2_V, %"ap_fixed_base<130, 66, true, 5, 3, 0>.exit" ]
+
+ST_3: d2_V (16)  [1/1] 0.00ns
+:1  %d2_V = phi i64 [ 0, %0 ], [ %p_Val2_20, %"ap_fixed_base<130, 66, true, 5, 3, 0>.exit" ]
+
+ST_3: i (17)  [1/1] 0.00ns
+:2  %i = phi i11 [ 0, %0 ], [ %i_1, %"ap_fixed_base<130, 66, true, 5, 3, 0>.exit" ]
+
+ST_3: exitcond (18)  [1/1] 2.94ns  loc: axi_algorithm.cpp:65
+:3  %exitcond = icmp eq i11 %i, -1
+
+ST_3: empty (19)  [1/1] 0.00ns
+:4  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2047, i64 2047, i64 2047)
+
+ST_3: i_1 (20)  [1/1] 2.86ns  loc: axi_algorithm.cpp:65
+:5  %i_1 = add i11 %i, 1
+
+ST_3: StgValue_35 (21)  [1/1] 0.00ns  loc: axi_algorithm.cpp:65
+:6  br i1 %exitcond, label %"ap_fixed_base<128, 64, true, 5, 3, 0>.exit", label %"ap_fixed_base<130, 66, true, 5, 3, 0>.exit"
+
+ST_3: OP2_V_1_cast (25)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:2  %OP2_V_1_cast = sext i64 %d2_V to i97
+
+ST_3: p_Val2_4 (26)  [5/5] 6.98ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:3  %p_Val2_4 = mul i97 %OP2_V_1_cast, %OP1_V_1_cast
+
+ST_3: OP2_V_cast3 (47)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:0  %OP2_V_cast3 = sext i64 %d2_V to i97
+
+ST_3: p_Val2_s (49)  [5/5] 6.98ns  loc: axi_algorithm.cpp:75
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:2  %p_Val2_s = mul i97 %OP1_V_1_cast, %OP2_V_cast3
+
+ST_3: IMAGINARIO_W_V_addr (87)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:40  %IMAGINARIO_W_V_addr = getelementptr [8 x i31]* @IMAGINARIO_W_V, i32 0, i32 %indiceK_cast1
+
+ST_3: IMAGINARIO_W_V_load (88)  [2/2] 3.25ns  loc: axi_algorithm.cpp:78
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:41  %IMAGINARIO_W_V_load = load i31* %IMAGINARIO_W_V_addr, align 4
+
+
+ <State 4>: 6.98ns
+ST_4: p_Val2_4 (26)  [4/5] 6.98ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:3  %p_Val2_4 = mul i97 %OP2_V_1_cast, %OP1_V_1_cast
+
+
+ <State 5>: 6.98ns
+ST_5: p_Val2_4 (26)  [3/5] 6.98ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:3  %p_Val2_4 = mul i97 %OP2_V_1_cast, %OP1_V_1_cast
+
+
+ <State 6>: 6.98ns
+ST_6: p_Val2_4 (26)  [2/5] 6.98ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:3  %p_Val2_4 = mul i97 %OP2_V_1_cast, %OP1_V_1_cast
+
+
+ <State 7>: 6.98ns
+ST_7: p_Val2_4 (26)  [1/5] 6.98ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:3  %p_Val2_4 = mul i97 %OP2_V_1_cast, %OP1_V_1_cast
+
+
+ <State 8>: 8.62ns
+ST_8: p_Val2_18 (24)  [1/1] 2.32ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:1  %p_Val2_18 = call i32 @_ssdm_op_Read.ap_fifo.volatile.i32P(i32* %aux_array_V)
+
+ST_8: tmp_2 (27)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:4  %tmp_2 = call i96 @_ssdm_op_BitConcatenate.i96.i32.i64(i32 %p_Val2_18, i64 0)
+
+ST_8: tmp_2_cast (28)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:5  %tmp_2_cast = sext i96 %tmp_2 to i98
+
+ST_8: tmp_8_cast (29)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:6  %tmp_8_cast = sext i97 %p_Val2_4 to i98
+
+ST_8: p_Val2_5 (30)  [1/1] 3.15ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:7  %p_Val2_5 = add i98 %tmp_8_cast, %tmp_2_cast
+
+ST_8: tmp_12 (31)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:8  %tmp_12 = call i96 @_ssdm_op_BitConcatenate.i96.i64.i32(i64 %p_Val2_6, i32 0)
+
+ST_8: tmp_12_cast (32)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:9  %tmp_12_cast = sext i96 %tmp_12 to i98
+
+ST_8: p_Val2_7 (33)  [1/1] 3.15ns  loc: axi_algorithm.cpp:69
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:10  %p_Val2_7 = sub i98 %p_Val2_5, %tmp_12_cast
+
+
+ <State 9>: 7.67ns
+ST_9: StgValue_54 (23)  [1/1] 0.00ns  loc: axi_algorithm.cpp:66
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:0  call void (...)* @_ssdm_op_SpecLoopName([4 x i8]* @p_str5) nounwind
+
+ST_9: signbit_5 (34)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69 (grouped into LUT with out node p_Val2_20)
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:11  %signbit_5 = call i1 @_ssdm_op_BitSelect.i1.i98.i32(i98 %p_Val2_7, i32 97)
+
+ST_9: p_Val2_8 (35)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69 (grouped into LUT with out node p_Val2_20)
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:12  %p_Val2_8 = call i64 @_ssdm_op_PartSelect.i64.i98.i32.i32(i98 %p_Val2_7, i32 32, i32 95)
+
+ST_9: tmp_50 (36)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69 (grouped into LUT with out node tmp_18)
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:13  %tmp_50 = call i1 @_ssdm_op_BitSelect.i1.i98.i32(i98 %p_Val2_7, i32 31)
+
+ST_9: tmp_51 (37)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69 (grouped into LUT with out node tmp_18)
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:14  %tmp_51 = trunc i98 %p_Val2_7 to i1
+
+ST_9: tmp_36 (38)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69 (grouped into LUT with out node tmp_18)
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:15  %tmp_36 = or i1 %tmp_51, %tmp_50
+
+ST_9: tmp_37 (39)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69 (grouped into LUT with out node tmp_18)
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:16  %tmp_37 = call i30 @_ssdm_op_PartSelect.i30.i98.i32.i32(i98 %p_Val2_7, i32 1, i32 30)
+
+ST_9: tmp_38 (40)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69 (grouped into LUT with out node tmp_18)
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:17  %tmp_38 = call i31 @_ssdm_op_BitConcatenate.i31.i30.i1(i30 %tmp_37, i1 %tmp_36)
+
+ST_9: tmp_18 (41)  [1/1] 3.26ns  loc: axi_algorithm.cpp:69 (out node of the LUT)
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:18  %tmp_18 = icmp ne i31 %tmp_38, 0
+
+ST_9: qb_assign_1 (42)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69 (grouped into LUT with out node p_Val2_20)
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:19  %qb_assign_1 = and i1 %tmp_18, %signbit_5
+
+ST_9: tmp_19 (43)  [1/1] 0.00ns  loc: axi_algorithm.cpp:69 (grouped into LUT with out node p_Val2_20)
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:20  %tmp_19 = zext i1 %qb_assign_1 to i64
+
+ST_9: p_Val2_20 (44)  [1/1] 4.40ns  loc: axi_algorithm.cpp:69 (out node of the LUT)
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:21  %p_Val2_20 = add nsw i64 %p_Val2_8, %tmp_19
+
+ST_9: StgValue_66 (45)  [1/1] 0.00ns  loc: axi_algorithm.cpp:65
+ap_fixed_base<130, 66, true, 5, 3, 0>.exit:22  br label %1
+
+
+ <State 10>: 6.98ns
+ST_10: p_Val2_s (49)  [4/5] 6.98ns  loc: axi_algorithm.cpp:75
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:2  %p_Val2_s = mul i97 %OP1_V_1_cast, %OP2_V_cast3
+
+ST_10: IMAGINARIO_W_V_load (88)  [1/2] 3.25ns  loc: axi_algorithm.cpp:78
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:41  %IMAGINARIO_W_V_load = load i31* %IMAGINARIO_W_V_addr, align 4
+
+
+ <State 11>: 6.98ns
+ST_11: OP2_V_cast (48)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:1  %OP2_V_cast = sext i64 %d2_V to i95
+
+ST_11: p_Val2_s (49)  [3/5] 6.98ns  loc: axi_algorithm.cpp:75
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:2  %p_Val2_s = mul i97 %OP1_V_1_cast, %OP2_V_cast3
+
+ST_11: OP1_V_2_cast (89)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:42  %OP1_V_2_cast = zext i31 %IMAGINARIO_W_V_load to i95
+
+ST_11: p_Val2_13 (90)  [5/5] 6.98ns  loc: axi_algorithm.cpp:78
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:43  %p_Val2_13 = mul i95 %OP1_V_2_cast, %OP2_V_cast
+
+
+ <State 12>: 6.98ns
+ST_12: p_Val2_s (49)  [2/5] 6.98ns  loc: axi_algorithm.cpp:75
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:2  %p_Val2_s = mul i97 %OP1_V_1_cast, %OP2_V_cast3
+
+ST_12: p_Val2_13 (90)  [4/5] 6.98ns  loc: axi_algorithm.cpp:78
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:43  %p_Val2_13 = mul i95 %OP1_V_2_cast, %OP2_V_cast
+
+
+ <State 13>: 6.98ns
+ST_13: p_Val2_s (49)  [1/5] 6.98ns  loc: axi_algorithm.cpp:75
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:2  %p_Val2_s = mul i97 %OP1_V_1_cast, %OP2_V_cast3
+
+ST_13: p_Val2_13 (90)  [3/5] 6.98ns  loc: axi_algorithm.cpp:78
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:43  %p_Val2_13 = mul i95 %OP1_V_2_cast, %OP2_V_cast
+
+
+ <State 14>: 6.98ns
+ST_14: tmp (52)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node tmp_6)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:5  %tmp = call i1 @_ssdm_op_BitSelect.i1.i97.i32(i97 %p_Val2_s, i32 31)
+
+ST_14: tmp_8 (53)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node tmp_6)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:6  %tmp_8 = trunc i97 %p_Val2_s to i1
+
+ST_14: tmp_3 (54)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node tmp_6)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:7  %tmp_3 = or i1 %tmp_8, %tmp
+
+ST_14: tmp_4 (55)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node tmp_6)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:8  %tmp_4 = call i30 @_ssdm_op_PartSelect.i30.i97.i32.i32(i97 %p_Val2_s, i32 1, i32 30)
+
+ST_14: tmp_5 (56)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node tmp_6)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:9  %tmp_5 = call i31 @_ssdm_op_BitConcatenate.i31.i30.i1(i30 %tmp_4, i1 %tmp_3)
+
+ST_14: tmp_6 (57)  [1/1] 3.26ns  loc: axi_algorithm.cpp:75 (out node of the LUT)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:10  %tmp_6 = icmp ne i31 %tmp_5, 0
+
+ST_14: p_Val2_13 (90)  [2/5] 6.98ns  loc: axi_algorithm.cpp:78
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:43  %p_Val2_13 = mul i95 %OP1_V_2_cast, %OP2_V_cast
+
+
+ <State 15>: 7.67ns
+ST_15: signbit (50)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node p_Val2_2)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:3  %signbit = call i1 @_ssdm_op_BitSelect.i1.i97.i32(i97 %p_Val2_s, i32 96)
+
+ST_15: p_Val2_1 (51)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node p_Val2_2)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:4  %p_Val2_1 = call i64 @_ssdm_op_PartSelect.i64.i97.i32.i32(i97 %p_Val2_s, i32 32, i32 95)
+
+ST_15: qb_assign (58)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node p_Val2_2)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:11  %qb_assign = and i1 %tmp_6, %signbit
+
+ST_15: tmp_7 (59)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node p_Val2_2)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:12  %tmp_7 = zext i1 %qb_assign to i64
+
+ST_15: p_Val2_2 (60)  [1/1] 4.40ns  loc: axi_algorithm.cpp:75 (out node of the LUT)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:13  %p_Val2_2 = add nsw i64 %tmp_7, %p_Val2_1
+
+ST_15: tmp_25 (63)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node tmp_10)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:16  %tmp_25 = call i1 @_ssdm_op_BitSelect.i1.i64.i32(i64 %p_Val2_2, i32 31)
+
+ST_15: tmp_31 (64)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node tmp_10)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:17  %tmp_31 = trunc i64 %p_Val2_2 to i1
+
+ST_15: tmp_s (65)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node tmp_10)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:18  %tmp_s = or i1 %tmp_31, %tmp_25
+
+ST_15: tmp_1 (66)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node tmp_10)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:19  %tmp_1 = call i30 @_ssdm_op_PartSelect.i30.i64.i32.i32(i64 %p_Val2_2, i32 1, i32 30)
+
+ST_15: tmp_9 (67)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node tmp_10)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:20  %tmp_9 = call i31 @_ssdm_op_BitConcatenate.i31.i30.i1(i30 %tmp_1, i1 %tmp_s)
+
+ST_15: tmp_10 (68)  [1/1] 3.26ns  loc: axi_algorithm.cpp:75 (out node of the LUT)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:21  %tmp_10 = icmp ne i31 %tmp_9, 0
+
+ST_15: p_Val2_13 (90)  [1/5] 6.98ns  loc: axi_algorithm.cpp:78
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:43  %p_Val2_13 = mul i95 %OP1_V_2_cast, %OP2_V_cast
+
+
+ <State 16>: 3.44ns
+ST_16: signbit_1 (61)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node p_Val2_9)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:14  %signbit_1 = call i1 @_ssdm_op_BitSelect.i1.i64.i32(i64 %p_Val2_2, i32 63)
+
+ST_16: p_Val2_3 (62)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node p_Val2_9)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:15  %p_Val2_3 = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %p_Val2_2, i32 32, i32 63)
+
+ST_16: qb_assign_2 (69)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node p_Val2_9)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:22  %qb_assign_2 = and i1 %tmp_10, %signbit_1
+
+ST_16: tmp_11 (70)  [1/1] 0.00ns  loc: axi_algorithm.cpp:75 (grouped into LUT with out node p_Val2_9)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:23  %tmp_11 = zext i1 %qb_assign_2 to i32
+
+ST_16: p_Val2_9 (71)  [1/1] 3.44ns  loc: axi_algorithm.cpp:75 (out node of the LUT)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:24  %p_Val2_9 = add nsw i32 %tmp_11, %p_Val2_3
+
+ST_16: tmp_13 (72)  [1/1] 0.00ns  loc: axi_algorithm.cpp:76
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:25  %tmp_13 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %p_Val2_9, i32 1, i32 31)
+
+ST_16: tmp_44 (94)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node tmp_28)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:47  %tmp_44 = call i1 @_ssdm_op_BitSelect.i1.i95.i32(i95 %p_Val2_13, i32 31)
+
+ST_16: tmp_45 (95)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node tmp_28)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:48  %tmp_45 = trunc i95 %p_Val2_13 to i1
+
+ST_16: tmp_24 (96)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node tmp_28)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:49  %tmp_24 = or i1 %tmp_45, %tmp_44
+
+ST_16: tmp_26 (97)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node tmp_28)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:50  %tmp_26 = call i30 @_ssdm_op_PartSelect.i30.i95.i32.i32(i95 %p_Val2_13, i32 1, i32 30)
+
+ST_16: tmp_27 (98)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node tmp_28)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:51  %tmp_27 = call i31 @_ssdm_op_BitConcatenate.i31.i30.i1(i30 %tmp_26, i1 %tmp_24)
+
+ST_16: tmp_28 (99)  [1/1] 3.26ns  loc: axi_algorithm.cpp:78 (out node of the LUT)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:52  %tmp_28 = icmp ne i31 %tmp_27, 0
+
+
+ <State 17>: 7.67ns
+ST_17: tmp_14 (73)  [1/1] 0.00ns  loc: axi_algorithm.cpp:76
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:26  %tmp_14 = call i63 @_ssdm_op_BitConcatenate.i63.i31.i32(i31 %tmp_13, i32 0)
+
+ST_17: tmp_15 (74)  [1/1] 0.00ns  loc: axi_algorithm.cpp:77
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:27  %tmp_15 = sext i63 %tmp_14 to i64
+
+ST_17: p_Val2_10 (75)  [1/1] 4.40ns  loc: axi_algorithm.cpp:77
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:28  %p_Val2_10 = sub i64 %tmp_15, %p_Val2_6
+
+ST_17: tmp_41 (78)  [1/1] 0.00ns  loc: axi_algorithm.cpp:77 (grouped into LUT with out node tmp_21)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:31  %tmp_41 = call i1 @_ssdm_op_BitSelect.i1.i64.i32(i64 %p_Val2_10, i32 31)
+
+ST_17: tmp_42 (79)  [1/1] 0.00ns  loc: axi_algorithm.cpp:77 (grouped into LUT with out node tmp_21)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:32  %tmp_42 = trunc i64 %p_Val2_10 to i1
+
+ST_17: tmp_16 (80)  [1/1] 0.00ns  loc: axi_algorithm.cpp:77 (grouped into LUT with out node tmp_21)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:33  %tmp_16 = or i1 %tmp_42, %tmp_41
+
+ST_17: tmp_17 (81)  [1/1] 0.00ns  loc: axi_algorithm.cpp:77 (grouped into LUT with out node tmp_21)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:34  %tmp_17 = call i30 @_ssdm_op_PartSelect.i30.i64.i32.i32(i64 %p_Val2_10, i32 1, i32 30)
+
+ST_17: tmp_20 (82)  [1/1] 0.00ns  loc: axi_algorithm.cpp:77 (grouped into LUT with out node tmp_21)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:35  %tmp_20 = call i31 @_ssdm_op_BitConcatenate.i31.i30.i1(i30 %tmp_17, i1 %tmp_16)
+
+ST_17: tmp_21 (83)  [1/1] 3.26ns  loc: axi_algorithm.cpp:77 (out node of the LUT)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:36  %tmp_21 = icmp ne i31 %tmp_20, 0
+
+ST_17: signbit_3 (91)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node p_Val2_15)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:44  %signbit_3 = call i1 @_ssdm_op_BitSelect.i1.i95.i32(i95 %p_Val2_13, i32 94)
+
+ST_17: tmp_23 (92)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node p_Val2_15)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:45  %tmp_23 = call i63 @_ssdm_op_PartSelect.i63.i95.i32.i32(i95 %p_Val2_13, i32 32, i32 94)
+
+ST_17: p_Val2_14 (93)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node p_Val2_15)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:46  %p_Val2_14 = sext i63 %tmp_23 to i64
+
+ST_17: qb_assign_4 (100)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node p_Val2_15)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:53  %qb_assign_4 = and i1 %tmp_28, %signbit_3
+
+ST_17: tmp_29 (101)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node p_Val2_15)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:54  %tmp_29 = zext i1 %qb_assign_4 to i64
+
+ST_17: p_Val2_15 (102)  [1/1] 4.38ns  loc: axi_algorithm.cpp:78 (out node of the LUT)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:55  %p_Val2_15 = add nsw i64 %tmp_29, %p_Val2_14
+
+ST_17: tmp_47 (105)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node tmp_34)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:58  %tmp_47 = call i1 @_ssdm_op_BitSelect.i1.i64.i32(i64 %p_Val2_15, i32 31)
+
+ST_17: tmp_48 (106)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node tmp_34)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:59  %tmp_48 = trunc i64 %p_Val2_15 to i1
+
+ST_17: tmp_30 (107)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node tmp_34)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:60  %tmp_30 = or i1 %tmp_48, %tmp_47
+
+ST_17: tmp_32 (108)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node tmp_34)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:61  %tmp_32 = call i30 @_ssdm_op_PartSelect.i30.i64.i32.i32(i64 %p_Val2_15, i32 1, i32 30)
+
+ST_17: tmp_33 (109)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node tmp_34)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:62  %tmp_33 = call i31 @_ssdm_op_BitConcatenate.i31.i30.i1(i30 %tmp_32, i1 %tmp_30)
+
+ST_17: tmp_34 (110)  [1/1] 3.26ns  loc: axi_algorithm.cpp:78 (out node of the LUT)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:63  %tmp_34 = icmp ne i31 %tmp_33, 0
+
+
+ <State 18>: 3.44ns
+ST_18: signbit_2 (76)  [1/1] 0.00ns  loc: axi_algorithm.cpp:77 (grouped into LUT with out node p_Val2_12)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:29  %signbit_2 = call i1 @_ssdm_op_BitSelect.i1.i64.i32(i64 %p_Val2_10, i32 63)
+
+ST_18: p_Val2_11 (77)  [1/1] 0.00ns  loc: axi_algorithm.cpp:77 (grouped into LUT with out node p_Val2_12)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:30  %p_Val2_11 = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %p_Val2_10, i32 32, i32 63)
+
+ST_18: qb_assign_3 (84)  [1/1] 0.00ns  loc: axi_algorithm.cpp:77 (grouped into LUT with out node p_Val2_12)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:37  %qb_assign_3 = and i1 %tmp_21, %signbit_2
+
+ST_18: tmp_22 (85)  [1/1] 0.00ns  loc: axi_algorithm.cpp:77 (grouped into LUT with out node p_Val2_12)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:38  %tmp_22 = zext i1 %qb_assign_3 to i32
+
+ST_18: p_Val2_12 (86)  [1/1] 3.44ns  loc: axi_algorithm.cpp:77 (out node of the LUT)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:39  %p_Val2_12 = add nsw i32 %tmp_22, %p_Val2_11
+
+ST_18: signbit_4 (103)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node p_Val2_17)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:56  %signbit_4 = call i1 @_ssdm_op_BitSelect.i1.i64.i32(i64 %p_Val2_15, i32 63)
+
+ST_18: p_Val2_16 (104)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node p_Val2_17)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:57  %p_Val2_16 = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %p_Val2_15, i32 32, i32 63)
+
+ST_18: qb_assign_5 (111)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node p_Val2_17)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:64  %qb_assign_5 = and i1 %tmp_34, %signbit_4
+
+ST_18: tmp_35 (112)  [1/1] 0.00ns  loc: axi_algorithm.cpp:78 (grouped into LUT with out node p_Val2_17)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:65  %tmp_35 = zext i1 %qb_assign_5 to i32
+
+ST_18: p_Val2_17 (113)  [1/1] 3.44ns  loc: axi_algorithm.cpp:78 (out node of the LUT)
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:66  %p_Val2_17 = add nsw i32 %tmp_35, %p_Val2_16
+
+ST_18: mrv (114)  [1/1] 0.00ns  loc: axi_algorithm.cpp:79
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:67  %mrv = insertvalue { i32, i32 } undef, i32 %p_Val2_12, 0
+
+ST_18: mrv_1 (115)  [1/1] 0.00ns  loc: axi_algorithm.cpp:79
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:68  %mrv_1 = insertvalue { i32, i32 } %mrv, i32 %p_Val2_17, 1
+
+ST_18: StgValue_141 (116)  [1/1] 0.00ns  loc: axi_algorithm.cpp:79
+ap_fixed_base<128, 64, true, 5, 3, 0>.exit:69  ret { i32, i32 } %mrv_1
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 3.25ns
+The critical path consists of the following:
+	wire read on port 'indiceK' [6]  (0 ns)
+	'getelementptr' operation ('REAL_PARTE_W_V_addr', axi_algorithm.cpp:69) [9]  (0 ns)
+	'load' operation ('REAL_PARTE_W_V_load', axi_algorithm.cpp:69) on array 'REAL_PARTE_W_V' [10]  (3.25 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('REAL_PARTE_W_V_load', axi_algorithm.cpp:69) on array 'REAL_PARTE_W_V' [10]  (3.25 ns)
+
+ <State 3>: 6.98ns
+The critical path consists of the following:
+	'phi' operation ('__Val2__') with incoming values : ('__Val2__', axi_algorithm.cpp:69) [16]  (0 ns)
+	'mul' operation ('__Val2__', axi_algorithm.cpp:75) [49]  (6.98 ns)
+
+ <State 4>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('__Val2__', axi_algorithm.cpp:69) [26]  (6.98 ns)
+
+ <State 5>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('__Val2__', axi_algorithm.cpp:69) [26]  (6.98 ns)
+
+ <State 6>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('__Val2__', axi_algorithm.cpp:69) [26]  (6.98 ns)
+
+ <State 7>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('__Val2__', axi_algorithm.cpp:69) [26]  (6.98 ns)
+
+ <State 8>: 8.62ns
+The critical path consists of the following:
+	fifo read on port 'aux_array_V' (axi_algorithm.cpp:69) [24]  (2.32 ns)
+	'add' operation ('__Val2__', axi_algorithm.cpp:69) [30]  (3.15 ns)
+	'sub' operation ('__Val2__', axi_algorithm.cpp:69) [33]  (3.15 ns)
+
+ <State 9>: 7.67ns
+The critical path consists of the following:
+	'or' operation ('tmp_36', axi_algorithm.cpp:69) [38]  (0 ns)
+	'icmp' operation ('tmp_18', axi_algorithm.cpp:69) [41]  (3.26 ns)
+	'and' operation ('qb', axi_algorithm.cpp:69) [42]  (0 ns)
+	'add' operation ('__Val2__', axi_algorithm.cpp:69) [44]  (4.4 ns)
+
+ <State 10>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('__Val2__', axi_algorithm.cpp:75) [49]  (6.98 ns)
+
+ <State 11>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('__Val2__', axi_algorithm.cpp:78) [90]  (6.98 ns)
+
+ <State 12>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('__Val2__', axi_algorithm.cpp:75) [49]  (6.98 ns)
+
+ <State 13>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('__Val2__', axi_algorithm.cpp:75) [49]  (6.98 ns)
+
+ <State 14>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('__Val2__', axi_algorithm.cpp:78) [90]  (6.98 ns)
+
+ <State 15>: 7.67ns
+The critical path consists of the following:
+	'and' operation ('qb', axi_algorithm.cpp:75) [58]  (0 ns)
+	'add' operation ('__Val2__', axi_algorithm.cpp:75) [60]  (4.4 ns)
+	'or' operation ('tmp_s', axi_algorithm.cpp:75) [65]  (0 ns)
+	'icmp' operation ('tmp_10', axi_algorithm.cpp:75) [68]  (3.26 ns)
+
+ <State 16>: 3.44ns
+The critical path consists of the following:
+	'and' operation ('qb', axi_algorithm.cpp:75) [69]  (0 ns)
+	'add' operation ('__Val2__', axi_algorithm.cpp:75) [71]  (3.44 ns)
+
+ <State 17>: 7.67ns
+The critical path consists of the following:
+	'sub' operation ('__Val2__', axi_algorithm.cpp:77) [75]  (4.4 ns)
+	'icmp' operation ('tmp_21', axi_algorithm.cpp:77) [83]  (3.26 ns)
+
+ <State 18>: 3.44ns
+The critical path consists of the following:
+	'and' operation ('qb', axi_algorithm.cpp:77) [84]  (0 ns)
+	'add' operation ('__Val2__', axi_algorithm.cpp:77) [86]  (3.44 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

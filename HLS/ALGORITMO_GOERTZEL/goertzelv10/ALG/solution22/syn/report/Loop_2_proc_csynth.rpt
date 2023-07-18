@@ -1,0 +1,200 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_2_proc'
+================================================================
+* Date:           Tue Jul 14 13:29:09 2020
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        ALG
+* Solution:       solution22
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      5.38|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   19|   19|   19|   19|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |   17|   17|         3|          1|          1|    16|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     48|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    198|
+|Register         |        -|      -|     104|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     104|    246|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------+----------+-------+---+----+------------+------------+
+    |             Variable Name             | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------+----------+-------+---+----+------------+------------+
+    |k_1_fu_130_p2                          |     +    |      0|  0|  15|           5|           1|
+    |ap_block_pp0_stage0_flag00001001       |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state3_io                     |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state3_pp0_stage0_iter1       |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state4_io                     |    and   |      0|  0|   2|           1|           1|
+    |output_AX_ALG_data_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
+    |output_AX_ALG_data_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
+    |output_AX_ALG_last_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
+    |output_AX_ALG_last_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
+    |exitcond_fu_124_p2                     |   icmp   |      0|  0|   3|           5|           6|
+    |last_assign_fu_136_p2                  |   icmp   |      0|  0|   2|           5|           4|
+    |output_AX_ALG_data_V_1_state_cmp_full  |   icmp   |      0|  0|   1|           2|           1|
+    |output_AX_ALG_last_V_1_state_cmp_full  |   icmp   |      0|  0|   1|           2|           1|
+    |ap_block_pp0_stage0_flag00011001       |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state1                        |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state5                        |    or    |      0|  0|   2|           1|           1|
+    |ap_enable_pp0                          |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1                |    xor   |      0|  0|   2|           1|           2|
+    +---------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                  |          |      0|  0|  48|          32|          28|
+    +---------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------+----+-----------+-----+-----------+
+    |               Name              | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                        |  21|          4|    1|          4|
+    |ap_done                          |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1          |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2          |   9|          2|    1|          2|
+    |k_reg_113                        |   9|          2|    5|         10|
+    |output_AX_ALG_TDATA_blk_n        |   9|          2|    1|          2|
+    |output_AX_ALG_data_V_1_data_out  |   9|          2|   32|         64|
+    |output_AX_ALG_data_V_1_state     |  15|          3|    2|          6|
+    |output_AX_ALG_dest_V_1_state     |  15|          3|    2|          6|
+    |output_AX_ALG_id_V_1_state       |  15|          3|    2|          6|
+    |output_AX_ALG_keep_V_1_state     |  15|          3|    2|          6|
+    |output_AX_ALG_last_V_1_data_out  |   9|          2|    1|          2|
+    |output_AX_ALG_last_V_1_state     |  15|          3|    2|          6|
+    |output_AX_ALG_strb_V_1_state     |  15|          3|    2|          6|
+    |output_AX_ALG_user_V_1_state     |  15|          3|    2|          6|
+    |y_V_blk_n                        |   9|          2|    1|          2|
+    +---------------------------------+----+-----------+-----+-----------+
+    |Total                            | 198|         41|   58|        132|
+    +---------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                          |   3|   0|    3|          0|
+    |ap_done_reg                        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2            |   1|   0|    1|          0|
+    |ap_reg_pp0_iter1_exitcond_reg_142  |   1|   0|    1|          0|
+    |exitcond_reg_142                   |   1|   0|    1|          0|
+    |k_reg_113                          |   5|   0|    5|          0|
+    |last_assign_reg_151                |   1|   0|    1|          0|
+    |output_AX_ALG_data_V_1_payload_A   |  32|   0|   32|          0|
+    |output_AX_ALG_data_V_1_payload_B   |  32|   0|   32|          0|
+    |output_AX_ALG_data_V_1_sel_rd      |   1|   0|    1|          0|
+    |output_AX_ALG_data_V_1_sel_wr      |   1|   0|    1|          0|
+    |output_AX_ALG_data_V_1_state       |   2|   0|    2|          0|
+    |output_AX_ALG_dest_V_1_sel_rd      |   1|   0|    1|          0|
+    |output_AX_ALG_dest_V_1_state       |   2|   0|    2|          0|
+    |output_AX_ALG_id_V_1_sel_rd        |   1|   0|    1|          0|
+    |output_AX_ALG_id_V_1_state         |   2|   0|    2|          0|
+    |output_AX_ALG_keep_V_1_sel_rd      |   1|   0|    1|          0|
+    |output_AX_ALG_keep_V_1_state       |   2|   0|    2|          0|
+    |output_AX_ALG_last_V_1_payload_A   |   1|   0|    1|          0|
+    |output_AX_ALG_last_V_1_payload_B   |   1|   0|    1|          0|
+    |output_AX_ALG_last_V_1_sel_rd      |   1|   0|    1|          0|
+    |output_AX_ALG_last_V_1_sel_wr      |   1|   0|    1|          0|
+    |output_AX_ALG_last_V_1_state       |   2|   0|    2|          0|
+    |output_AX_ALG_strb_V_1_sel_rd      |   1|   0|    1|          0|
+    |output_AX_ALG_strb_V_1_state       |   2|   0|    2|          0|
+    |output_AX_ALG_user_V_1_sel_rd      |   1|   0|    1|          0|
+    |output_AX_ALG_user_V_1_state       |   2|   0|    2|          0|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              | 104|   0|  104|          0|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+----------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++----------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                |  in |    1| ap_ctrl_hs |      Loop_2_proc     | return value |
+|ap_rst                |  in |    1| ap_ctrl_hs |      Loop_2_proc     | return value |
+|ap_start              |  in |    1| ap_ctrl_hs |      Loop_2_proc     | return value |
+|ap_done               | out |    1| ap_ctrl_hs |      Loop_2_proc     | return value |
+|ap_continue           |  in |    1| ap_ctrl_hs |      Loop_2_proc     | return value |
+|ap_idle               | out |    1| ap_ctrl_hs |      Loop_2_proc     | return value |
+|ap_ready              | out |    1| ap_ctrl_hs |      Loop_2_proc     | return value |
+|y_V_dout              |  in |   32|   ap_fifo  |          y_V         |    pointer   |
+|y_V_empty_n           |  in |    1|   ap_fifo  |          y_V         |    pointer   |
+|y_V_read              | out |    1|   ap_fifo  |          y_V         |    pointer   |
+|output_AX_ALG_TDATA   | out |   32|    axis    | output_AX_ALG_data_V |    pointer   |
+|output_AX_ALG_TVALID  | out |    1|    axis    | output_AX_ALG_data_V |    pointer   |
+|output_AX_ALG_TREADY  |  in |    1|    axis    | output_AX_ALG_data_V |    pointer   |
+|output_AX_ALG_TKEEP   | out |    4|    axis    | output_AX_ALG_keep_V |    pointer   |
+|output_AX_ALG_TSTRB   | out |    4|    axis    | output_AX_ALG_strb_V |    pointer   |
+|output_AX_ALG_TUSER   | out |    4|    axis    | output_AX_ALG_user_V |    pointer   |
+|output_AX_ALG_TLAST   | out |    1|    axis    | output_AX_ALG_last_V |    pointer   |
+|output_AX_ALG_TID     | out |    5|    axis    |  output_AX_ALG_id_V  |    pointer   |
+|output_AX_ALG_TDEST   | out |    5|    axis    | output_AX_ALG_dest_V |    pointer   |
++----------------------+-----+-----+------------+----------------------+--------------+
+

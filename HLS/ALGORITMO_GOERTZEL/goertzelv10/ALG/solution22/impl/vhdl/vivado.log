@@ -1,0 +1,1705 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Jul 14 13:18:12 2020
+# Process ID: 8308
+# Current directory: C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl
+# Command line: vivado.exe -notrace -mode batch -source run_vivado.tcl
+# Log file: C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/vivado.log
+# Journal file: C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl\vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace
+[Tue Jul 14 13:18:15 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/synth_1/runme.log
+[Tue Jul 14 13:18:15 2020] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log goertzel_algorithm_simpler.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source goertzel_algorithm_simpler.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source goertzel_algorithm_simpler.tcl -notrace
+Command: synth_design -top goertzel_algorithm_simpler -part xc7z020clg484-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5644 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 304.855 ; gain = 81.973
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'goertzel_algorithm_simpler' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.vhd:37]
+INFO: [Synth 8-3491] module 'read_data' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:12' bound to instance 'read_data_U0' of component 'read_data' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'read_data' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:39]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:55]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:58]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00001001_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:255]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_pp0_stage0_iter0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:273]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state2_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:279]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_0to0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element ap_reset_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:329]
+WARNING: [Synth 8-6014] Unused sequential element buf_0_V_blk_n_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:339]
+WARNING: [Synth 8-6014] Unused sequential element input_AX_ALG_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:360]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:135]
+WARNING: [Synth 8-6014] Unused sequential element input_data_V_0_ack_out_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element input_dest_V_0_ack_out_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'read_data' (1#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/read_data.vhd:39]
+INFO: [Synth 8-3491] module 'devuelveAuxArray' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:12' bound to instance 'devuelveAuxArray_U0' of component 'devuelveAuxArray' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'devuelveAuxArray' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:33]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:54]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:57]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:69]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:74]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 2048 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'devuelveAuxArray_bkb' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray_bkb.vhd:93' bound to instance 'arrayAuxiliar_V_U' of component 'devuelveAuxArray_bkb' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'devuelveAuxArray_bkb' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray_bkb.vhd:112]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 2048 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'devuelveAuxArray_bkb_ram' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray_bkb.vhd:13' bound to instance 'devuelveAuxArray_bkb_ram_U' of component 'devuelveAuxArray_bkb_ram' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray_bkb.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'devuelveAuxArray_bkb_ram' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray_bkb.vhd:35]
+	Parameter mem_type bound to: block - type: string 
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 11 - type: integer 
+	Parameter mem_size bound to: 2048 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'devuelveAuxArray_bkb_ram' (2#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray_bkb.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'devuelveAuxArray_bkb' (3#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray_bkb.vhd:112]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:330]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state3_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:337]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state4_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:343]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:366]
+WARNING: [Synth 8-6014] Unused sequential element aux_array_V_blk_n_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:445]
+WARNING: [Synth 8-6014] Unused sequential element bufIn_0_V_blk_n_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:477]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011001_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:254]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:324]
+WARNING: [Synth 8-6014] Unused sequential element bufIn_0_V_read_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:487]
+WARNING: [Synth 8-6014] Unused sequential element internal_ap_ready_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'devuelveAuxArray' (4#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:33]
+INFO: [Synth 8-3491] module 'Loop_g1_proc' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_g1_proc.vhd:12' bound to instance 'Loop_g1_proc_U0' of component 'Loop_g1_proc' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.vhd:320]
+INFO: [Synth 8-638] synthesizing module 'Loop_g1_proc' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_g1_proc.vhd:33]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_g1_proc.vhd:55]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_g1_proc.vhd:58]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_g1_proc.vhd:63]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_g1_proc.vhd:65]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_g1_proc.vhd:69]
+INFO: [Synth 8-3491] module 'goertzelInterno_simp' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:12' bound to instance 'grp_goertzelInterno_simp_fu_79' of component 'goertzelInterno_simp' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_g1_proc.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'goertzelInterno_simp' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:29]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:82]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:85]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:94]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:98]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:100]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:102]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:108]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:112]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:120]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:123]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:126]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:131]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:138]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:144]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:220]
+	Parameter DataWidth bound to: 24 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'goertzelInterno_scud' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_scud.vhd:73' bound to instance 'REAL_PARTE_W_V_U' of component 'goertzelInterno_scud' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:283]
+INFO: [Synth 8-638] synthesizing module 'goertzelInterno_scud' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_scud.vhd:86]
+	Parameter DataWidth bound to: 24 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'goertzelInterno_scud_rom' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_scud.vhd:12' bound to instance 'goertzelInterno_scud_rom_U' of component 'goertzelInterno_scud_rom' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_scud.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'goertzelInterno_scud_rom' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_scud.vhd:27]
+	Parameter dwidth bound to: 24 - type: integer 
+	Parameter awidth bound to: 3 - type: integer 
+	Parameter mem_size bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_scud.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'goertzelInterno_scud_rom' (5#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_scud.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'goertzelInterno_scud' (6#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_scud.vhd:86]
+	Parameter DataWidth bound to: 28 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'goertzelInterno_sdEe' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_sdEe.vhd:73' bound to instance 'IMAGINARIO_W_V_U' of component 'goertzelInterno_sdEe' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'goertzelInterno_sdEe' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_sdEe.vhd:86]
+	Parameter DataWidth bound to: 28 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'goertzelInterno_sdEe_rom' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_sdEe.vhd:12' bound to instance 'goertzelInterno_sdEe_rom_U' of component 'goertzelInterno_sdEe_rom' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_sdEe.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'goertzelInterno_sdEe_rom' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_sdEe.vhd:27]
+	Parameter dwidth bound to: 28 - type: integer 
+	Parameter awidth bound to: 3 - type: integer 
+	Parameter mem_size bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_sdEe.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'goertzelInterno_sdEe_rom' (7#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_sdEe.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'goertzelInterno_sdEe' (8#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_sdEe.vhd:86]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 33 - type: integer 
+	Parameter dout_WIDTH bound to: 97 - type: integer 
+INFO: [Synth 8-3491] module 'goertzel_algoritheOg' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:61' bound to instance 'goertzel_algoritheOg_U11' of component 'goertzel_algoritheOg' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:307]
+INFO: [Synth 8-638] synthesizing module 'goertzel_algoritheOg' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:77]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 33 - type: integer 
+	Parameter dout_WIDTH bound to: 97 - type: integer 
+INFO: [Synth 8-3491] module 'goertzel_algoritheOg_MulnS_0' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:12' bound to instance 'goertzel_algoritheOg_MulnS_0_U' of component 'goertzel_algoritheOg_MulnS_0' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'goertzel_algoritheOg_MulnS_0' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:21]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:23]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'goertzel_algoritheOg_MulnS_0' (9#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'goertzel_algoritheOg' (10#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:77]
+WARNING: [Synth 8-6014] Unused sequential element aux_array_V_blk_n_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:595]
+INFO: [Synth 8-256] done synthesizing module 'goertzelInterno_simp' (11#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzelInterno_simp.vhd:29]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_g1_proc.vhd:280]
+WARNING: [Synth 8-6014] Unused sequential element y_V_blk_n_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_g1_proc.vhd:343]
+INFO: [Synth 8-256] done synthesizing module 'Loop_g1_proc' (12#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_g1_proc.vhd:33]
+INFO: [Synth 8-3491] module 'Loop_2_proc' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:12' bound to instance 'Loop_2_proc_U0' of component 'Loop_2_proc' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.vhd:339]
+INFO: [Synth 8-638] synthesizing module 'Loop_2_proc' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:36]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:61]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:64]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:135]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:159]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_dest_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:302]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_id_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:336]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_keep_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:370]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_strb_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:452]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_user_V_1_sel_rd_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:486]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00001001_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:610]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:628]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state3_pp0_stage0_iter1_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:641]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state5_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:654]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:677]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_TDATA_blk_n_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:716]
+WARNING: [Synth 8-6014] Unused sequential element y_V_blk_n_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:862]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:622]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_dest_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_id_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:352]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_keep_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:386]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_last_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:420]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_strb_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:468]
+WARNING: [Synth 8-6014] Unused sequential element output_AX_ALG_user_V_1_vld_in_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:502]
+WARNING: [Synth 8-6014] Unused sequential element y_V_read_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:872]
+INFO: [Synth 8-256] done synthesizing module 'Loop_2_proc' (13#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:36]
+INFO: [Synth 8-3491] module 'fifo_w32_d4_A' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:49' bound to instance 'bufIn_0_V_U' of component 'fifo_w32_d4_A' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.vhd:361]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d4_A' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:68]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_w32_d4_A_shiftReg' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:13' bound to instance 'U_fifo_w32_d4_A_shiftReg' of component 'fifo_w32_d4_A_shiftReg' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d4_A_shiftReg' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:26]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d4_A_shiftReg' (14#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d4_A' (15#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:68]
+INFO: [Synth 8-3491] module 'fifo_w32_d4_A' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:49' bound to instance 'aux_array_V_U' of component 'fifo_w32_d4_A' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.vhd:374]
+INFO: [Synth 8-3491] module 'fifo_w32_d4_A' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:49' bound to instance 'y_V_U' of component 'fifo_w32_d4_A' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.vhd:387]
+INFO: [Synth 8-3491] module 'start_for_devuelvfYi' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_devuelvfYi.vhd:49' bound to instance 'start_for_devuelvfYi_U' of component 'start_for_devuelvfYi' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.vhd:400]
+INFO: [Synth 8-638] synthesizing module 'start_for_devuelvfYi' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_devuelvfYi.vhd:68]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_devuelvfYi_shiftReg' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_devuelvfYi.vhd:13' bound to instance 'U_start_for_devuelvfYi_shiftReg' of component 'start_for_devuelvfYi_shiftReg' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_devuelvfYi.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'start_for_devuelvfYi_shiftReg' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_devuelvfYi.vhd:26]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_devuelvfYi_shiftReg' (16#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_devuelvfYi.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'start_for_devuelvfYi' (17#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_devuelvfYi.vhd:68]
+INFO: [Synth 8-3491] module 'start_for_Loop_g1g8j' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_g1g8j.vhd:49' bound to instance 'start_for_Loop_g1g8j_U' of component 'start_for_Loop_g1g8j' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.vhd:413]
+INFO: [Synth 8-638] synthesizing module 'start_for_Loop_g1g8j' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_g1g8j.vhd:68]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_Loop_g1g8j_shiftReg' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_g1g8j.vhd:13' bound to instance 'U_start_for_Loop_g1g8j_shiftReg' of component 'start_for_Loop_g1g8j_shiftReg' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_g1g8j.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'start_for_Loop_g1g8j_shiftReg' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_g1g8j.vhd:26]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_Loop_g1g8j_shiftReg' (18#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_g1g8j.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'start_for_Loop_g1g8j' (19#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_g1g8j.vhd:68]
+INFO: [Synth 8-3491] module 'start_for_Loop_2_hbi' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_2_hbi.vhd:49' bound to instance 'start_for_Loop_2_hbi_U' of component 'start_for_Loop_2_hbi' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.vhd:426]
+INFO: [Synth 8-638] synthesizing module 'start_for_Loop_2_hbi' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_2_hbi.vhd:68]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_Loop_2_hbi_shiftReg' declared at 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_2_hbi.vhd:13' bound to instance 'U_start_for_Loop_2_hbi_shiftReg' of component 'start_for_Loop_2_hbi_shiftReg' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_2_hbi.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'start_for_Loop_2_hbi_shiftReg' [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_2_hbi.vhd:26]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_Loop_2_hbi_shiftReg' (20#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_2_hbi.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'start_for_Loop_2_hbi' (21#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/start_for_Loop_2_hbi.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'goertzel_algorithm_simpler' (22#1) [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.vhd:37]
+WARNING: [Synth 8-3331] design goertzel_algoritheOg has unconnected port reset
+WARNING: [Synth 8-3331] design goertzelInterno_sdEe has unconnected port reset
+WARNING: [Synth 8-3331] design goertzelInterno_scud has unconnected port reset
+WARNING: [Synth 8-3331] design devuelveAuxArray_bkb has unconnected port reset
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TKEEP[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TKEEP[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TKEEP[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TKEEP[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TSTRB[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TSTRB[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TSTRB[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TSTRB[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TUSER[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TUSER[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TUSER[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TUSER[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TLAST[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[4]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TID[0]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[4]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[3]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[2]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[1]
+WARNING: [Synth 8-3331] design read_data has unconnected port input_AX_ALG_TDEST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 350.945 ; gain = 128.062
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 350.945 ; gain = 128.062
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.xdc]
+Finished Parsing XDC File [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 682.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 682.125 ; gain = 459.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 682.125 ; gain = 459.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 682.125 ; gain = 459.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "input_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_125_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element i_2_reg_151_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:255]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_226_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_18_fu_337_p2" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_21_fu_621_p2" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_33_fu_700_p2" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_10_fu_479_p2" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_28_fu_562_p2" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond1_fu_91_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_124_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "last_assign_fu_136_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "output_AX_ALG_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_AX_ALG_last_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element k_reg_113_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:520]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[3] was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[4] was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:36]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:104]
+WARNING: [Synth 8-6014] Unused sequential element mOutPtr_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:100]
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 682.125 ; gain = 459.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     98 Bit       Adders := 1     
+	   2 Input     64 Bit       Adders := 2     
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input     61 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               98 Bit    Registers := 1     
+	               97 Bit    Registers := 5     
+	               64 Bit    Registers := 5     
+	               61 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 7     
+	               31 Bit    Registers := 1     
+	               28 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 12    
+	                1 Bit    Registers := 54    
++---Multipliers : 
+	                34x64  Multipliers := 1     
++---RAMs : 
+	              64K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	  19 Input     18 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 13    
+	   4 Input      2 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 65    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module read_data 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module devuelveAuxArray_bkb_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              64K Bit         RAMs := 1     
+Module devuelveAuxArray 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module goertzelInterno_scud_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+Module goertzelInterno_sdEe_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               28 Bit    Registers := 1     
+Module goertzel_algoritheOg_MulnS_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               97 Bit    Registers := 3     
+	               64 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
++---Multipliers : 
+	                34x64  Multipliers := 1     
+Module goertzelInterno_simp 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     98 Bit       Adders := 1     
+	   2 Input     64 Bit       Adders := 2     
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input     61 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               98 Bit    Registers := 1     
+	               97 Bit    Registers := 2     
+	               64 Bit    Registers := 4     
+	               61 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	  19 Input     18 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module Loop_g1_proc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module Loop_2_proc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 17    
+Module fifo_w32_d4_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module start_for_devuelvfYi_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_devuelvfYi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module start_for_Loop_g1g8j_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Loop_g1g8j 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module start_for_Loop_2_hbi_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Loop_2_hbi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "devuelveAuxArray_U0/exitcond_fu_125_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/exitcond_fu_226_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/tmp_18_fu_337_p2" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/tmp_28_fu_562_p2" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/tmp_10_fu_479_p2" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/tmp_21_fu_621_p2" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/tmp_33_fu_700_p2" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 8 [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/a_reg0_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algoritheOg.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element devuelveAuxArray_U0/i_2_reg_151_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/devuelveAuxArray.vhd:255]
+WARNING: [Synth 8-6014] Unused sequential element Loop_2_proc_U0/k_reg_113_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/Loop_2_proc.vhd:520]
+WARNING: [Synth 8-6014] Unused sequential element bufIn_0_V_U/mOutPtr_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:100]
+WARNING: [Synth 8-6014] Unused sequential element aux_array_V_U/mOutPtr_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:100]
+WARNING: [Synth 8-6014] Unused sequential element y_V_U/mOutPtr_reg was removed.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/fifo_w32_d4_A.vhd:100]
+DSP Report: Generating DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register B is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: register A is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: register Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: Generating DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg, operation Mode is: (PCIN>>17)+(A*B2)'.
+DSP Report: register B is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: register Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: register Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: Generating DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg, operation Mode is: (A2*B)'.
+DSP Report: register A is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: register Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: Generating DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product, operation Mode is: PCIN+(A2*B2)'.
+DSP Report: register B is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product.
+DSP Report: register A is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product.
+DSP Report: register Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product.
+DSP Report: Generating DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register A is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: register Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: register Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: Generating DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register B is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: register A is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: register Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg.
+DSP Report: Generating DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register A is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product.
+DSP Report: register Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product.
+DSP Report: Generating DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register B is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: register A is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: register Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: register Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+DSP Report: operator Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product is absorbed into DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg.
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TKEEP[3] driven by constant 1
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TKEEP[2] driven by constant 1
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TKEEP[1] driven by constant 1
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TKEEP[0] driven by constant 1
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TSTRB[3] driven by constant 1
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TSTRB[2] driven by constant 1
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TSTRB[1] driven by constant 1
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TSTRB[0] driven by constant 1
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TUSER[3] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TUSER[2] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TUSER[1] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TUSER[0] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TID[4] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TID[3] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TID[2] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TID[1] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TID[0] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TDEST[4] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TDEST[3] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TDEST[2] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TDEST[1] driven by constant 0
+WARNING: [Synth 8-3917] design goertzel_algorithm_simpler has port output_AX_ALG_TDEST[0] driven by constant 0
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TKEEP[3]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TKEEP[2]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TKEEP[1]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TKEEP[0]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TSTRB[3]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TSTRB[2]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TSTRB[1]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TSTRB[0]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TUSER[3]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TUSER[2]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TUSER[1]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TUSER[0]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TLAST[0]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TID[4]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TID[3]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TID[2]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TID[1]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TID[0]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TDEST[4]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TDEST[3]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TDEST[2]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TDEST[1]
+WARNING: [Synth 8-3331] design goertzel_algorithm_simpler has unconnected port input_AX_ALG_TDEST[0]
+INFO: [Synth 8-3971] The signal devuelveAuxArray_U0/arrayAuxiliar_V_U/devuelveAuxArray_bkb_ram_U/ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/indiceK_cast1_reg_788_reg[0]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/indiceK_cast1_reg_788_reg[1]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[0]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[1]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[2]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[2]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[3]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[3]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[4]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[4]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[16]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[5]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[6]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[6]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[7]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[8]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[18]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[8]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[9]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[9]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[20]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[10]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[10] )
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[11]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[12]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[26]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[13]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[14]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[16]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[15]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[18]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[18]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_U/goertzelInterno_sdEe_rom_U/q0_reg[21] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/REAL_PARTE_W_V_U/goertzelInterno_scud_rom_U/q0_reg[23] )
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[0]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[1]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[24]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[2]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[2]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[21]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[3]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[3]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[4]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[4]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[16]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[5]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[23]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[6]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[6]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[7]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[8]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[18]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[8]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[19]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[9]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[9]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[20]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[10]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[11]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[12]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[26]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[13]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[14]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[16]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[15]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[18]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[18]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[25]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[23]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[24]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[24]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[25]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[25]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[26]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[26]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[27]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[28]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[29]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[30]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[30]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[31]' (FDE) to 'Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[32]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\devuelveAuxArray_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_g1_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_2_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\read_data_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_data_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/IMAGINARIO_W_V_load_reg_840_reg[21] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[32] )
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[32]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/OP1_V_1_cast_reg_798_reg[10]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/indiceK_cast1_reg_788_reg[3]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/indiceK_cast1_reg_788_reg[2]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/ap_done_reg_reg) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (read_data_U0/ap_CS_fsm_reg[0]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (devuelveAuxArray_U0/ap_done_reg_reg) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[47]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[46]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[45]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[44]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[43]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[42]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[41]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[40]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[39]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[38]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[37]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[36]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[35]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[34]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[33]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[32]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[31]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[30]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[29]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[28]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[27]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[26]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[25]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[24]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[23]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[22]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[21]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[20]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[19]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[18]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[17]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[16]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[15]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[14]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[13]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[12]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[11]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[10]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[9]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[8]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[7]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[6]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[5]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[4]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[3]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[2]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[1]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/b_reg0_reg[0]) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[47]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[46]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[45]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[44]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[43]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[42]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[41]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[40]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[39]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[38]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[37]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[36]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[35]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[34]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[33]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[32]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[31]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[30]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[29]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[28]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[27]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[26]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[25]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[24]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[23]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[22]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[21]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[20]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[19]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[18]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[17]__0) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[47]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[46]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[45]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[44]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[43]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[42]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[41]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[40]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[39]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[38]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[37]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[36]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[35]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+WARNING: [Synth 8-3332] Sequential element (Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff1_reg[34]__1) is unused and will be removed from module goertzel_algorithm_simpler.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 682.125 ; gain = 459.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------------+------------+---------------+----------------+
+|Module Name              | RTL Object | Depth x Width | Implemented As | 
++-------------------------+------------+---------------+----------------+
+|goertzelInterno_scud_rom | p_0_out    | 8x24          | LUT            | 
+|goertzelInterno_sdEe_rom | p_0_out    | 8x28          | LUT            | 
++-------------------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|devuelveAuxArray_bkb_ram: | ram_reg    | 2 K x 32(WRITE_FIRST)  | W | R | 2 K x 32(READ_FIRST)   | W |   | Port A and B     | 0      | 2      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|goertzel_algorithm_simpler | (A2*B2)'           | 18     | 13     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|goertzel_algorithm_simpler | (PCIN>>17)+(A*B2)' | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|goertzel_algorithm_simpler | (A2*B)'            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|goertzel_algorithm_simpler | PCIN+(A2*B2)'      | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|goertzel_algorithm_simpler | (PCIN>>17)+(A2*B)' | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|goertzel_algorithm_simpler | (A2*B2)'           | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|goertzel_algorithm_simpler | (PCIN>>17)+(A2*B)' | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|goertzel_algorithm_simpler | (PCIN+(A2*B2)')'   | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
++---------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 709.758 ; gain = 486.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 713.766 ; gain = 490.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance devuelveAuxArray_U0/arrayAuxiliar_V_U/devuelveAuxArray_bkb_ram_U/ram_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance devuelveAuxArray_U0/arrayAuxiliar_V_U/devuelveAuxArray_bkb_ram_U/ram_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 738.062 ; gain = 515.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.062 ; gain = 515.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.062 ; gain = 515.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.062 ; gain = 515.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.062 ; gain = 515.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.062 ; gain = 515.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.062 ; gain = 515.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[4] | 8      | 32         | 32     | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   121|
+|2     |DSP48E1   |     4|
+|3     |DSP48E1_4 |     2|
+|4     |DSP48E1_5 |     1|
+|5     |DSP48E1_6 |     1|
+|6     |LUT1      |   322|
+|7     |LUT2      |   140|
+|8     |LUT3      |   174|
+|9     |LUT4      |   170|
+|10    |LUT5      |    91|
+|11    |LUT6      |   143|
+|12    |RAMB36E1  |     2|
+|13    |SRL16E    |    96|
+|14    |FDRE      |   946|
+|15    |FDSE      |    22|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+-----------------------------+------+
+|      |Instance                               |Module                       |Cells |
++------+---------------------------------------+-----------------------------+------+
+|1     |top                                    |                             |  2235|
+|2     |  Loop_2_proc_U0                       |Loop_2_proc                  |   191|
+|3     |  Loop_g1_proc_U0                      |Loop_g1_proc                 |  1618|
+|4     |    grp_goertzelInterno_simp_fu_79     |goertzelInterno_simp         |  1560|
+|5     |      IMAGINARIO_W_V_U                 |goertzelInterno_sdEe         |    13|
+|6     |        goertzelInterno_sdEe_rom_U     |goertzelInterno_sdEe_rom     |    13|
+|7     |      REAL_PARTE_W_V_U                 |goertzelInterno_scud         |    36|
+|8     |        goertzelInterno_scud_rom_U     |goertzelInterno_scud_rom     |    36|
+|9     |      goertzel_algoritheOg_U11         |goertzel_algoritheOg         |   313|
+|10    |        goertzel_algoritheOg_MulnS_0_U |goertzel_algoritheOg_MulnS_0 |   313|
+|11    |  aux_array_V_U                        |fifo_w32_d4_A                |    51|
+|12    |    U_fifo_w32_d4_A_shiftReg           |fifo_w32_d4_A_shiftReg_3     |    35|
+|13    |  bufIn_0_V_U                          |fifo_w32_d4_A_0              |    51|
+|14    |    U_fifo_w32_d4_A_shiftReg           |fifo_w32_d4_A_shiftReg_2     |    35|
+|15    |  devuelveAuxArray_U0                  |devuelveAuxArray             |   129|
+|16    |    arrayAuxiliar_V_U                  |devuelveAuxArray_bkb         |    67|
+|17    |      devuelveAuxArray_bkb_ram_U       |devuelveAuxArray_bkb_ram     |    67|
+|18    |  read_data_U0                         |read_data                    |   117|
+|19    |  start_for_Loop_2_hbi_U               |start_for_Loop_2_hbi         |    10|
+|20    |  start_for_Loop_g1g8j_U               |start_for_Loop_g1g8j         |     9|
+|21    |  start_for_devuelvfYi_U               |start_for_devuelvfYi         |     9|
+|22    |  y_V_U                                |fifo_w32_d4_A_1              |    50|
+|23    |    U_fifo_w32_d4_A_shiftReg           |fifo_w32_d4_A_shiftReg       |    35|
++------+---------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.062 ; gain = 515.180
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 318 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 738.062 ; gain = 184.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 738.062 ; gain = 515.180
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+216 Infos, 262 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 738.062 ; gain = 517.762
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/synth_1/goertzel_algorithm_simpler.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 738.062 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 14 13:18:46 2020...
+[Tue Jul 14 13:18:48 2020] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:32 . Memory (MB): peak = 236.934 ; gain = 5.512
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.xdc:2]
+Finished Parsing XDC File [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 518.168 ; gain = 281.234
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 518.168 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 988.215 ; gain = 470.047
+[Tue Jul 14 13:19:01 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/impl_1/runme.log
+[Tue Jul 14 13:19:01 2020] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log goertzel_algorithm_simpler.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source goertzel_algorithm_simpler.tcl -notrace
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source goertzel_algorithm_simpler.tcl -notrace
+Command: open_checkpoint C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/impl_1/goertzel_algorithm_simpler.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 219.863 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/impl_1/.Xil/Vivado-10864-LAPTOP-5NTBTHR8/dcp3/goertzel_algorithm_simpler.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.xdc:2]
+Finished Parsing XDC File [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/impl_1/.Xil/Vivado-10864-LAPTOP-5NTBTHR8/dcp3/goertzel_algorithm_simpler.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.1 (64-bit) build 1846317
+open_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 517.559 ; gain = 297.695
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg484'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.316 . Memory (MB): peak = 525.195 ; gain = 7.637
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 187a6a010
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 988.605 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 280 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 187a6a010
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 988.605 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1d3cf66e0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 988.605 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1d3cf66e0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.185 . Memory (MB): peak = 988.605 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1d3cf66e0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 988.605 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 988.605 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1d3cf66e0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.194 . Memory (MB): peak = 988.605 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 2 newly gated: 0 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: 15c1a4e6f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1085.457 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 15c1a4e6f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.437 . Memory (MB): peak = 1085.457 ; gain = 96.852
+27 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1085.457 ; gain = 567.898
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/impl_1/goertzel_algorithm_simpler_opt.dcp' has been generated.
+Command: report_drc -file goertzel_algorithm_simpler_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/impl_1/goertzel_algorithm_simpler_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg484'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1085.457 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: cd8e3474
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1085.457 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 90ac26a3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.458 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 10c15bac2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.793 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 10c15bac2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.795 . Memory (MB): peak = 1085.457 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 10c15bac2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.798 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 20f36b31a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 20f36b31a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1692a115c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 21be8ec9e
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1b281447f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 23129b63f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 104b9fae1
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1a3259860
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1a3259860
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1a3259860
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1637d0b3a
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1637d0b3a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=3.471. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 17e1156da
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 17e1156da
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 17e1156da
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 17e1156da
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1488004ba
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1488004ba
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+Ending Placer Task | Checksum: ce690f86
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1085.457 ; gain = 0.000
+46 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.189 . Memory (MB): peak = 1085.457 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/impl_1/goertzel_algorithm_simpler_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1085.457 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1085.457 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1085.457 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.500 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+50 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.129 . Memory (MB): peak = 1085.457 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/impl_1/goertzel_algorithm_simpler_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020-clg484'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: b1906449 ConstDB: 0 ShapeSum: 1cd8ab3d RouteDB: 0
+
+Phase 1 Build RT Design
+WARNING: [Route 35-198] Port "input_AX_ALG_TVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "input_AX_ALG_TDATA[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "input_AX_ALG_TDATA[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_AX_ALG_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_AX_ALG_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+Phase 1 Build RT Design | Checksum: 292d78ec
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1150.000 ; gain = 64.543
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 292d78ec
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1150.000 ; gain = 64.543
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 292d78ec
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1153.473 ; gain = 68.016
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 292d78ec
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1153.473 ; gain = 68.016
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 158186e6f
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1156.102 ; gain = 70.645
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.477  | TNS=0.000  | WHS=-0.141 | THS=-25.514|
+
+Phase 2 Router Initialization | Checksum: 168b4c087
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 19ee87b70
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 87
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.162  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 162df10d8
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.162  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1b2150854
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+Phase 4 Rip-up And Reroute | Checksum: 1b2150854
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 1b2150854
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1b2150854
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+Phase 5 Delay and Skew Optimization | Checksum: 1b2150854
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1d9395320
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.277  | TNS=0.000  | WHS=0.127  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 23e96e290
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+Phase 6 Post Hold Fix | Checksum: 23e96e290
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.206016 %
+  Global Horizontal Routing Utilization  = 0.298428 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 24caf7402
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 24caf7402
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.199 ; gain = 75.742
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 23e690302
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1161.199 ; gain = 75.742
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=3.277  | TNS=0.000  | WHS=0.127  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 23e690302
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1161.199 ; gain = 75.742
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1161.199 ; gain = 75.742
+
+Routing Is Done.
+63 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 1161.199 ; gain = 75.742
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.194 . Memory (MB): peak = 1161.199 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/impl_1/goertzel_algorithm_simpler_routed.dcp' has been generated.
+Command: report_drc -file goertzel_algorithm_simpler_drc_routed.rpt -pb goertzel_algorithm_simpler_drc_routed.pb -rpx goertzel_algorithm_simpler_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/impl_1/goertzel_algorithm_simpler_drc_routed.rpt.
+report_drc completed successfully
+Command: report_methodology -file goertzel_algorithm_simpler_methodology_drc_routed.rpt -rpx goertzel_algorithm_simpler_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/project.runs/impl_1/goertzel_algorithm_simpler_methodology_drc_routed.rpt.
+report_methodology completed successfully
+Command: report_power -file goertzel_algorithm_simpler_power_routed.rpt -pb goertzel_algorithm_simpler_power_summary_routed.pb -rpx goertzel_algorithm_simpler_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+70 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 14 13:19:49 2020...
+[Tue Jul 14 13:19:52 2020] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:50 . Memory (MB): peak = 1000.641 ; gain = 4.070
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/.Xil/Vivado-8308-LAPTOP-5NTBTHR8/dcp4/goertzel_algorithm_simpler.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/goertzel_algorithm_simpler.xdc:2]
+Finished Parsing XDC File [C:/Users/Raul/Documents/GOERTZEL_HLS/goertzelv10/ALG/solution22/impl/vhdl/.Xil/Vivado-8308-LAPTOP-5NTBTHR8/dcp4/goertzel_algorithm_simpler.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1093.164 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1093.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1172.211 ; gain = 1.090
+
+
+Implementation tool: Xilinx Vivado v.2017.1
+Project:             ALG
+Solution:            solution22
+Device target:       xc7z020clg484-1
+Report date:         Tue Jul 14 13:19:53 +0100 2020
+
+#=== Post-Implementation Resource usage ===
+SLICE:          320
+LUT:            650
+FF:             968
+DSP:              8
+BRAM:             4
+SRL:             48
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    5.939
+CP achieved post-implementation:    6.729
+Timing met
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 14 13:19:53 2020...

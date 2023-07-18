@@ -1,0 +1,16 @@
+devuelveAuxArray_bkb
+goertzel_algoritheOg
+goertzelInterno_scud
+goertzelInterno_sdEe
+fifo_w32_d4_A
+fifo_w32_d4_A
+fifo_w32_d4_A
+start_for_devuelvfYi
+start_for_Loop_g1g8j
+start_for_Loop_2_hbi
+read_data
+devuelveAuxArray
+goertzelInterno_simp
+Loop_g1_proc
+Loop_2_proc
+goertzel_algorithm_simpler

@@ -1,0 +1,55 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="pop_stream" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="push_stream" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="read_data" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="write_data" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="devuelveAuxArray" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="goertzelInterno_simpler" label="">
+<pragma name="ALLOCATION">
+<option name="instances" positionalBoolean="4" value="mul"/>
+<option name="limit" value="1"/>
+<option name="operation" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="goertzel_algorithm_simpler" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="goertzel_algorithm_simpler" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+<option name="bundle" value="CONTROL_BUS"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="goertzel_algorithm_simpler" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="input_AX_ALG"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="goertzel_algorithm_simpler" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="output_AX_ALG"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="goertzel_algorithm_simpler" label="">
+<pragma name="PIPELINE"/>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

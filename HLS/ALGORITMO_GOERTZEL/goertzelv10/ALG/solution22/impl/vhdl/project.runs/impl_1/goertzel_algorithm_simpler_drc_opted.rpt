@@ -1,0 +1,57 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Tue Jul 14 13:19:23 2020
+| Host         : LAPTOP-5NTBTHR8 running 64-bit major release  (build 9200)
+| Command      : report_drc -file goertzel_algorithm_simpler_drc_opted.rpt
+| Design       : goertzel_algorithm_simpler
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_goertzel_algorithm_simpler
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 4
++--------+----------+------------------------+------------+
+| Rule   | Severity | Description            | Violations |
++--------+----------+------------------------+------------+
+| DPOP-1 | Warning  | PREG Output pipelining | 3          |
+| ZPS7-1 | Warning  | PS7 block required     | 1          |
++--------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg output Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg__1 output Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/buff0_reg__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product output Loop_g1_proc_U0/grp_goertzelInterno_simp_fu_79/goertzel_algoritheOg_U11/goertzel_algoritheOg_MulnS_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

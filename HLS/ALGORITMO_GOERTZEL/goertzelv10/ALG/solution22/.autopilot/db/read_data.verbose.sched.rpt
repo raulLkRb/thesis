@@ -1,0 +1,149 @@
+
+
+================================================================
+== Vivado HLS Report for 'read_data'
+================================================================
+* Date:           Tue Jul 14 13:29:08 2020
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        ALG
+* Solution:       solution22
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      2.32|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    1|    1|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 2
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+* FSM state operations: 
+
+ <State 1>: 0.00ns
+ST_1: empty (14)  [2/2] 0.00ns
+.critedge:5  %empty = call { i32, i4, i4, i4, i1, i5, i5 } @_ssdm_op_Read.axis.volatile.i32P.i4P.i4P.i4P.i1P.i5P.i5P(i32* %input_data_V, i4* %input_keep_V, i4* %input_strb_V, i4* %input_user_V, i1* %input_last_V, i5* %input_id_V, i5* %input_dest_V)
+
+
+ <State 2>: 2.32ns
+ST_2: StgValue_4 (9)  [1/1] 0.00ns
+.critedge:0  call void (...)* @_ssdm_op_SpecInterface(i32* %buf_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str62, i32 0, i32 0, [1 x i8]* @p_str63, [1 x i8]* @p_str64, [1 x i8]* @p_str65, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str66, [1 x i8]* @p_str67)
+
+ST_2: StgValue_5 (10)  [1/1] 0.00ns
+.critedge:1  call void (...)* @_ssdm_op_SpecInterface(i32* %input_data_V, i4* %input_keep_V, i4* %input_strb_V, i4* %input_user_V, i1* %input_last_V, i5* %input_id_V, i5* %input_dest_V, [5 x i8]* @p_str8, i32 1, i32 1, [5 x i8]* @p_str9, i32 0, i32 0, [1 x i8]* @p_str3, [1 x i8]* @p_str3, [1 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str3, [1 x i8]* @p_str3)
+
+ST_2: StgValue_6 (11)  [1/1] 0.00ns  loc: ./axi_algorithm.h:202
+.critedge:2  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str12) nounwind
+
+ST_2: tmp (12)  [1/1] 0.00ns  loc: ./axi_algorithm.h:202
+.critedge:3  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str12)
+
+ST_2: StgValue_8 (13)  [1/1] 0.00ns  loc: ./axi_algorithm.h:203
+.critedge:4  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str3) nounwind
+
+ST_2: empty (14)  [1/2] 0.00ns
+.critedge:5  %empty = call { i32, i4, i4, i4, i1, i5, i5 } @_ssdm_op_Read.axis.volatile.i32P.i4P.i4P.i4P.i1P.i5P.i5P(i32* %input_data_V, i4* %input_keep_V, i4* %input_strb_V, i4* %input_user_V, i1* %input_last_V, i5* %input_id_V, i5* %input_dest_V)
+
+ST_2: p_Val2_s (15)  [1/1] 0.00ns
+.critedge:6  %p_Val2_s = extractvalue { i32, i4, i4, i4, i1, i5, i5 } %empty, 0
+
+ST_2: StgValue_11 (16)  [1/1] 2.32ns  loc: ./axi_algorithm.h:205
+.critedge:7  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %buf_0_V, i32 %p_Val2_s)
+
+ST_2: empty_14 (17)  [1/1] 0.00ns  loc: ./axi_algorithm.h:206
+.critedge:8  %empty_14 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str12, i32 %tmp)
+
+ST_2: StgValue_13 (18)  [1/1] 0.00ns  loc: ./axi_algorithm.h:207
+.critedge:9  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 2.32ns
+The critical path consists of the following:
+	axis read on port 'input_data_V' [14]  (0 ns)
+	fifo write on port 'buf_0_V' (./axi_algorithm.h:205) [16]  (2.32 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
